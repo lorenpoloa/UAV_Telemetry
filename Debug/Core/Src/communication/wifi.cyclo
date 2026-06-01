@@ -1,0 +1,17 @@
+../Core/Src/communication/wifi.c:62:17:get_dma_write_index	1
+../Core/Src/communication/wifi.c:75:13:flush_ring_buffer	1
+../Core/Src/communication/wifi.c:92:12:search_in_ring_buffer	5
+../Core/Src/communication/wifi.c:128:6:HAL_UART_TxCpltCallback	3
+../Core/Src/communication/wifi.c:155:22:wifi_send_cmd	6
+../Core/Src/communication/wifi.c:202:15:WIFI_Init	4
+../Core/Src/communication/wifi.c:232:15:WIFI_Test	1
+../Core/Src/communication/wifi.c:241:15:WIFI_Reset	1
+../Core/Src/communication/wifi.c:250:15:WIFI_SetStationMode	1
+../Core/Src/communication/wifi.c:265:15:WIFI_ConnectAP	2
+../Core/Src/communication/wifi.c:287:15:WIFI_DisconnectAP	1
+../Core/Src/communication/wifi.c:294:15:WIFI_GetState	1
+../Core/Src/communication/wifi.c:308:15:WIFI_MQTT_UserConfig	1
+../Core/Src/communication/wifi.c:329:15:WIFI_MQTT_Connect	2
+../Core/Src/communication/wifi.c:358:15:WIFI_MQTT_Publish	2
+../Core/Src/communication/wifi.c:378:15:WIFI_MQTT_Disconnect	2
+../Core/Src/communication/wifi.c:397:15:WIFI_Reconnect	6

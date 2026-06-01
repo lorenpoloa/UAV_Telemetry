@@ -1,0 +1,5 @@
+../Core/Src/freertos.c:292:6:StartImuTask	16	static
+../Core/Src/freertos.c:325:6:StartGpsTask	16	static
+../Core/Src/freertos.c:363:6:StartPacketTask	48	static
+../Core/Src/freertos.c:465:6:StartWifiTask	16	static
+../Core/Src/freertos.c:557:6:MX_FREERTOS_Init	8	static

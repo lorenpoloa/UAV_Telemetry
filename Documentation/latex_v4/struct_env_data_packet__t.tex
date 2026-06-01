@@ -1,0 +1,101 @@
+\doxysection{Referencia de la estructura Env\+Data\+Packet\+\_\+t}
+\hypertarget{struct_env_data_packet__t}{}\label{struct_env_data_packet__t}\index{EnvDataPacket\_t@{EnvDataPacket\_t}}
+
+
+Paquete normalizado con las magnitudes ambientales.  
+
+
+
+
+{\ttfamily \+\#include $<$formatter\+\_\+data.\+h$>$}
+
+\doxysubsubsection*{Campos de datos}
+\begin{DoxyCompactItemize}
+\item 
+float \doxymbox{\hyperlink{struct_env_data_packet__t_a6e74ffd463a08ca8f84853de0e481f81}{heading}}
+\begin{DoxyCompactList}\small\item\em Rumbo estimado a partir del magnetómetro. \end{DoxyCompactList}\item 
+float \doxymbox{\hyperlink{struct_env_data_packet__t_ab1dff79b3336177db5ef969da1ba0b37}{temperature}}
+\begin{DoxyCompactList}\small\item\em Temperatura medida por el sensor barométrico. \end{DoxyCompactList}\item 
+float \doxymbox{\hyperlink{struct_env_data_packet__t_a0b2adc3c9f665b5f536eba98c57a650b}{pressure}}
+\begin{DoxyCompactList}\small\item\em Presión atmosférica medida o calculada. \end{DoxyCompactList}\item 
+uint32\+\_\+t \doxymbox{\hyperlink{struct_env_data_packet__t_ab436357f5d4f6c59ef835346d8f6a1ef}{env\+\_\+timestamp}}
+\begin{DoxyCompactList}\small\item\em Marca temporal asociada a la muestra ambiental. \end{DoxyCompactList}\item 
+uint32\+\_\+t \doxymbox{\hyperlink{struct_env_data_packet__t_a2b75559edd243f496db6f25b0ec9ba4c}{checksum}}
+\begin{DoxyCompactList}\small\item\em Valor de comprobación usado para detectar paquetes inconsistentes. \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{struct_env_data_packet__t_a932ed86e5b03bc2d2bac8888872123a5}{env\+\_\+updated}}
+\begin{DoxyCompactList}\small\item\em Indica si el paquete contiene datos ambientales pendientes de consumir. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Paquete normalizado con las magnitudes ambientales. 
+
+Mantiene juntas las variables ambientales calculadas por el módulo 10DoF para evitar que temperatura, presión y rumbo pertenezcan a instantes distintos al ser enviados por la capa de comunicación. 
+
+\label{struct_env_data_packet__t_doc-variable-members}
+\Hypertarget{struct_env_data_packet__t_doc-variable-members}
+\doxysubsection{Documentación de campos}
+\Hypertarget{struct_env_data_packet__t_a2b75559edd243f496db6f25b0ec9ba4c}\index{EnvDataPacket\_t@{EnvDataPacket\_t}!checksum@{checksum}}
+\index{checksum@{checksum}!EnvDataPacket\_t@{EnvDataPacket\_t}}
+\doxysubsubsection{\texorpdfstring{checksum}{checksum}}
+{\footnotesize\ttfamily \label{struct_env_data_packet__t_a2b75559edd243f496db6f25b0ec9ba4c} 
+uint32\+\_\+t Env\+Data\+Packet\+\_\+t::\+checksum}
+
+
+
+Valor de comprobación usado para detectar paquetes inconsistentes. 
+
+\Hypertarget{struct_env_data_packet__t_ab436357f5d4f6c59ef835346d8f6a1ef}\index{EnvDataPacket\_t@{EnvDataPacket\_t}!env\_timestamp@{env\_timestamp}}
+\index{env\_timestamp@{env\_timestamp}!EnvDataPacket\_t@{EnvDataPacket\_t}}
+\doxysubsubsection{\texorpdfstring{env\_timestamp}{env\_timestamp}}
+{\footnotesize\ttfamily \label{struct_env_data_packet__t_ab436357f5d4f6c59ef835346d8f6a1ef} 
+uint32\+\_\+t Env\+Data\+Packet\+\_\+t::\+env\+\_\+timestamp}
+
+
+
+Marca temporal asociada a la muestra ambiental. 
+
+\Hypertarget{struct_env_data_packet__t_a932ed86e5b03bc2d2bac8888872123a5}\index{EnvDataPacket\_t@{EnvDataPacket\_t}!env\_updated@{env\_updated}}
+\index{env\_updated@{env\_updated}!EnvDataPacket\_t@{EnvDataPacket\_t}}
+\doxysubsubsection{\texorpdfstring{env\_updated}{env\_updated}}
+{\footnotesize\ttfamily \label{struct_env_data_packet__t_a932ed86e5b03bc2d2bac8888872123a5} 
+int Env\+Data\+Packet\+\_\+t::\+env\+\_\+updated}
+
+
+
+Indica si el paquete contiene datos ambientales pendientes de consumir. 
+
+\Hypertarget{struct_env_data_packet__t_a6e74ffd463a08ca8f84853de0e481f81}\index{EnvDataPacket\_t@{EnvDataPacket\_t}!heading@{heading}}
+\index{heading@{heading}!EnvDataPacket\_t@{EnvDataPacket\_t}}
+\doxysubsubsection{\texorpdfstring{heading}{heading}}
+{\footnotesize\ttfamily \label{struct_env_data_packet__t_a6e74ffd463a08ca8f84853de0e481f81} 
+float Env\+Data\+Packet\+\_\+t::\+heading}
+
+
+
+Rumbo estimado a partir del magnetómetro. 
+
+\Hypertarget{struct_env_data_packet__t_a0b2adc3c9f665b5f536eba98c57a650b}\index{EnvDataPacket\_t@{EnvDataPacket\_t}!pressure@{pressure}}
+\index{pressure@{pressure}!EnvDataPacket\_t@{EnvDataPacket\_t}}
+\doxysubsubsection{\texorpdfstring{pressure}{pressure}}
+{\footnotesize\ttfamily \label{struct_env_data_packet__t_a0b2adc3c9f665b5f536eba98c57a650b} 
+float Env\+Data\+Packet\+\_\+t::\+pressure}
+
+
+
+Presión atmosférica medida o calculada. 
+
+\Hypertarget{struct_env_data_packet__t_ab1dff79b3336177db5ef969da1ba0b37}\index{EnvDataPacket\_t@{EnvDataPacket\_t}!temperature@{temperature}}
+\index{temperature@{temperature}!EnvDataPacket\_t@{EnvDataPacket\_t}}
+\doxysubsubsection{\texorpdfstring{temperature}{temperature}}
+{\footnotesize\ttfamily \label{struct_env_data_packet__t_ab1dff79b3336177db5ef969da1ba0b37} 
+float Env\+Data\+Packet\+\_\+t::\+temperature}
+
+
+
+Temperatura medida por el sensor barométrico. 
+
+
+
+La documentación de esta estructura está generada del siguiente archivo:\+\begin{DoxyCompactItemize}
+\item 
+Core/\+\+Inc/\+\doxymbox{\hyperlink{formatter__data_8h}{formatter\+\_\+data.\+h}}\end{DoxyCompactItemize}

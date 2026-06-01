@@ -1,0 +1,245 @@
+\doxysection{Referencia de la estructura Sensor10\+Do\+F\+\_\+t}
+\hypertarget{struct_sensor10_do_f__t}{}\label{struct_sensor10_do_f__t}\index{Sensor10DoF\_t@{Sensor10DoF\_t}}
+
+
+Conjunto completo de medidas calculadas por el módulo 10DoF.  
+
+
+
+
+{\ttfamily \+\#include $<$sensor10\+Do\+F.\+h$>$}
+
+\doxysubsubsection*{Campos de datos}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \doxymbox{\hyperlink{struct_sensor10_do_f__t_a9c4e4ecef897e2cd0b0ff059fa65b829}{timestamp\+\_\+ms}}
+\begin{DoxyCompactList}\small\item\em Marca temporal de la muestra en milisegundos. \end{DoxyCompactList}\item 
+float \doxymbox{\hyperlink{struct_sensor10_do_f__t_aa1a31abd984c23dc8ee2a4ff85444798}{accel\+\_\+x\+\_\+ms2}}
+\begin{DoxyCompactList}\small\item\em Aceleración en el eje X expresada en m/\+s². \end{DoxyCompactList}\item 
+float \doxymbox{\hyperlink{struct_sensor10_do_f__t_a62971bc8c5fbd91ac100eb5ef6fd6ae2}{accel\+\_\+y\+\_\+ms2}}
+\begin{DoxyCompactList}\small\item\em Aceleración en el eje Y expresada en m/\+s². \end{DoxyCompactList}\item 
+float \doxymbox{\hyperlink{struct_sensor10_do_f__t_a8f638798518ccd5d9739de8a0ab8d84f}{accel\+\_\+z\+\_\+ms2}}
+\begin{DoxyCompactList}\small\item\em Aceleración en el eje Z expresada en m/\+s². \end{DoxyCompactList}\item 
+float \doxymbox{\hyperlink{struct_sensor10_do_f__t_a265758e317a736d407b0a5bc246f816d}{gyro\+\_\+x\+\_\+dps}}
+\begin{DoxyCompactList}\small\item\em Velocidad angular en el eje X expresada en grados/\+s. \end{DoxyCompactList}\item 
+float \doxymbox{\hyperlink{struct_sensor10_do_f__t_a33b4fcc5c7ff72b86d462378c4e423e8}{gyro\+\_\+y\+\_\+dps}}
+\begin{DoxyCompactList}\small\item\em Velocidad angular en el eje Y expresada en grados/\+s. \end{DoxyCompactList}\item 
+float \doxymbox{\hyperlink{struct_sensor10_do_f__t_a41fb0f77162e02ff868b4dc8224f9732}{gyro\+\_\+z\+\_\+dps}}
+\begin{DoxyCompactList}\small\item\em Velocidad angular en el eje Z expresada en grados/\+s. \end{DoxyCompactList}\item 
+float \doxymbox{\hyperlink{struct_sensor10_do_f__t_adade1c66b93deb5ff835141c180505d3}{mag\+\_\+x\+\_\+uT}}
+\begin{DoxyCompactList}\small\item\em Campo magnético en el eje X expresado en microteslas. \end{DoxyCompactList}\item 
+float \doxymbox{\hyperlink{struct_sensor10_do_f__t_a1534c128d71efdfdc4a6c7dbe854ffef}{mag\+\_\+y\+\_\+uT}}
+\begin{DoxyCompactList}\small\item\em Campo magnético en el eje Y expresado en microteslas. \end{DoxyCompactList}\item 
+float \doxymbox{\hyperlink{struct_sensor10_do_f__t_a1e45b6a7e3417692d01214fb13816a53}{mag\+\_\+z\+\_\+uT}}
+\begin{DoxyCompactList}\small\item\em Campo magnético en el eje Z expresado en microteslas. \end{DoxyCompactList}\item 
+float \doxymbox{\hyperlink{struct_sensor10_do_f__t_a3e222cb315c3326870ed7784f148a2f8}{heading\+\_\+deg}}
+\begin{DoxyCompactList}\small\item\em Rumbo horizontal estimado en grados. \end{DoxyCompactList}\item 
+float \doxymbox{\hyperlink{struct_sensor10_do_f__t_ac74169a0c8d9ccabb217f08979bef09f}{roll\+\_\+deg}}
+\begin{DoxyCompactList}\small\item\em Ángulo de roll estimado en grados. \end{DoxyCompactList}\item 
+float \doxymbox{\hyperlink{struct_sensor10_do_f__t_a0ade405858f65a93eb92fbb7d4eb4e20}{pitch\+\_\+deg}}
+\begin{DoxyCompactList}\small\item\em Ángulo de pitch estimado en grados. \end{DoxyCompactList}\item 
+float \doxymbox{\hyperlink{struct_sensor10_do_f__t_ae4b5d897e1d9550cda0333e25458ae6c}{temperature\+\_\+c}}
+\begin{DoxyCompactList}\small\item\em Temperatura medida por el barómetro en grados Celsius. \end{DoxyCompactList}\item 
+float \doxymbox{\hyperlink{struct_sensor10_do_f__t_a310b695bb1d6a33d702e193705fdc425}{pressure\+\_\+pa}}
+\begin{DoxyCompactList}\small\item\em Presión atmosférica en pascales. \end{DoxyCompactList}\item 
+float \doxymbox{\hyperlink{struct_sensor10_do_f__t_a225f65d3f6aa0490493ab67c0592ea94}{pressure\+\_\+hpa}}
+\begin{DoxyCompactList}\small\item\em Presión atmosférica en hectopascales. \end{DoxyCompactList}\item 
+float \doxymbox{\hyperlink{struct_sensor10_do_f__t_aed41824328898379e8ef076635010267}{pressure\+\_\+atm}}
+\begin{DoxyCompactList}\small\item\em Presión atmosférica expresada en atmósferas. \end{DoxyCompactList}\item 
+float \doxymbox{\hyperlink{struct_sensor10_do_f__t_a67ddcbd4279b410e81b8db0482048d5c}{altitude\+\_\+m}}
+\begin{DoxyCompactList}\small\item\em Altitud estimada a partir de la presión barométrica en metros. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Conjunto completo de medidas calculadas por el módulo 10DoF. 
+
+La estructura agrupa todas las magnitudes derivadas de una lectura para que la aplicación pueda mover una muestra coherente entre tareas. Las unidades se expresan en formato físico de alto nivel y no en cuentas ADC o registros del sensor. 
+
+\label{struct_sensor10_do_f__t_doc-variable-members}
+\Hypertarget{struct_sensor10_do_f__t_doc-variable-members}
+\doxysubsection{Documentación de campos}
+\Hypertarget{struct_sensor10_do_f__t_aa1a31abd984c23dc8ee2a4ff85444798}\index{Sensor10DoF\_t@{Sensor10DoF\_t}!accel\_x\_ms2@{accel\_x\_ms2}}
+\index{accel\_x\_ms2@{accel\_x\_ms2}!Sensor10DoF\_t@{Sensor10DoF\_t}}
+\doxysubsubsection{\texorpdfstring{accel\_x\_ms2}{accel\_x\_ms2}}
+{\footnotesize\ttfamily \label{struct_sensor10_do_f__t_aa1a31abd984c23dc8ee2a4ff85444798} 
+float Sensor10\+Do\+F\+\_\+t::\+accel\+\_\+x\+\_\+ms2}
+
+
+
+Aceleración en el eje X expresada en m/\+s². 
+
+\Hypertarget{struct_sensor10_do_f__t_a62971bc8c5fbd91ac100eb5ef6fd6ae2}\index{Sensor10DoF\_t@{Sensor10DoF\_t}!accel\_y\_ms2@{accel\_y\_ms2}}
+\index{accel\_y\_ms2@{accel\_y\_ms2}!Sensor10DoF\_t@{Sensor10DoF\_t}}
+\doxysubsubsection{\texorpdfstring{accel\_y\_ms2}{accel\_y\_ms2}}
+{\footnotesize\ttfamily \label{struct_sensor10_do_f__t_a62971bc8c5fbd91ac100eb5ef6fd6ae2} 
+float Sensor10\+Do\+F\+\_\+t::\+accel\+\_\+y\+\_\+ms2}
+
+
+
+Aceleración en el eje Y expresada en m/\+s². 
+
+\Hypertarget{struct_sensor10_do_f__t_a8f638798518ccd5d9739de8a0ab8d84f}\index{Sensor10DoF\_t@{Sensor10DoF\_t}!accel\_z\_ms2@{accel\_z\_ms2}}
+\index{accel\_z\_ms2@{accel\_z\_ms2}!Sensor10DoF\_t@{Sensor10DoF\_t}}
+\doxysubsubsection{\texorpdfstring{accel\_z\_ms2}{accel\_z\_ms2}}
+{\footnotesize\ttfamily \label{struct_sensor10_do_f__t_a8f638798518ccd5d9739de8a0ab8d84f} 
+float Sensor10\+Do\+F\+\_\+t::\+accel\+\_\+z\+\_\+ms2}
+
+
+
+Aceleración en el eje Z expresada en m/\+s². 
+
+\Hypertarget{struct_sensor10_do_f__t_a67ddcbd4279b410e81b8db0482048d5c}\index{Sensor10DoF\_t@{Sensor10DoF\_t}!altitude\_m@{altitude\_m}}
+\index{altitude\_m@{altitude\_m}!Sensor10DoF\_t@{Sensor10DoF\_t}}
+\doxysubsubsection{\texorpdfstring{altitude\_m}{altitude\_m}}
+{\footnotesize\ttfamily \label{struct_sensor10_do_f__t_a67ddcbd4279b410e81b8db0482048d5c} 
+float Sensor10\+Do\+F\+\_\+t::\+altitude\+\_\+m}
+
+
+
+Altitud estimada a partir de la presión barométrica en metros. 
+
+\Hypertarget{struct_sensor10_do_f__t_a265758e317a736d407b0a5bc246f816d}\index{Sensor10DoF\_t@{Sensor10DoF\_t}!gyro\_x\_dps@{gyro\_x\_dps}}
+\index{gyro\_x\_dps@{gyro\_x\_dps}!Sensor10DoF\_t@{Sensor10DoF\_t}}
+\doxysubsubsection{\texorpdfstring{gyro\_x\_dps}{gyro\_x\_dps}}
+{\footnotesize\ttfamily \label{struct_sensor10_do_f__t_a265758e317a736d407b0a5bc246f816d} 
+float Sensor10\+Do\+F\+\_\+t::\+gyro\+\_\+x\+\_\+dps}
+
+
+
+Velocidad angular en el eje X expresada en grados/\+s. 
+
+\Hypertarget{struct_sensor10_do_f__t_a33b4fcc5c7ff72b86d462378c4e423e8}\index{Sensor10DoF\_t@{Sensor10DoF\_t}!gyro\_y\_dps@{gyro\_y\_dps}}
+\index{gyro\_y\_dps@{gyro\_y\_dps}!Sensor10DoF\_t@{Sensor10DoF\_t}}
+\doxysubsubsection{\texorpdfstring{gyro\_y\_dps}{gyro\_y\_dps}}
+{\footnotesize\ttfamily \label{struct_sensor10_do_f__t_a33b4fcc5c7ff72b86d462378c4e423e8} 
+float Sensor10\+Do\+F\+\_\+t::\+gyro\+\_\+y\+\_\+dps}
+
+
+
+Velocidad angular en el eje Y expresada en grados/\+s. 
+
+\Hypertarget{struct_sensor10_do_f__t_a41fb0f77162e02ff868b4dc8224f9732}\index{Sensor10DoF\_t@{Sensor10DoF\_t}!gyro\_z\_dps@{gyro\_z\_dps}}
+\index{gyro\_z\_dps@{gyro\_z\_dps}!Sensor10DoF\_t@{Sensor10DoF\_t}}
+\doxysubsubsection{\texorpdfstring{gyro\_z\_dps}{gyro\_z\_dps}}
+{\footnotesize\ttfamily \label{struct_sensor10_do_f__t_a41fb0f77162e02ff868b4dc8224f9732} 
+float Sensor10\+Do\+F\+\_\+t::\+gyro\+\_\+z\+\_\+dps}
+
+
+
+Velocidad angular en el eje Z expresada en grados/\+s. 
+
+\Hypertarget{struct_sensor10_do_f__t_a3e222cb315c3326870ed7784f148a2f8}\index{Sensor10DoF\_t@{Sensor10DoF\_t}!heading\_deg@{heading\_deg}}
+\index{heading\_deg@{heading\_deg}!Sensor10DoF\_t@{Sensor10DoF\_t}}
+\doxysubsubsection{\texorpdfstring{heading\_deg}{heading\_deg}}
+{\footnotesize\ttfamily \label{struct_sensor10_do_f__t_a3e222cb315c3326870ed7784f148a2f8} 
+float Sensor10\+Do\+F\+\_\+t::\+heading\+\_\+deg}
+
+
+
+Rumbo horizontal estimado en grados. 
+
+\Hypertarget{struct_sensor10_do_f__t_adade1c66b93deb5ff835141c180505d3}\index{Sensor10DoF\_t@{Sensor10DoF\_t}!mag\_x\_uT@{mag\_x\_uT}}
+\index{mag\_x\_uT@{mag\_x\_uT}!Sensor10DoF\_t@{Sensor10DoF\_t}}
+\doxysubsubsection{\texorpdfstring{mag\_x\_uT}{mag\_x\_uT}}
+{\footnotesize\ttfamily \label{struct_sensor10_do_f__t_adade1c66b93deb5ff835141c180505d3} 
+float Sensor10\+Do\+F\+\_\+t::\+mag\+\_\+x\+\_\+uT}
+
+
+
+Campo magnético en el eje X expresado en microteslas. 
+
+\Hypertarget{struct_sensor10_do_f__t_a1534c128d71efdfdc4a6c7dbe854ffef}\index{Sensor10DoF\_t@{Sensor10DoF\_t}!mag\_y\_uT@{mag\_y\_uT}}
+\index{mag\_y\_uT@{mag\_y\_uT}!Sensor10DoF\_t@{Sensor10DoF\_t}}
+\doxysubsubsection{\texorpdfstring{mag\_y\_uT}{mag\_y\_uT}}
+{\footnotesize\ttfamily \label{struct_sensor10_do_f__t_a1534c128d71efdfdc4a6c7dbe854ffef} 
+float Sensor10\+Do\+F\+\_\+t::\+mag\+\_\+y\+\_\+uT}
+
+
+
+Campo magnético en el eje Y expresado en microteslas. 
+
+\Hypertarget{struct_sensor10_do_f__t_a1e45b6a7e3417692d01214fb13816a53}\index{Sensor10DoF\_t@{Sensor10DoF\_t}!mag\_z\_uT@{mag\_z\_uT}}
+\index{mag\_z\_uT@{mag\_z\_uT}!Sensor10DoF\_t@{Sensor10DoF\_t}}
+\doxysubsubsection{\texorpdfstring{mag\_z\_uT}{mag\_z\_uT}}
+{\footnotesize\ttfamily \label{struct_sensor10_do_f__t_a1e45b6a7e3417692d01214fb13816a53} 
+float Sensor10\+Do\+F\+\_\+t::\+mag\+\_\+z\+\_\+uT}
+
+
+
+Campo magnético en el eje Z expresado en microteslas. 
+
+\Hypertarget{struct_sensor10_do_f__t_a0ade405858f65a93eb92fbb7d4eb4e20}\index{Sensor10DoF\_t@{Sensor10DoF\_t}!pitch\_deg@{pitch\_deg}}
+\index{pitch\_deg@{pitch\_deg}!Sensor10DoF\_t@{Sensor10DoF\_t}}
+\doxysubsubsection{\texorpdfstring{pitch\_deg}{pitch\_deg}}
+{\footnotesize\ttfamily \label{struct_sensor10_do_f__t_a0ade405858f65a93eb92fbb7d4eb4e20} 
+float Sensor10\+Do\+F\+\_\+t::\+pitch\+\_\+deg}
+
+
+
+Ángulo de pitch estimado en grados. 
+
+\Hypertarget{struct_sensor10_do_f__t_aed41824328898379e8ef076635010267}\index{Sensor10DoF\_t@{Sensor10DoF\_t}!pressure\_atm@{pressure\_atm}}
+\index{pressure\_atm@{pressure\_atm}!Sensor10DoF\_t@{Sensor10DoF\_t}}
+\doxysubsubsection{\texorpdfstring{pressure\_atm}{pressure\_atm}}
+{\footnotesize\ttfamily \label{struct_sensor10_do_f__t_aed41824328898379e8ef076635010267} 
+float Sensor10\+Do\+F\+\_\+t::\+pressure\+\_\+atm}
+
+
+
+Presión atmosférica expresada en atmósferas. 
+
+\Hypertarget{struct_sensor10_do_f__t_a225f65d3f6aa0490493ab67c0592ea94}\index{Sensor10DoF\_t@{Sensor10DoF\_t}!pressure\_hpa@{pressure\_hpa}}
+\index{pressure\_hpa@{pressure\_hpa}!Sensor10DoF\_t@{Sensor10DoF\_t}}
+\doxysubsubsection{\texorpdfstring{pressure\_hpa}{pressure\_hpa}}
+{\footnotesize\ttfamily \label{struct_sensor10_do_f__t_a225f65d3f6aa0490493ab67c0592ea94} 
+float Sensor10\+Do\+F\+\_\+t::\+pressure\+\_\+hpa}
+
+
+
+Presión atmosférica en hectopascales. 
+
+\Hypertarget{struct_sensor10_do_f__t_a310b695bb1d6a33d702e193705fdc425}\index{Sensor10DoF\_t@{Sensor10DoF\_t}!pressure\_pa@{pressure\_pa}}
+\index{pressure\_pa@{pressure\_pa}!Sensor10DoF\_t@{Sensor10DoF\_t}}
+\doxysubsubsection{\texorpdfstring{pressure\_pa}{pressure\_pa}}
+{\footnotesize\ttfamily \label{struct_sensor10_do_f__t_a310b695bb1d6a33d702e193705fdc425} 
+float Sensor10\+Do\+F\+\_\+t::\+pressure\+\_\+pa}
+
+
+
+Presión atmosférica en pascales. 
+
+\Hypertarget{struct_sensor10_do_f__t_ac74169a0c8d9ccabb217f08979bef09f}\index{Sensor10DoF\_t@{Sensor10DoF\_t}!roll\_deg@{roll\_deg}}
+\index{roll\_deg@{roll\_deg}!Sensor10DoF\_t@{Sensor10DoF\_t}}
+\doxysubsubsection{\texorpdfstring{roll\_deg}{roll\_deg}}
+{\footnotesize\ttfamily \label{struct_sensor10_do_f__t_ac74169a0c8d9ccabb217f08979bef09f} 
+float Sensor10\+Do\+F\+\_\+t::\+roll\+\_\+deg}
+
+
+
+Ángulo de roll estimado en grados. 
+
+\Hypertarget{struct_sensor10_do_f__t_ae4b5d897e1d9550cda0333e25458ae6c}\index{Sensor10DoF\_t@{Sensor10DoF\_t}!temperature\_c@{temperature\_c}}
+\index{temperature\_c@{temperature\_c}!Sensor10DoF\_t@{Sensor10DoF\_t}}
+\doxysubsubsection{\texorpdfstring{temperature\_c}{temperature\_c}}
+{\footnotesize\ttfamily \label{struct_sensor10_do_f__t_ae4b5d897e1d9550cda0333e25458ae6c} 
+float Sensor10\+Do\+F\+\_\+t::\+temperature\+\_\+c}
+
+
+
+Temperatura medida por el barómetro en grados Celsius. 
+
+\Hypertarget{struct_sensor10_do_f__t_a9c4e4ecef897e2cd0b0ff059fa65b829}\index{Sensor10DoF\_t@{Sensor10DoF\_t}!timestamp\_ms@{timestamp\_ms}}
+\index{timestamp\_ms@{timestamp\_ms}!Sensor10DoF\_t@{Sensor10DoF\_t}}
+\doxysubsubsection{\texorpdfstring{timestamp\_ms}{timestamp\_ms}}
+{\footnotesize\ttfamily \label{struct_sensor10_do_f__t_a9c4e4ecef897e2cd0b0ff059fa65b829} 
+uint32\+\_\+t Sensor10\+Do\+F\+\_\+t::\+timestamp\+\_\+ms}
+
+
+
+Marca temporal de la muestra en milisegundos. 
+
+
+
+La documentación de esta estructura está generada del siguiente archivo:\+\begin{DoxyCompactItemize}
+\item 
+Core/\+\+Inc/\+\doxymbox{\hyperlink{sensor10_do_f_8h}{sensor10\+Do\+F.\+h}}\end{DoxyCompactItemize}

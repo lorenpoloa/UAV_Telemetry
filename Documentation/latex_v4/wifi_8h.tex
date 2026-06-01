@@ -1,0 +1,718 @@
+\doxysection{Referencia del archivo Core/\+\+Inc/\+wifi.h}
+\hypertarget{wifi_8h}{}\label{wifi_8h}\index{Core/Inc/wifi.h@{Core/Inc/wifi.h}}
+
+
+Interfaz pública del driver Wi\+Fi basado en comandos AT.  
+
+
+{\ttfamily \+\#include "{}main.\+h"{}}\newline
+{\ttfamily \+\#include "{}wifi\+\_\+types.\+h"{}}\newline
+{\ttfamily \+\#include $<$stdint.\+h$>$}\newline
+Gráfico de dependencias incluidas en wifi.\+h:\+
+% FIG 0
+Gráfico de los archivos que directa o indirectamente incluyen a este archivo:\+
+% FIG 1
+\doxysubsubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{wifi__types_8h_aacb4bf20b6b92924d603518fe15874d2}{wifi\+\_\+status\+\_\+t}} \doxymbox{\hyperlink{wifi_8h_ad7ba0a0beada20c448bbc88a93c2ee5e}{WIFI\+\_\+\+Init}} (UART\+\_\+\+Handle\+Type\+Def \texorpdfstring{$\ast$}{*}huart)
+\begin{DoxyCompactList}\small\item\em Inicializa el driver Wi\+Fi y asocia la UART del módulo. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{wifi__types_8h_aacb4bf20b6b92924d603518fe15874d2}{wifi\+\_\+status\+\_\+t}} \doxymbox{\hyperlink{wifi_8h_a7747574249adc0e0daf6b4ed9d0062ce}{WIFI\+\_\+\+Reset}} (void)
+\begin{DoxyCompactList}\small\item\em Reinicia el módulo Wi\+Fi. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{wifi__types_8h_aacb4bf20b6b92924d603518fe15874d2}{wifi\+\_\+status\+\_\+t}} \doxymbox{\hyperlink{wifi_8h_acfaca1eea2072d0ca3cd4b5db1783dd9}{WIFI\+\_\+\+Test}} (void)
+\begin{DoxyCompactList}\small\item\em Comprueba la comunicación básica con el módulo Wi\+Fi. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{wifi__types_8h_aacb4bf20b6b92924d603518fe15874d2}{wifi\+\_\+status\+\_\+t}} \doxymbox{\hyperlink{wifi_8h_a1f2c5609610021e450931fa3a38c03b9}{WIFI\+\_\+\+Set\+Station\+Mode}} (void)
+\begin{DoxyCompactList}\small\item\em Configura el módulo Wi\+Fi en modo estación. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{wifi__types_8h_aacb4bf20b6b92924d603518fe15874d2}{wifi\+\_\+status\+\_\+t}} \doxymbox{\hyperlink{wifi_8h_a39f3b93115207ae63db616da2e291bff}{WIFI\+\_\+\+Connect\+AP}} (const char \texorpdfstring{$\ast$}{*}ssid, const char \texorpdfstring{$\ast$}{*}pass)
+\begin{DoxyCompactList}\small\item\em Conecta el módulo Wi\+Fi a un punto de acceso. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{wifi__types_8h_aacb4bf20b6b92924d603518fe15874d2}{wifi\+\_\+status\+\_\+t}} \doxymbox{\hyperlink{wifi_8h_a75bbb0398c0a03ed639b264ad2b096f2}{WIFI\+\_\+\+Disconnect\+AP}} (void)
+\begin{DoxyCompactList}\small\item\em Desconecta el módulo del punto de acceso actual. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{wifi__types_8h_a5f847547d1654ba6664de98abb0ee37c}{wifi\+\_\+state\+\_\+t}} \doxymbox{\hyperlink{wifi_8h_a8979de139d7d93ca4b9e5f6f63fadb95}{WIFI\+\_\+\+Get\+State}} (void)
+\begin{DoxyCompactList}\small\item\em Devuelve el estado lógico actual del driver Wi\+Fi. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{wifi__types_8h_aacb4bf20b6b92924d603518fe15874d2}{wifi\+\_\+status\+\_\+t}} \doxymbox{\hyperlink{wifi_8h_a6b44e23754cca97389330d3b6cbf52ea}{WIFI\+\_\+\+Get\+IP}} (char \texorpdfstring{$\ast$}{*}ip, uint16\+\_\+t len)
+\begin{DoxyCompactList}\small\item\em Solicita la dirección IP asignada al módulo. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{wifi__types_8h_aacb4bf20b6b92924d603518fe15874d2}{wifi\+\_\+status\+\_\+t}} \doxymbox{\hyperlink{wifi_8h_ab15097d974cfefeaf3cfb0efa0467aec}{WIFI\+\_\+\+Get\+RSSI}} (int \texorpdfstring{$\ast$}{*}rssi)
+\begin{DoxyCompactList}\small\item\em Solicita el nivel RSSI de la conexión Wi\+Fi. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{wifi__types_8h_aacb4bf20b6b92924d603518fe15874d2}{wifi\+\_\+status\+\_\+t}} \doxymbox{\hyperlink{wifi_8h_a56c17530ef3f91f4872221d8027f2d04}{WIFI\+\_\+\+TCPConnect}} (const char \texorpdfstring{$\ast$}{*}host, uint16\+\_\+t port)
+\begin{DoxyCompactList}\small\item\em Abre una conexión TCP con un host remoto. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{wifi__types_8h_aacb4bf20b6b92924d603518fe15874d2}{wifi\+\_\+status\+\_\+t}} \doxymbox{\hyperlink{wifi_8h_a572fefcfcdef32399be655dba8bb059e}{WIFI\+\_\+\+TCPClose}} (void)
+\begin{DoxyCompactList}\small\item\em Cierra la conexión TCP activa. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{wifi__types_8h_aacb4bf20b6b92924d603518fe15874d2}{wifi\+\_\+status\+\_\+t}} \doxymbox{\hyperlink{wifi_8h_a0c8912a840f8f8724afa067d36f5923e}{WIFI\+\_\+\+Send\+Raw}} (const char \texorpdfstring{$\ast$}{*}data)
+\begin{DoxyCompactList}\small\item\em Envía datos sin procesar por la conexión activa. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{wifi__types_8h_aacb4bf20b6b92924d603518fe15874d2}{wifi\+\_\+status\+\_\+t}} \doxymbox{\hyperlink{wifi_8h_acd57efc1a26efc2d18627ea6e1568efb}{WIFI\+\_\+\+Send\+JSON}} (const char \texorpdfstring{$\ast$}{*}json)
+\begin{DoxyCompactList}\small\item\em Envía una cadena JSON por la conexión activa. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{wifi__types_8h_aacb4bf20b6b92924d603518fe15874d2}{wifi\+\_\+status\+\_\+t}} \doxymbox{\hyperlink{wifi_8h_a1d9fadf4213ccd2311ce0fc2a06afca3}{WIFI\+\_\+\+Reconnect}} (void)
+\begin{DoxyCompactList}\small\item\em Ejecuta la secuencia de reconexión Wi\+Fi definida por el driver. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{wifi_8h_a31ff91c6d95ef644f730f3cb892ef634}{WIFI\+\_\+\+Process}} (void)
+\begin{DoxyCompactList}\small\item\em Procesa tareas internas periódicas del módulo Wi\+Fi. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{wifi__types_8h_aacb4bf20b6b92924d603518fe15874d2}{wifi\+\_\+status\+\_\+t}} \doxymbox{\hyperlink{wifi_8h_a0e5735c17066d67391c749d3452df96b}{WIFI\+\_\+\+HTTP\+\_\+\+Post\+JSON}} (const char \texorpdfstring{$\ast$}{*}host, const char \texorpdfstring{$\ast$}{*}path, const char \texorpdfstring{$\ast$}{*}json)
+\begin{DoxyCompactList}\small\item\em Realiza una petición HTTP POST con contenido JSON. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{wifi__types_8h_aacb4bf20b6b92924d603518fe15874d2}{wifi\+\_\+status\+\_\+t}} \doxymbox{\hyperlink{wifi_8h_a71aae5bbf4169cfcd1a9d837a65eaf53}{WIFI\+\_\+\+MQTT\+\_\+\+User\+Config}} (const char \texorpdfstring{$\ast$}{*}client\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Configura el identificador de cliente MQTT. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{wifi__types_8h_aacb4bf20b6b92924d603518fe15874d2}{wifi\+\_\+status\+\_\+t}} \doxymbox{\hyperlink{wifi_8h_ac6919200b1e3953136e059f9116e47f4}{WIFI\+\_\+\+MQTT\+\_\+\+Connect}} (const char \texorpdfstring{$\ast$}{*}broker, uint16\+\_\+t port)
+\begin{DoxyCompactList}\small\item\em Establece la conexión MQTT con el broker. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{wifi__types_8h_aacb4bf20b6b92924d603518fe15874d2}{wifi\+\_\+status\+\_\+t}} \doxymbox{\hyperlink{wifi_8h_addc561002e88e333d80cc8949357b748}{WIFI\+\_\+\+MQTT\+\_\+\+Publish}} (const char \texorpdfstring{$\ast$}{*}topic, const char \texorpdfstring{$\ast$}{*}payload, uint8\+\_\+t qos, uint8\+\_\+t retain)
+\begin{DoxyCompactList}\small\item\em Publica un payload en un topic MQTT. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{wifi__types_8h_aacb4bf20b6b92924d603518fe15874d2}{wifi\+\_\+status\+\_\+t}} \doxymbox{\hyperlink{wifi_8h_a032255cc4569e63ffb08160e6098afd2}{WIFI\+\_\+\+MQTT\+\_\+\+Subscribe}} (const char \texorpdfstring{$\ast$}{*}topic, uint8\+\_\+t qos)
+\begin{DoxyCompactList}\small\item\em Suscribe el cliente MQTT a un topic. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{wifi__types_8h_aacb4bf20b6b92924d603518fe15874d2}{wifi\+\_\+status\+\_\+t}} \doxymbox{\hyperlink{wifi_8h_a0aa3d38b06472f563555f8697216c2c6}{WIFI\+\_\+\+MQTT\+\_\+\+Disconnect}} (void)
+\begin{DoxyCompactList}\small\item\em Cierra la sesión MQTT activa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Interfaz pública del driver Wi\+Fi basado en comandos AT. 
+
+\begin{DoxyAuthor}{Autor}
+Lorenzo 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Fecha}
+25 abr 2026
+\end{DoxyDate}
+El módulo encapsula las operaciones de red necesarias para el proyecto:\+ conexión al punto de acceso, transporte TCP, envío HTTP y publicación MQTT. La API mantiene una interfaz de alto nivel para que las tareas de Free\+RTOS no dependan del formato concreto de los comandos AT ni de las respuestas del módulo Wi\+Fi. 
+
+\label{wifi_8h_doc-func-members}
+\Hypertarget{wifi_8h_doc-func-members}
+\doxysubsection{Documentación de funciones}
+\Hypertarget{wifi_8h_a39f3b93115207ae63db616da2e291bff}\index{wifi.h@{wifi.h}!WIFI\_ConnectAP@{WIFI\_ConnectAP}}
+\index{WIFI\_ConnectAP@{WIFI\_ConnectAP}!wifi.h@{wifi.h}}
+\doxysubsubsection{\texorpdfstring{WIFI\_ConnectAP()}{WIFI\_ConnectAP()}}
+{\footnotesize\ttfamily \label{wifi_8h_a39f3b93115207ae63db616da2e291bff} 
+\doxymbox{\hyperlink{wifi__types_8h_aacb4bf20b6b92924d603518fe15874d2}{wifi\+\_\+status\+\_\+t}} WIFI\+\_\+\+Connect\+AP (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{ssid}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{pass}{}\end{DoxyParamCaption})}
+
+
+
+Conecta el módulo Wi\+Fi a un punto de acceso. 
+
+Conecta el módulo a un punto de acceso Wi\+Fi.
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\doxymbox{\texttt{in}}  & {\em ssid} & Nombre de la red Wi\+Fi. \\
+\hline
+\doxymbox{\texttt{in}}  & {\em pass} & Contraseña de la red Wi\+Fi.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+WIFI\+\_\+\+OK si la asociación se completa correctamente. 
+
+WIFI\+\_\+\+TIMEOUT si el punto de acceso no responde a tiempo. 
+
+WIFI\+\_\+\+ERROR si las credenciales o la negociación fallan.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondición}
+{\ttfamily ssid} y {\ttfamily pass} deben apuntar a cadenas válidas terminadas en cero.
+\end{DoxyPrecond}
+Conecta el módulo Wi\+Fi a un punto de acceso.
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\doxymbox{\texttt{in}}  & {\em ssid} & Nombre de la red Wi\+Fi. \\
+\hline
+\doxymbox{\texttt{in}}  & {\em pass} & Contraseña de la red Wi\+Fi. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Valores devueltos}
+{\em WIFI\+\_\+\+OK} & Conexión establecida y dirección IP obtenida. \\
+\hline
+{\em WIFI\+\_\+\+ERROR} & Error de conexión o transmisión. \\
+\hline
+{\em WIFI\+\_\+\+TIMEOUT} & No se obtuvo confirmación dentro del tiempo límite.\\
+\hline
+\end{DoxyRetVals}
+Las credenciales se almacenan localmente para que \doxylink{wifi_8h_a1d9fadf4213ccd2311ce0fc2a06afca3}{WIFI\+\_\+\+Reconnect()} pueda reconstruir la conexión sin depender de que la aplicación vuelva a pasarlas. Gráfico de llamadas de esta función:\+
+% FIG 2
+Gráfico de llamadas a esta función:\+
+% FIG 3
+\Hypertarget{wifi_8h_a75bbb0398c0a03ed639b264ad2b096f2}\index{wifi.h@{wifi.h}!WIFI\_DisconnectAP@{WIFI\_DisconnectAP}}
+\index{WIFI\_DisconnectAP@{WIFI\_DisconnectAP}!wifi.h@{wifi.h}}
+\doxysubsubsection{\texorpdfstring{WIFI\_DisconnectAP()}{WIFI\_DisconnectAP()}}
+{\footnotesize\ttfamily \label{wifi_8h_a75bbb0398c0a03ed639b264ad2b096f2} 
+\doxymbox{\hyperlink{wifi__types_8h_aacb4bf20b6b92924d603518fe15874d2}{wifi\+\_\+status\+\_\+t}} WIFI\+\_\+\+Disconnect\+AP (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Desconecta el módulo del punto de acceso actual. 
+
+\begin{DoxyReturn}{Devuelve}
+WIFI\+\_\+\+OK si la desconexión se completa correctamente. 
+
+WIFI\+\_\+\+ERROR si el módulo no acepta la orden.
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Valores devueltos}
+{\em WIFI\+\_\+\+OK} & Desconexión aceptada. \\
+\hline
+{\em WIFI\+\_\+\+ERROR} & Error devuelto por el módulo o fallo de transmisión. \\
+\hline
+{\em WIFI\+\_\+\+TIMEOUT} & No hubo respuesta dentro del tiempo límite. \\
+\hline
+\end{DoxyRetVals}
+Gráfico de llamadas de esta función:\+
+% FIG 4
+\Hypertarget{wifi_8h_a6b44e23754cca97389330d3b6cbf52ea}\index{wifi.h@{wifi.h}!WIFI\_GetIP@{WIFI\_GetIP}}
+\index{WIFI\_GetIP@{WIFI\_GetIP}!wifi.h@{wifi.h}}
+\doxysubsubsection{\texorpdfstring{WIFI\_GetIP()}{WIFI\_GetIP()}}
+{\footnotesize\ttfamily \label{wifi_8h_a6b44e23754cca97389330d3b6cbf52ea} 
+\doxymbox{\hyperlink{wifi__types_8h_aacb4bf20b6b92924d603518fe15874d2}{wifi\+\_\+status\+\_\+t}} WIFI\+\_\+\+Get\+IP (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{ip}{, }\item[{uint16\+\_\+t}]{len}{}\end{DoxyParamCaption})}
+
+
+
+Solicita la dirección IP asignada al módulo. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\doxymbox{\texttt{out}}  & {\em ip} & Buffer donde se copiará la dirección IP. \\
+\hline
+\doxymbox{\texttt{in}}  & {\em len} & Tamaño disponible en el buffer {\ttfamily ip}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+WIFI\+\_\+\+OK si se obtiene una dirección IP válida. 
+
+WIFI\+\_\+\+NOT\+\_\+\+CONNECTED si el módulo no tiene red activa. 
+
+WIFI\+\_\+\+ERROR si no puede parsearse la respuesta.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondición}
+{\ttfamily ip} debe apuntar a un buffer válido. 
+\end{DoxyPrecond}
+\Hypertarget{wifi_8h_ab15097d974cfefeaf3cfb0efa0467aec}\index{wifi.h@{wifi.h}!WIFI\_GetRSSI@{WIFI\_GetRSSI}}
+\index{WIFI\_GetRSSI@{WIFI\_GetRSSI}!wifi.h@{wifi.h}}
+\doxysubsubsection{\texorpdfstring{WIFI\_GetRSSI()}{WIFI\_GetRSSI()}}
+{\footnotesize\ttfamily \label{wifi_8h_ab15097d974cfefeaf3cfb0efa0467aec} 
+\doxymbox{\hyperlink{wifi__types_8h_aacb4bf20b6b92924d603518fe15874d2}{wifi\+\_\+status\+\_\+t}} WIFI\+\_\+\+Get\+RSSI (\begin{DoxyParamCaption}\item[{int \texorpdfstring{$\ast$}{*}}]{rssi}{}\end{DoxyParamCaption})}
+
+
+
+Solicita el nivel RSSI de la conexión Wi\+Fi. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\doxymbox{\texttt{out}}  & {\em rssi} & Variable donde se almacena la potencia recibida.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+WIFI\+\_\+\+OK si el RSSI se obtiene correctamente. 
+
+WIFI\+\_\+\+NOT\+\_\+\+CONNECTED si no hay conexión activa. 
+
+WIFI\+\_\+\+ERROR si la respuesta no puede interpretarse.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondición}
+{\ttfamily rssi} debe apuntar a memoria válida. 
+\end{DoxyPrecond}
+\Hypertarget{wifi_8h_a8979de139d7d93ca4b9e5f6f63fadb95}\index{wifi.h@{wifi.h}!WIFI\_GetState@{WIFI\_GetState}}
+\index{WIFI\_GetState@{WIFI\_GetState}!wifi.h@{wifi.h}}
+\doxysubsubsection{\texorpdfstring{WIFI\_GetState()}{WIFI\_GetState()}}
+{\footnotesize\ttfamily \label{wifi_8h_a8979de139d7d93ca4b9e5f6f63fadb95} 
+\doxymbox{\hyperlink{wifi__types_8h_a5f847547d1654ba6664de98abb0ee37c}{wifi\+\_\+state\+\_\+t}} WIFI\+\_\+\+Get\+State (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Devuelve el estado lógico actual del driver Wi\+Fi. 
+
+Devuelve el estado lógico actual del módulo Wi\+Fi/\+\+MQTT.
+
+\begin{DoxyReturn}{Devuelve}
+Estado de conexión almacenado por el módulo.
+\end{DoxyReturn}
+\begin{DoxyNote}{Nota}
+El estado permite a la aplicación evitar publicaciones cuando todavía no existe conectividad suficiente.
+\end{DoxyNote}
+Devuelve el estado lógico actual del driver Wi\+Fi.
+
+\begin{DoxyReturn}{Devuelve}
+Estado interno de conexión. 
+\end{DoxyReturn}
+\Hypertarget{wifi_8h_a0e5735c17066d67391c749d3452df96b}\index{wifi.h@{wifi.h}!WIFI\_HTTP\_PostJSON@{WIFI\_HTTP\_PostJSON}}
+\index{WIFI\_HTTP\_PostJSON@{WIFI\_HTTP\_PostJSON}!wifi.h@{wifi.h}}
+\doxysubsubsection{\texorpdfstring{WIFI\_HTTP\_PostJSON()}{WIFI\_HTTP\_PostJSON()}}
+{\footnotesize\ttfamily \label{wifi_8h_a0e5735c17066d67391c749d3452df96b} 
+\doxymbox{\hyperlink{wifi__types_8h_aacb4bf20b6b92924d603518fe15874d2}{wifi\+\_\+status\+\_\+t}} WIFI\+\_\+\+HTTP\+\_\+\+Post\+JSON (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{host}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{path}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{json}{}\end{DoxyParamCaption})}
+
+
+
+Realiza una petición HTTP POST con contenido JSON. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\doxymbox{\texttt{in}}  & {\em host} & Servidor HTTP de destino. \\
+\hline
+\doxymbox{\texttt{in}}  & {\em path} & Ruta del recurso al que se envía la petición. \\
+\hline
+\doxymbox{\texttt{in}}  & {\em json} & Cuerpo JSON de la petición.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+WIFI\+\_\+\+OK si la petición se envía correctamente. 
+
+WIFI\+\_\+\+NOT\+\_\+\+CONNECTED si no existe conectividad suficiente. 
+
+WIFI\+\_\+\+ERROR si falla la conexión o el envío.
+\end{DoxyReturn}
+La función ofrece una vía de telemetría alternativa a MQTT manteniendo el mismo formato de datos de aplicación. \Hypertarget{wifi_8h_ad7ba0a0beada20c448bbc88a93c2ee5e}\index{wifi.h@{wifi.h}!WIFI\_Init@{WIFI\_Init}}
+\index{WIFI\_Init@{WIFI\_Init}!wifi.h@{wifi.h}}
+\doxysubsubsection{\texorpdfstring{WIFI\_Init()}{WIFI\_Init()}}
+{\footnotesize\ttfamily \label{wifi_8h_ad7ba0a0beada20c448bbc88a93c2ee5e} 
+\doxymbox{\hyperlink{wifi__types_8h_aacb4bf20b6b92924d603518fe15874d2}{wifi\+\_\+status\+\_\+t}} WIFI\+\_\+\+Init (\begin{DoxyParamCaption}\item[{UART\+\_\+\+Handle\+Type\+Def \texorpdfstring{$\ast$}{*}}]{huart}{}\end{DoxyParamCaption})}
+
+
+
+Inicializa el driver Wi\+Fi y asocia la UART del módulo. 
+
+Inicializa el driver Wi\+Fi y prepara la recepción DMA circular.
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\doxymbox{\texttt{in}}  & {\em huart} & Handler HAL de la UART conectada al módulo Wi\+Fi.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+WIFI\+\_\+\+OK si el módulo queda preparado para recibir comandos. 
+
+WIFI\+\_\+\+ERROR si la UART o el módulo no pueden inicializarse.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondición}
+{\ttfamily huart} debe estar inicializado por la capa HAL.
+\end{DoxyPrecond}
+Inicializa el driver Wi\+Fi y asocia la UART del módulo.
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\doxymbox{\texttt{in}}  & {\em huart} & UART conectada al módulo Wi\+Fi. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Valores devueltos}
+{\em WIFI\+\_\+\+OK} & El módulo respondió y quedó en modo estación. \\
+\hline
+{\em WIFI\+\_\+\+ERROR} & No se pudo comunicar o configurar el módulo.\\
+\hline
+\end{DoxyRetVals}
+La recepción DMA se arranca antes de probar el módulo para capturar cualquier respuesta o evento que emita el ESP. Se desactivan interrupciones de mitad y fin de recepción porque el consumo se realiza por software consultando el índice del DMA. Gráfico de llamadas de esta función:\+
+% FIG 5
+Gráfico de llamadas a esta función:\+
+% FIG 6
+\Hypertarget{wifi_8h_ac6919200b1e3953136e059f9116e47f4}\index{wifi.h@{wifi.h}!WIFI\_MQTT\_Connect@{WIFI\_MQTT\_Connect}}
+\index{WIFI\_MQTT\_Connect@{WIFI\_MQTT\_Connect}!wifi.h@{wifi.h}}
+\doxysubsubsection{\texorpdfstring{WIFI\_MQTT\_Connect()}{WIFI\_MQTT\_Connect()}}
+{\footnotesize\ttfamily \label{wifi_8h_ac6919200b1e3953136e059f9116e47f4} 
+\doxymbox{\hyperlink{wifi__types_8h_aacb4bf20b6b92924d603518fe15874d2}{wifi\+\_\+status\+\_\+t}} WIFI\+\_\+\+MQTT\+\_\+\+Connect (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{broker}{, }\item[{uint16\+\_\+t}]{port}{}\end{DoxyParamCaption})}
+
+
+
+Establece la conexión MQTT con el broker. 
+
+Abre la conexión MQTT contra el broker indicado.
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\doxymbox{\texttt{in}}  & {\em broker} & Nombre DNS o dirección IP del broker MQTT. \\
+\hline
+\doxymbox{\texttt{in}}  & {\em port} & Puerto TCP del broker MQTT.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+WIFI\+\_\+\+OK si la sesión MQTT queda establecida. 
+
+WIFI\+\_\+\+TIMEOUT si el broker no responde. 
+
+WIFI\+\_\+\+ERROR si falla la negociación MQTT.
+\end{DoxyReturn}
+Establece la conexión MQTT con el broker.
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\doxymbox{\texttt{in}}  & {\em broker} & Dirección IP o nombre del broker MQTT. \\
+\hline
+\doxymbox{\texttt{in}}  & {\em port} & Puerto TCP del broker MQTT. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Valores devueltos}
+{\em WIFI\+\_\+\+OK} & Conexión MQTT establecida. \\
+\hline
+{\em WIFI\+\_\+\+ERROR} & Error devuelto por el módulo o fallo de transmisión. \\
+\hline
+{\em WIFI\+\_\+\+TIMEOUT} & No hubo respuesta dentro del tiempo límite.\\
+\hline
+\end{DoxyRetVals}
+El broker y puerto se conservan para recuperar la sesión tras pérdidas de red sin obligar al resto de tareas a conocer la secuencia AT de reconexión. Gráfico de llamadas de esta función:\+
+% FIG 7
+Gráfico de llamadas a esta función:\+
+% FIG 8
+\Hypertarget{wifi_8h_a0aa3d38b06472f563555f8697216c2c6}\index{wifi.h@{wifi.h}!WIFI\_MQTT\_Disconnect@{WIFI\_MQTT\_Disconnect}}
+\index{WIFI\_MQTT\_Disconnect@{WIFI\_MQTT\_Disconnect}!wifi.h@{wifi.h}}
+\doxysubsubsection{\texorpdfstring{WIFI\_MQTT\_Disconnect()}{WIFI\_MQTT\_Disconnect()}}
+{\footnotesize\ttfamily \label{wifi_8h_a0aa3d38b06472f563555f8697216c2c6} 
+\doxymbox{\hyperlink{wifi__types_8h_aacb4bf20b6b92924d603518fe15874d2}{wifi\+\_\+status\+\_\+t}} WIFI\+\_\+\+MQTT\+\_\+\+Disconnect (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Cierra la sesión MQTT activa. 
+
+Cierra la sesión MQTT actual.
+
+\begin{DoxyReturn}{Devuelve}
+WIFI\+\_\+\+OK si la desconexión se completa correctamente. 
+
+WIFI\+\_\+\+ERROR si el módulo no confirma el cierre de sesión.
+\end{DoxyReturn}
+Cierra la sesión MQTT activa.
+
+
+\begin{DoxyRetVals}{Valores devueltos}
+{\em WIFI\+\_\+\+OK} & Sesión MQTT liberada. \\
+\hline
+{\em WIFI\+\_\+\+ERROR} & Error devuelto por el módulo o fallo de transmisión. \\
+\hline
+{\em WIFI\+\_\+\+TIMEOUT} & No hubo respuesta dentro del tiempo límite. \\
+\hline
+\end{DoxyRetVals}
+Gráfico de llamadas de esta función:\+
+% FIG 9
+Gráfico de llamadas a esta función:\+
+% FIG 10
+\Hypertarget{wifi_8h_addc561002e88e333d80cc8949357b748}\index{wifi.h@{wifi.h}!WIFI\_MQTT\_Publish@{WIFI\_MQTT\_Publish}}
+\index{WIFI\_MQTT\_Publish@{WIFI\_MQTT\_Publish}!wifi.h@{wifi.h}}
+\doxysubsubsection{\texorpdfstring{WIFI\_MQTT\_Publish()}{WIFI\_MQTT\_Publish()}}
+{\footnotesize\ttfamily \label{wifi_8h_addc561002e88e333d80cc8949357b748} 
+\doxymbox{\hyperlink{wifi__types_8h_aacb4bf20b6b92924d603518fe15874d2}{wifi\+\_\+status\+\_\+t}} WIFI\+\_\+\+MQTT\+\_\+\+Publish (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{topic}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{payload}{, }\item[{uint8\+\_\+t}]{qos}{, }\item[{uint8\+\_\+t}]{retain}{}\end{DoxyParamCaption})}
+
+
+
+Publica un payload en un topic MQTT. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\doxymbox{\texttt{in}}  & {\em topic} & Topic MQTT de destino. \\
+\hline
+\doxymbox{\texttt{in}}  & {\em payload} & Contenido que se publicará. \\
+\hline
+\doxymbox{\texttt{in}}  & {\em qos} & Nivel QoS solicitado para la publicación. \\
+\hline
+\doxymbox{\texttt{in}}  & {\em retain} & Flag retain enviado al broker.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+WIFI\+\_\+\+OK si el módulo acepta la publicación. 
+
+WIFI\+\_\+\+NOT\+\_\+\+CONNECTED si no existe sesión MQTT activa. 
+
+WIFI\+\_\+\+ERROR si el comando de publicación falla.
+\end{DoxyReturn}
+La función permite a las tareas publicar telemetría sin conocer el comando AT concreto ni la sintaxis interna del módulo Wi\+Fi.
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\doxymbox{\texttt{in}}  & {\em topic} & Topic MQTT de destino. \\
+\hline
+\doxymbox{\texttt{in}}  & {\em payload} & Cadena que se publica como contenido del mensaje. \\
+\hline
+\doxymbox{\texttt{in}}  & {\em qos} & Nivel QoS solicitado al módulo Wi\+Fi. \\
+\hline
+\doxymbox{\texttt{in}}  & {\em retain} & Flag retain del mensaje MQTT. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Valores devueltos}
+{\em WIFI\+\_\+\+OK} & Publicación aceptada por el módulo. \\
+\hline
+{\em WIFI\+\_\+\+ERROR} & Error devuelto por el módulo o fallo de transmisión. \\
+\hline
+{\em WIFI\+\_\+\+TIMEOUT} & No hubo confirmación dentro del tiempo límite.\\
+\hline
+\end{DoxyRetVals}
+Si la publicación falla, el estado se degrada a WIFI\+\_\+\+CONNECTED porque la red puede seguir activa aunque la sesión MQTT haya quedado inválida. Esta decisión permite que la capa superior intente reconstruir solo MQTT antes de reiniciar toda la conexión Wi\+Fi. Gráfico de llamadas de esta función:\+
+% FIG 11
+Gráfico de llamadas a esta función:\+
+% FIG 12
+\Hypertarget{wifi_8h_a032255cc4569e63ffb08160e6098afd2}\index{wifi.h@{wifi.h}!WIFI\_MQTT\_Subscribe@{WIFI\_MQTT\_Subscribe}}
+\index{WIFI\_MQTT\_Subscribe@{WIFI\_MQTT\_Subscribe}!wifi.h@{wifi.h}}
+\doxysubsubsection{\texorpdfstring{WIFI\_MQTT\_Subscribe()}{WIFI\_MQTT\_Subscribe()}}
+{\footnotesize\ttfamily \label{wifi_8h_a032255cc4569e63ffb08160e6098afd2} 
+\doxymbox{\hyperlink{wifi__types_8h_aacb4bf20b6b92924d603518fe15874d2}{wifi\+\_\+status\+\_\+t}} WIFI\+\_\+\+MQTT\+\_\+\+Subscribe (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{topic}{, }\item[{uint8\+\_\+t}]{qos}{}\end{DoxyParamCaption})}
+
+
+
+Suscribe el cliente MQTT a un topic. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\doxymbox{\texttt{in}}  & {\em topic} & Topic MQTT que se desea recibir. \\
+\hline
+\doxymbox{\texttt{in}}  & {\em qos} & Nivel QoS solicitado para la suscripción.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+WIFI\+\_\+\+OK si la suscripción se completa correctamente. 
+
+WIFI\+\_\+\+NOT\+\_\+\+CONNECTED si no existe sesión MQTT activa. 
+
+WIFI\+\_\+\+ERROR si el broker o el módulo rechazan la suscripción. 
+\end{DoxyReturn}
+\Hypertarget{wifi_8h_a71aae5bbf4169cfcd1a9d837a65eaf53}\index{wifi.h@{wifi.h}!WIFI\_MQTT\_UserConfig@{WIFI\_MQTT\_UserConfig}}
+\index{WIFI\_MQTT\_UserConfig@{WIFI\_MQTT\_UserConfig}!wifi.h@{wifi.h}}
+\doxysubsubsection{\texorpdfstring{WIFI\_MQTT\_UserConfig()}{WIFI\_MQTT\_UserConfig()}}
+{\footnotesize\ttfamily \label{wifi_8h_a71aae5bbf4169cfcd1a9d837a65eaf53} 
+\doxymbox{\hyperlink{wifi__types_8h_aacb4bf20b6b92924d603518fe15874d2}{wifi\+\_\+status\+\_\+t}} WIFI\+\_\+\+MQTT\+\_\+\+User\+Config (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{client\+\_\+id}{}\end{DoxyParamCaption})}
+
+
+
+Configura el identificador de cliente MQTT. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\doxymbox{\texttt{in}}  & {\em client\+\_\+id} & Identificador usado por el broker para reconocer el nodo.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+WIFI\+\_\+\+OK si la configuración se acepta correctamente. 
+
+WIFI\+\_\+\+ERROR si el módulo rechaza el identificador.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondición}
+{\ttfamily client\+\_\+id} debe apuntar a una cadena válida terminada en cero.
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parámetros}
+\doxymbox{\texttt{in}}  & {\em client\+\_\+id} & Identificador usado por el cliente MQTT del módulo. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Valores devueltos}
+{\em WIFI\+\_\+\+OK} & Configuración aceptada. \\
+\hline
+{\em WIFI\+\_\+\+ERROR} & Error devuelto por el módulo o fallo de transmisión. \\
+\hline
+{\em WIFI\+\_\+\+TIMEOUT} & No hubo respuesta dentro del tiempo límite.\\
+\hline
+\end{DoxyRetVals}
+El identificador se guarda para poder repetir la configuración después de una reconexión Wi\+Fi o reinicio del módulo. Gráfico de llamadas de esta función:\+
+% FIG 13
+Gráfico de llamadas a esta función:\+
+% FIG 14
+\Hypertarget{wifi_8h_a31ff91c6d95ef644f730f3cb892ef634}\index{wifi.h@{wifi.h}!WIFI\_Process@{WIFI\_Process}}
+\index{WIFI\_Process@{WIFI\_Process}!wifi.h@{wifi.h}}
+\doxysubsubsection{\texorpdfstring{WIFI\_Process()}{WIFI\_Process()}}
+{\footnotesize\ttfamily \label{wifi_8h_a31ff91c6d95ef644f730f3cb892ef634} 
+void WIFI\+\_\+\+Process (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Procesa tareas internas periódicas del módulo Wi\+Fi. 
+
+Se expone para que una tarea de Free\+RTOS pueda mantener el estado del driver sin bloquear al resto del sistema. \Hypertarget{wifi_8h_a1d9fadf4213ccd2311ce0fc2a06afca3}\index{wifi.h@{wifi.h}!WIFI\_Reconnect@{WIFI\_Reconnect}}
+\index{WIFI\_Reconnect@{WIFI\_Reconnect}!wifi.h@{wifi.h}}
+\doxysubsubsection{\texorpdfstring{WIFI\_Reconnect()}{WIFI\_Reconnect()}}
+{\footnotesize\ttfamily \label{wifi_8h_a1d9fadf4213ccd2311ce0fc2a06afca3} 
+\doxymbox{\hyperlink{wifi__types_8h_aacb4bf20b6b92924d603518fe15874d2}{wifi\+\_\+status\+\_\+t}} WIFI\+\_\+\+Reconnect (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Ejecuta la secuencia de reconexión Wi\+Fi definida por el driver. 
+
+Reconstruye la conexión Wi\+Fi y MQTT usando la configuración almacenada.
+
+\begin{DoxyReturn}{Devuelve}
+WIFI\+\_\+\+OK si se recupera la conectividad. 
+
+WIFI\+\_\+\+ERROR si la reconexión falla.
+\end{DoxyReturn}
+Centralizar la reconexión evita que varias tareas intenten recuperar el módem con secuencias distintas.
+
+Ejecuta la secuencia de reconexión Wi\+Fi definida por el driver.
+
+
+\begin{DoxyRetVals}{Valores devueltos}
+{\em WIFI\+\_\+\+OK} & Reconexión completada hasta MQTT. \\
+\hline
+{\em WIFI\+\_\+\+ERROR} & No se pudo restaurar Wi\+Fi o MQTT.\\
+\hline
+\end{DoxyRetVals}
+La rutina distingue entre pérdida total de Wi\+Fi y pérdida solo de MQTT para no reiniciar más capas de las necesarias. Esto reduce tiempo de recuperación y evita cortes innecesarios cuando el punto de acceso sigue disponible. Gráfico de llamadas de esta función:\+
+% FIG 15
+\Hypertarget{wifi_8h_a7747574249adc0e0daf6b4ed9d0062ce}\index{wifi.h@{wifi.h}!WIFI\_Reset@{WIFI\_Reset}}
+\index{WIFI\_Reset@{WIFI\_Reset}!wifi.h@{wifi.h}}
+\doxysubsubsection{\texorpdfstring{WIFI\_Reset()}{WIFI\_Reset()}}
+{\footnotesize\ttfamily \label{wifi_8h_a7747574249adc0e0daf6b4ed9d0062ce} 
+\doxymbox{\hyperlink{wifi__types_8h_aacb4bf20b6b92924d603518fe15874d2}{wifi\+\_\+status\+\_\+t}} WIFI\+\_\+\+Reset (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Reinicia el módulo Wi\+Fi. 
+
+Reinicia el módulo Wi\+Fi mediante comando AT.
+
+\begin{DoxyReturn}{Devuelve}
+WIFI\+\_\+\+OK si el reinicio se acepta correctamente. 
+
+WIFI\+\_\+\+TIMEOUT si el módulo no responde. 
+
+WIFI\+\_\+\+ERROR si la secuencia de reinicio falla.
+\end{DoxyReturn}
+Se usa para devolver el módem a un estado conocido cuando la comunicación AT o la conexión de red dejan de ser fiables.
+
+Reinicia el módulo Wi\+Fi.
+
+
+\begin{DoxyRetVals}{Valores devueltos}
+{\em WIFI\+\_\+\+OK} & El módulo confirmó el reinicio con {\ttfamily ready}. \\
+\hline
+{\em WIFI\+\_\+\+ERROR} & Error devuelto por el módulo o fallo de transmisión. \\
+\hline
+{\em WIFI\+\_\+\+TIMEOUT} & No hubo respuesta dentro del tiempo límite. \\
+\hline
+\end{DoxyRetVals}
+Gráfico de llamadas de esta función:\+
+% FIG 16
+Gráfico de llamadas a esta función:\+
+% FIG 17
+\Hypertarget{wifi_8h_acd57efc1a26efc2d18627ea6e1568efb}\index{wifi.h@{wifi.h}!WIFI\_SendJSON@{WIFI\_SendJSON}}
+\index{WIFI\_SendJSON@{WIFI\_SendJSON}!wifi.h@{wifi.h}}
+\doxysubsubsection{\texorpdfstring{WIFI\_SendJSON()}{WIFI\_SendJSON()}}
+{\footnotesize\ttfamily \label{wifi_8h_acd57efc1a26efc2d18627ea6e1568efb} 
+\doxymbox{\hyperlink{wifi__types_8h_aacb4bf20b6b92924d603518fe15874d2}{wifi\+\_\+status\+\_\+t}} WIFI\+\_\+\+Send\+JSON (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{json}{}\end{DoxyParamCaption})}
+
+
+
+Envía una cadena JSON por la conexión activa. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\doxymbox{\texttt{in}}  & {\em json} & Cadena JSON terminada en cero.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+WIFI\+\_\+\+OK si el envío se completa correctamente. 
+
+WIFI\+\_\+\+NOT\+\_\+\+CONNECTED si no existe transporte disponible. 
+
+WIFI\+\_\+\+ERROR si el módulo rechaza los datos.
+\end{DoxyReturn}
+Esta función mantiene separada la generación del contenido JSON de la mecánica de transmisión por el módem. \Hypertarget{wifi_8h_a0c8912a840f8f8724afa067d36f5923e}\index{wifi.h@{wifi.h}!WIFI\_SendRaw@{WIFI\_SendRaw}}
+\index{WIFI\_SendRaw@{WIFI\_SendRaw}!wifi.h@{wifi.h}}
+\doxysubsubsection{\texorpdfstring{WIFI\_SendRaw()}{WIFI\_SendRaw()}}
+{\footnotesize\ttfamily \label{wifi_8h_a0c8912a840f8f8724afa067d36f5923e} 
+\doxymbox{\hyperlink{wifi__types_8h_aacb4bf20b6b92924d603518fe15874d2}{wifi\+\_\+status\+\_\+t}} WIFI\+\_\+\+Send\+Raw (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{data}{}\end{DoxyParamCaption})}
+
+
+
+Envía datos sin procesar por la conexión activa. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\doxymbox{\texttt{in}}  & {\em data} & Cadena de datos a transmitir.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+WIFI\+\_\+\+OK si el módulo acepta el envío. 
+
+WIFI\+\_\+\+NOT\+\_\+\+CONNECTED si no existe transporte disponible. 
+
+WIFI\+\_\+\+ERROR si se produce un fallo durante la transmisión. 
+\end{DoxyReturn}
+\Hypertarget{wifi_8h_a1f2c5609610021e450931fa3a38c03b9}\index{wifi.h@{wifi.h}!WIFI\_SetStationMode@{WIFI\_SetStationMode}}
+\index{WIFI\_SetStationMode@{WIFI\_SetStationMode}!wifi.h@{wifi.h}}
+\doxysubsubsection{\texorpdfstring{WIFI\_SetStationMode()}{WIFI\_SetStationMode()}}
+{\footnotesize\ttfamily \label{wifi_8h_a1f2c5609610021e450931fa3a38c03b9} 
+\doxymbox{\hyperlink{wifi__types_8h_aacb4bf20b6b92924d603518fe15874d2}{wifi\+\_\+status\+\_\+t}} WIFI\+\_\+\+Set\+Station\+Mode (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Configura el módulo Wi\+Fi en modo estación. 
+
+\begin{DoxyReturn}{Devuelve}
+WIFI\+\_\+\+OK si el modo queda configurado correctamente. 
+
+WIFI\+\_\+\+ERROR si el módulo rechaza la configuración.
+\end{DoxyReturn}
+El modo estación es necesario para que el dispositivo se conecte a la red local y pueda alcanzar el broker MQTT o servicios HTTP externos.
+
+
+\begin{DoxyRetVals}{Valores devueltos}
+{\em WIFI\+\_\+\+OK} & Configuración aceptada. \\
+\hline
+{\em WIFI\+\_\+\+ERROR} & Error devuelto por el módulo o fallo de transmisión. \\
+\hline
+{\em WIFI\+\_\+\+TIMEOUT} & No hubo respuesta dentro del tiempo límite. \\
+\hline
+\end{DoxyRetVals}
+Gráfico de llamadas de esta función:\+
+% FIG 18
+Gráfico de llamadas a esta función:\+
+% FIG 19
+\Hypertarget{wifi_8h_a572fefcfcdef32399be655dba8bb059e}\index{wifi.h@{wifi.h}!WIFI\_TCPClose@{WIFI\_TCPClose}}
+\index{WIFI\_TCPClose@{WIFI\_TCPClose}!wifi.h@{wifi.h}}
+\doxysubsubsection{\texorpdfstring{WIFI\_TCPClose()}{WIFI\_TCPClose()}}
+{\footnotesize\ttfamily \label{wifi_8h_a572fefcfcdef32399be655dba8bb059e} 
+\doxymbox{\hyperlink{wifi__types_8h_aacb4bf20b6b92924d603518fe15874d2}{wifi\+\_\+status\+\_\+t}} WIFI\+\_\+\+TCPClose (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Cierra la conexión TCP activa. 
+
+\begin{DoxyReturn}{Devuelve}
+WIFI\+\_\+\+OK si la conexión se cierra correctamente. 
+
+WIFI\+\_\+\+ERROR si no puede cerrarse la sesión. 
+\end{DoxyReturn}
+\Hypertarget{wifi_8h_a56c17530ef3f91f4872221d8027f2d04}\index{wifi.h@{wifi.h}!WIFI\_TCPConnect@{WIFI\_TCPConnect}}
+\index{WIFI\_TCPConnect@{WIFI\_TCPConnect}!wifi.h@{wifi.h}}
+\doxysubsubsection{\texorpdfstring{WIFI\_TCPConnect()}{WIFI\_TCPConnect()}}
+{\footnotesize\ttfamily \label{wifi_8h_a56c17530ef3f91f4872221d8027f2d04} 
+\doxymbox{\hyperlink{wifi__types_8h_aacb4bf20b6b92924d603518fe15874d2}{wifi\+\_\+status\+\_\+t}} WIFI\+\_\+\+TCPConnect (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{host}{, }\item[{uint16\+\_\+t}]{port}{}\end{DoxyParamCaption})}
+
+
+
+Abre una conexión TCP con un host remoto. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\doxymbox{\texttt{in}}  & {\em host} & Nombre DNS o dirección IP del servidor remoto. \\
+\hline
+\doxymbox{\texttt{in}}  & {\em port} & Puerto TCP remoto.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+WIFI\+\_\+\+OK si la conexión se establece correctamente. 
+
+WIFI\+\_\+\+TIMEOUT si el host no responde. 
+
+WIFI\+\_\+\+ERROR si el módulo rechaza la conexión. 
+\end{DoxyReturn}
+\Hypertarget{wifi_8h_acfaca1eea2072d0ca3cd4b5db1783dd9}\index{wifi.h@{wifi.h}!WIFI\_Test@{WIFI\_Test}}
+\index{WIFI\_Test@{WIFI\_Test}!wifi.h@{wifi.h}}
+\doxysubsubsection{\texorpdfstring{WIFI\_Test()}{WIFI\_Test()}}
+{\footnotesize\ttfamily \label{wifi_8h_acfaca1eea2072d0ca3cd4b5db1783dd9} 
+\doxymbox{\hyperlink{wifi__types_8h_aacb4bf20b6b92924d603518fe15874d2}{wifi\+\_\+status\+\_\+t}} WIFI\+\_\+\+Test (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Comprueba la comunicación básica con el módulo Wi\+Fi. 
+
+Comprueba que el módulo Wi\+Fi responde a comandos AT.
+
+\begin{DoxyReturn}{Devuelve}
+WIFI\+\_\+\+OK si el módulo responde al comando de prueba. 
+
+WIFI\+\_\+\+TIMEOUT si no hay respuesta. 
+
+WIFI\+\_\+\+ERROR si la respuesta recibida no es válida.
+\end{DoxyReturn}
+Comprueba la comunicación básica con el módulo Wi\+Fi.
+
+
+\begin{DoxyRetVals}{Valores devueltos}
+{\em WIFI\+\_\+\+OK} & El módulo respondió con {\ttfamily OK}. \\
+\hline
+{\em WIFI\+\_\+\+ERROR} & Error devuelto por el módulo o fallo de transmisión. \\
+\hline
+{\em WIFI\+\_\+\+TIMEOUT} & No hubo respuesta dentro del tiempo límite. \\
+\hline
+\end{DoxyRetVals}
+Gráfico de llamadas de esta función:\+
+% FIG 20
+Gráfico de llamadas a esta función:\+
+% FIG 21

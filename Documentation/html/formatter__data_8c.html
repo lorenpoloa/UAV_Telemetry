@@ -1,0 +1,479 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.17.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Mi Proyecto STM32: Referencia del archivo Core/Src/formatter_data.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+const theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'default';
+mermaid.initialize({ startOnLoad: true, theme: theme });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Mi Proyecto STM32<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.17.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', () => {
+  initMenu('',true);
+  init_search();
+});
+</script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1" style="position:absolute;right:8px;top:8px;height:36px;"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2" style="float:right">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('formatter__data_8c.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Referencia del archivo formatter_data.c</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Conversión de paquetes de telemetría a cadenas de texto para publicación.  
+<a href="#details">Más...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="formatter__data_8h_source.html">formatter_data.h</a>&quot;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Gráfico de dependencias incluidas en formatter_data.c:</div>
+<div class="dyncontent">
+<div class="center"><img src="formatter__data_8c__incl.png" border="0" usemap="#a_core_2_src_2formatter__data_8c" loading="lazy" alt=""/></div>
+<!-- MAP 0 -->
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:ae9ef0eb14e10c6d73fcd9de44f1bf115" id="r_ae9ef0eb14e10c6d73fcd9de44f1bf115"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae9ef0eb14e10c6d73fcd9de44f1bf115">ImuData_to_json</a> (char *buffer, size_t buffer_size, <a class="el" href="struct_imu_data_packet__t.html">ImuDataPacket_t</a> *data)</td></tr>
+<tr class="memdesc:ae9ef0eb14e10c6d73fcd9de44f1bf115"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializa el paquete inercial en el formato compacto de telemetría.  <br /></td></tr>
+<tr class="memitem:a28b5ca7c194bcc1332e9d96afd6b317f" id="r_a28b5ca7c194bcc1332e9d96afd6b317f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a28b5ca7c194bcc1332e9d96afd6b317f">EnvData_to_json</a> (char *buffer, size_t buffer_size, <a class="el" href="struct_env_data_packet__t.html">EnvDataPacket_t</a> *data)</td></tr>
+<tr class="memdesc:a28b5ca7c194bcc1332e9d96afd6b317f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializa el paquete ambiental en el formato compacto de telemetría.  <br /></td></tr>
+<tr class="memitem:addef3f02614d4204178afe4991a99ff2" id="r_addef3f02614d4204178afe4991a99ff2"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#addef3f02614d4204178afe4991a99ff2">GpsData_to_json</a> (char *buffer, size_t buffer_size, <a class="el" href="struct_gps_data_packet__t.html">GpsDataPacket_t</a> *data)</td></tr>
+<tr class="memdesc:addef3f02614d4204178afe4991a99ff2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializa el paquete GPS en el formato compacto de telemetría.  <br /></td></tr>
+<tr class="memitem:a2c059d8a7f63ddf24fb3c4899487fa38" id="r_a2c059d8a7f63ddf24fb3c4899487fa38"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a2c059d8a7f63ddf24fb3c4899487fa38">GpsDataPacket_Init</a> (<a class="el" href="struct_gps_data_packet__t.html">GpsDataPacket_t</a> *packet)</td></tr>
+<tr class="memdesc:a2c059d8a7f63ddf24fb3c4899487fa38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicializa un paquete GPS a un estado conocido.  <br /></td></tr>
+<tr class="memitem:aa7dfe24eaf1db45d49d4c462acbf569b" id="r_aa7dfe24eaf1db45d49d4c462acbf569b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aa7dfe24eaf1db45d49d4c462acbf569b">ImuDataPacket_Init</a> (<a class="el" href="struct_imu_data_packet__t.html">ImuDataPacket_t</a> *packet)</td></tr>
+<tr class="memdesc:aa7dfe24eaf1db45d49d4c462acbf569b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicializa un paquete IMU a un estado conocido.  <br /></td></tr>
+<tr class="memitem:ab99e42d398f1018fc1a459cc4bee1088" id="r_ab99e42d398f1018fc1a459cc4bee1088"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab99e42d398f1018fc1a459cc4bee1088">EnvDataPacket_Init</a> (<a class="el" href="struct_env_data_packet__t.html">EnvDataPacket_t</a> *packet)</td></tr>
+<tr class="memdesc:ab99e42d398f1018fc1a459cc4bee1088"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicializa un paquete ambiental a un estado conocido.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Conversión de paquetes de telemetría a cadenas de texto para publicación. </p>
+<dl class="section author"><dt>Autor</dt><dd>Lorenzo </dd></dl>
+<dl class="section date"><dt>Fecha</dt><dd>15 may 2026</dd></dl>
+<p>Este módulo centraliza el formateo de los datos adquiridos antes de enviarlos por el canal de comunicaciones. Se mantiene un formato compacto basado en separadores para reducir el tamaño del payload y simplificar su transporte por MQTT/AT, evitando caracteres que anteriormente podían interferir con el encapsulado de comandos del módulo WiFi. </p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentación de funciones</h2>
+<a id="a28b5ca7c194bcc1332e9d96afd6b317f" name="a28b5ca7c194bcc1332e9d96afd6b317f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28b5ca7c194bcc1332e9d96afd6b317f">&#9670;&#160;</a></span>EnvData_to_json()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EnvData_to_json </td>
+          <td>(</td>
+          <td class="paramtype">char *</td>          <td class="paramname"><span class="paramname"><em>buffer</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>buffer_size</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_env_data_packet__t.html">EnvDataPacket_t</a> *</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Serializa el paquete ambiental en el formato compacto de telemetría. </p>
+<p>Serializa un paquete ambiental en formato JSON.</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">buffer</td><td>Buffer donde se escribe la cadena generada. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buffer_size</td><td>Tamaño total disponible en <code class="param">buffer</code>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>Paquete ambiental con rumbo, temperatura y presión.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>El formato se mantiene coherente con el resto de tramas del sistema para que el receptor pueda aplicar una única lógica de separación de campos, sin tratar este paquete como un caso especial.</p>
+<dl class="section pre"><dt>Precondición</dt><dd><code class="param">buffer</code> debe apuntar a memoria válida con al menos <code class="param">buffer_size</code> bytes. </dd>
+<dd>
+<code class="param">data</code> debe apuntar a un paquete ambiental válido.</dd></dl>
+<p>Serializa el paquete ambiental en el formato compacto de telemetría.</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">buffer</td><td>Buffer de salida donde se escribe la cadena JSON. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buffer_size</td><td>Tamaño disponible en el buffer de salida. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>Paquete ambiental que contiene la última muestra normalizada.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>Precondición</dt><dd><span class="tt">buffer</span> debe apuntar a memoria válida y <span class="tt">buffer_size</span> debe ser suficiente para almacenar el JSON generado. </dd>
+<dd>
+<span class="tt">data</span> debe apuntar a un paquete inicializado. </dd></dl>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="formatter__data_8c_a28b5ca7c194bcc1332e9d96afd6b317f_icgraph.png" border="0" usemap="#aformatter__data_8c_a28b5ca7c194bcc1332e9d96afd6b317f_icgraph" loading="lazy" alt=""/></div>
+<!-- MAP 1 -->
+</div>
+
+</div>
+</div>
+<a id="ab99e42d398f1018fc1a459cc4bee1088" name="ab99e42d398f1018fc1a459cc4bee1088"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab99e42d398f1018fc1a459cc4bee1088">&#9670;&#160;</a></span>EnvDataPacket_Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EnvDataPacket_Init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_env_data_packet__t.html">EnvDataPacket_t</a> *</td>          <td class="paramname"><span class="paramname"><em>packet</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inicializa un paquete ambiental a un estado conocido. </p>
+<p>Inicializa un paquete ambiental con valores seguros.</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">packet</td><td>Paquete ambiental que se reinicia.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Se utiliza el mismo patrón que en el resto de paquetes para mantener una semántica uniforme entre productores y consumidores de datos en FreeRTOS.</p>
+<dl class="section pre"><dt>Precondición</dt><dd><code class="param">packet</code> debe apuntar a una estructura válida.</dd></dl>
+<p>Inicializa un paquete ambiental a un estado conocido.</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">packet</td><td>Paquete ambiental a inicializar.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section post"><dt>Postcondición</dt><dd>El paquete queda preparado para ser usado por el pipeline antes de la primera lectura barométrica o magnética. </dd></dl>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="formatter__data_8c_ab99e42d398f1018fc1a459cc4bee1088_icgraph.png" border="0" usemap="#aformatter__data_8c_ab99e42d398f1018fc1a459cc4bee1088_icgraph" loading="lazy" alt=""/></div>
+<!-- MAP 2 -->
+</div>
+
+</div>
+</div>
+<a id="addef3f02614d4204178afe4991a99ff2" name="addef3f02614d4204178afe4991a99ff2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addef3f02614d4204178afe4991a99ff2">&#9670;&#160;</a></span>GpsData_to_json()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GpsData_to_json </td>
+          <td>(</td>
+          <td class="paramtype">char *</td>          <td class="paramname"><span class="paramname"><em>buffer</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>buffer_size</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_gps_data_packet__t.html">GpsDataPacket_t</a> *</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Serializa el paquete GPS en el formato compacto de telemetría. </p>
+<p>Serializa un paquete GPS en formato JSON.</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">buffer</td><td>Buffer donde se escribe la cadena generada. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buffer_size</td><td>Tamaño total disponible en <code class="param">buffer</code>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>Paquete GPS con altitud, latitud y longitud.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Las coordenadas se limitan a cuatro decimales para contener el tamaño del mensaje y porque la precisión resultante es suficiente para la visualización general de posición usada por la interfaz del proyecto.</p>
+<dl class="section pre"><dt>Precondición</dt><dd><code class="param">buffer</code> debe apuntar a memoria válida con al menos <code class="param">buffer_size</code> bytes. </dd>
+<dd>
+<code class="param">data</code> debe apuntar a un paquete GPS válido.</dd></dl>
+<p>Serializa el paquete GPS en el formato compacto de telemetría.</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">buffer</td><td>Buffer de salida donde se escribe la cadena JSON. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buffer_size</td><td>Tamaño disponible en el buffer de salida. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>Paquete GPS que contiene la última muestra normalizada.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>Precondición</dt><dd><span class="tt">buffer</span> debe apuntar a memoria válida y <span class="tt">buffer_size</span> debe ser suficiente para almacenar el JSON generado. </dd>
+<dd>
+<span class="tt">data</span> debe apuntar a un paquete inicializado.</dd></dl>
+<dl class="section note"><dt>Nota</dt><dd>La función está pensada para preparar payloads MQTT sin exponer al publicador los detalles internos de la estructura GPS. </dd></dl>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="formatter__data_8c_addef3f02614d4204178afe4991a99ff2_icgraph.png" border="0" usemap="#aformatter__data_8c_addef3f02614d4204178afe4991a99ff2_icgraph" loading="lazy" alt=""/></div>
+<!-- MAP 3 -->
+</div>
+
+</div>
+</div>
+<a id="a2c059d8a7f63ddf24fb3c4899487fa38" name="a2c059d8a7f63ddf24fb3c4899487fa38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c059d8a7f63ddf24fb3c4899487fa38">&#9670;&#160;</a></span>GpsDataPacket_Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GpsDataPacket_Init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_gps_data_packet__t.html">GpsDataPacket_t</a> *</td>          <td class="paramname"><span class="paramname"><em>packet</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inicializa un paquete GPS a un estado conocido. </p>
+<p>Inicializa un paquete GPS con valores seguros.</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">packet</td><td>Paquete GPS que se reinicia.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Se borra toda la estructura antes de fijar los flags de control para evitar que una lectura parcial o antigua se interprete como nueva telemetría válida.</p>
+<dl class="section pre"><dt>Precondición</dt><dd><code class="param">packet</code> debe apuntar a una estructura válida.</dd></dl>
+<p>Inicializa un paquete GPS a un estado conocido.</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">packet</td><td>Paquete GPS a inicializar.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section post"><dt>Postcondición</dt><dd>El paquete queda preparado para ser usado por el pipeline antes de que llegue la primera trama GPS válida. </dd></dl>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="formatter__data_8c_a2c059d8a7f63ddf24fb3c4899487fa38_icgraph.png" border="0" usemap="#aformatter__data_8c_a2c059d8a7f63ddf24fb3c4899487fa38_icgraph" loading="lazy" alt=""/></div>
+<!-- MAP 4 -->
+</div>
+
+</div>
+</div>
+<a id="ae9ef0eb14e10c6d73fcd9de44f1bf115" name="ae9ef0eb14e10c6d73fcd9de44f1bf115"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9ef0eb14e10c6d73fcd9de44f1bf115">&#9670;&#160;</a></span>ImuData_to_json()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ImuData_to_json </td>
+          <td>(</td>
+          <td class="paramtype">char *</td>          <td class="paramname"><span class="paramname"><em>buffer</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>buffer_size</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_imu_data_packet__t.html">ImuDataPacket_t</a> *</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Serializa el paquete inercial en el formato compacto de telemetría. </p>
+<p>Serializa un paquete IMU en formato JSON.</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">buffer</td><td>Buffer donde se escribe la cadena generada. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buffer_size</td><td>Tamaño total disponible en <code class="param">buffer</code>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>Paquete IMU con acelerómetro, giróscopo y magnetómetro.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>El formato usa claves delimitadas con <span class="tt">|</span> y campos separados por <span class="tt">/</span> para evitar comillas dobles dentro del payload. Esta decisión reduce problemas al insertar la cadena dentro de comandos AT, donde las comillas forman parte de la sintaxis del propio comando.</p>
+<dl class="section pre"><dt>Precondición</dt><dd><code class="param">buffer</code> debe apuntar a memoria válida con al menos <code class="param">buffer_size</code> bytes. </dd>
+<dd>
+<code class="param">data</code> debe apuntar a un paquete IMU válido. </dd></dl>
+<dl class="section note"><dt>Nota</dt><dd>La función no devuelve estado; si el buffer no es suficiente, <span class="tt">snprintf</span> truncará la salida manteniendo la terminación nula cuando el tamaño lo permita.</dd></dl>
+<p>Serializa el paquete inercial en el formato compacto de telemetría.</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">buffer</td><td>Buffer de salida donde se escribe la cadena JSON. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buffer_size</td><td>Tamaño disponible en el buffer de salida. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>Paquete IMU que contiene la última muestra normalizada.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>Precondición</dt><dd><span class="tt">buffer</span> debe apuntar a memoria válida y <span class="tt">buffer_size</span> debe ser suficiente para almacenar el JSON generado. </dd>
+<dd>
+<span class="tt">data</span> debe apuntar a un paquete inicializado.</dd></dl>
+<dl class="section note"><dt>Nota</dt><dd>Centralizar la conversión evita duplicar el formato de telemetría en las tareas de FreeRTOS. </dd></dl>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="formatter__data_8c_ae9ef0eb14e10c6d73fcd9de44f1bf115_icgraph.png" border="0" usemap="#aformatter__data_8c_ae9ef0eb14e10c6d73fcd9de44f1bf115_icgraph" loading="lazy" alt=""/></div>
+<!-- MAP 5 -->
+</div>
+
+</div>
+</div>
+<a id="aa7dfe24eaf1db45d49d4c462acbf569b" name="aa7dfe24eaf1db45d49d4c462acbf569b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7dfe24eaf1db45d49d4c462acbf569b">&#9670;&#160;</a></span>ImuDataPacket_Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ImuDataPacket_Init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_imu_data_packet__t.html">ImuDataPacket_t</a> *</td>          <td class="paramname"><span class="paramname"><em>packet</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inicializa un paquete IMU a un estado conocido. </p>
+<p>Inicializa un paquete IMU con valores seguros.</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">packet</td><td>Paquete IMU que se reinicia.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>El reinicio explícito del flag de actualización permite que las tareas consumidoras distingan entre datos recién publicados y memoria simplemente reservada o reutilizada.</p>
+<dl class="section pre"><dt>Precondición</dt><dd><code class="param">packet</code> debe apuntar a una estructura válida.</dd></dl>
+<p>Inicializa un paquete IMU a un estado conocido.</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">packet</td><td>Paquete IMU a inicializar.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section post"><dt>Postcondición</dt><dd>El paquete queda preparado para ser usado por el pipeline antes de la primera lectura del sensor. </dd></dl>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="formatter__data_8c_aa7dfe24eaf1db45d49d4c462acbf569b_icgraph.png" border="0" usemap="#aformatter__data_8c_aa7dfe24eaf1db45d49d4c462acbf569b_icgraph" loading="lazy" alt=""/></div>
+<!-- MAP 6 -->
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c6310732a22f63c0c2fc5595561e68f1.html">Core</a></li><li class="navelem"><a href="dir_b596f468b52957496e4f78b80e029268.html">Src</a></li><li class="navelem"><a href="formatter__data_8c.html">formatter_data.c</a></li>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.17.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,479 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.17.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TFG_UAV_TELEMETRY_v4: Referencia de la estructura Sensor10DoF_t</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+const theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'default';
+mermaid.initialize({ startOnLoad: true, theme: theme });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TFG_UAV_TELEMETRY_v4<span id="projectnumber">&#160;4.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.17.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', () => {
+  initMenu('',true);
+  init_search();
+});
+</script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1" style="position:absolute;right:8px;top:8px;height:36px;"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2" style="float:right">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('struct_sensor10_do_f__t.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Referencia de la estructura Sensor10DoF_t</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Conjunto completo de medidas calculadas por el módulo 10DoF.  
+ <a href="#details">Más...</a></p>
+
+<p><code>#include &lt;<a class="el" href="sensor10_do_f_8h_source.html">sensor10DoF.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Campos de datos</h2></td></tr>
+<tr class="memitem:a9c4e4ecef897e2cd0b0ff059fa65b829" id="r_a9c4e4ecef897e2cd0b0ff059fa65b829"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a9c4e4ecef897e2cd0b0ff059fa65b829">timestamp_ms</a></td></tr>
+<tr class="memdesc:a9c4e4ecef897e2cd0b0ff059fa65b829"><td class="mdescLeft">&#160;</td><td class="mdescRight">Marca temporal de la muestra en milisegundos.  <br /></td></tr>
+<tr class="memitem:aa1a31abd984c23dc8ee2a4ff85444798" id="r_aa1a31abd984c23dc8ee2a4ff85444798"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#aa1a31abd984c23dc8ee2a4ff85444798">accel_x_ms2</a></td></tr>
+<tr class="memdesc:aa1a31abd984c23dc8ee2a4ff85444798"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aceleración en el eje X expresada en m/s².  <br /></td></tr>
+<tr class="memitem:a62971bc8c5fbd91ac100eb5ef6fd6ae2" id="r_a62971bc8c5fbd91ac100eb5ef6fd6ae2"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a62971bc8c5fbd91ac100eb5ef6fd6ae2">accel_y_ms2</a></td></tr>
+<tr class="memdesc:a62971bc8c5fbd91ac100eb5ef6fd6ae2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aceleración en el eje Y expresada en m/s².  <br /></td></tr>
+<tr class="memitem:a8f638798518ccd5d9739de8a0ab8d84f" id="r_a8f638798518ccd5d9739de8a0ab8d84f"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a8f638798518ccd5d9739de8a0ab8d84f">accel_z_ms2</a></td></tr>
+<tr class="memdesc:a8f638798518ccd5d9739de8a0ab8d84f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aceleración en el eje Z expresada en m/s².  <br /></td></tr>
+<tr class="memitem:a265758e317a736d407b0a5bc246f816d" id="r_a265758e317a736d407b0a5bc246f816d"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a265758e317a736d407b0a5bc246f816d">gyro_x_dps</a></td></tr>
+<tr class="memdesc:a265758e317a736d407b0a5bc246f816d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Velocidad angular en el eje X expresada en grados/s.  <br /></td></tr>
+<tr class="memitem:a33b4fcc5c7ff72b86d462378c4e423e8" id="r_a33b4fcc5c7ff72b86d462378c4e423e8"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a33b4fcc5c7ff72b86d462378c4e423e8">gyro_y_dps</a></td></tr>
+<tr class="memdesc:a33b4fcc5c7ff72b86d462378c4e423e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Velocidad angular en el eje Y expresada en grados/s.  <br /></td></tr>
+<tr class="memitem:a41fb0f77162e02ff868b4dc8224f9732" id="r_a41fb0f77162e02ff868b4dc8224f9732"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a41fb0f77162e02ff868b4dc8224f9732">gyro_z_dps</a></td></tr>
+<tr class="memdesc:a41fb0f77162e02ff868b4dc8224f9732"><td class="mdescLeft">&#160;</td><td class="mdescRight">Velocidad angular en el eje Z expresada en grados/s.  <br /></td></tr>
+<tr class="memitem:adade1c66b93deb5ff835141c180505d3" id="r_adade1c66b93deb5ff835141c180505d3"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#adade1c66b93deb5ff835141c180505d3">mag_x_uT</a></td></tr>
+<tr class="memdesc:adade1c66b93deb5ff835141c180505d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Campo magnético en el eje X expresado en microteslas.  <br /></td></tr>
+<tr class="memitem:a1534c128d71efdfdc4a6c7dbe854ffef" id="r_a1534c128d71efdfdc4a6c7dbe854ffef"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a1534c128d71efdfdc4a6c7dbe854ffef">mag_y_uT</a></td></tr>
+<tr class="memdesc:a1534c128d71efdfdc4a6c7dbe854ffef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Campo magnético en el eje Y expresado en microteslas.  <br /></td></tr>
+<tr class="memitem:a1e45b6a7e3417692d01214fb13816a53" id="r_a1e45b6a7e3417692d01214fb13816a53"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a1e45b6a7e3417692d01214fb13816a53">mag_z_uT</a></td></tr>
+<tr class="memdesc:a1e45b6a7e3417692d01214fb13816a53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Campo magnético en el eje Z expresado en microteslas.  <br /></td></tr>
+<tr class="memitem:a3e222cb315c3326870ed7784f148a2f8" id="r_a3e222cb315c3326870ed7784f148a2f8"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a3e222cb315c3326870ed7784f148a2f8">heading_deg</a></td></tr>
+<tr class="memdesc:a3e222cb315c3326870ed7784f148a2f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rumbo horizontal estimado en grados.  <br /></td></tr>
+<tr class="memitem:ac74169a0c8d9ccabb217f08979bef09f" id="r_ac74169a0c8d9ccabb217f08979bef09f"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#ac74169a0c8d9ccabb217f08979bef09f">roll_deg</a></td></tr>
+<tr class="memdesc:ac74169a0c8d9ccabb217f08979bef09f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ángulo de roll estimado en grados.  <br /></td></tr>
+<tr class="memitem:a0ade405858f65a93eb92fbb7d4eb4e20" id="r_a0ade405858f65a93eb92fbb7d4eb4e20"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a0ade405858f65a93eb92fbb7d4eb4e20">pitch_deg</a></td></tr>
+<tr class="memdesc:a0ade405858f65a93eb92fbb7d4eb4e20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ángulo de pitch estimado en grados.  <br /></td></tr>
+<tr class="memitem:ae4b5d897e1d9550cda0333e25458ae6c" id="r_ae4b5d897e1d9550cda0333e25458ae6c"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#ae4b5d897e1d9550cda0333e25458ae6c">temperature_c</a></td></tr>
+<tr class="memdesc:ae4b5d897e1d9550cda0333e25458ae6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Temperatura medida por el barómetro en grados Celsius.  <br /></td></tr>
+<tr class="memitem:a310b695bb1d6a33d702e193705fdc425" id="r_a310b695bb1d6a33d702e193705fdc425"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a310b695bb1d6a33d702e193705fdc425">pressure_pa</a></td></tr>
+<tr class="memdesc:a310b695bb1d6a33d702e193705fdc425"><td class="mdescLeft">&#160;</td><td class="mdescRight">Presión atmosférica en pascales.  <br /></td></tr>
+<tr class="memitem:a225f65d3f6aa0490493ab67c0592ea94" id="r_a225f65d3f6aa0490493ab67c0592ea94"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a225f65d3f6aa0490493ab67c0592ea94">pressure_hpa</a></td></tr>
+<tr class="memdesc:a225f65d3f6aa0490493ab67c0592ea94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Presión atmosférica en hectopascales.  <br /></td></tr>
+<tr class="memitem:aed41824328898379e8ef076635010267" id="r_aed41824328898379e8ef076635010267"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#aed41824328898379e8ef076635010267">pressure_atm</a></td></tr>
+<tr class="memdesc:aed41824328898379e8ef076635010267"><td class="mdescLeft">&#160;</td><td class="mdescRight">Presión atmosférica expresada en atmósferas.  <br /></td></tr>
+<tr class="memitem:a67ddcbd4279b410e81b8db0482048d5c" id="r_a67ddcbd4279b410e81b8db0482048d5c"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a67ddcbd4279b410e81b8db0482048d5c">altitude_m</a></td></tr>
+<tr class="memdesc:a67ddcbd4279b410e81b8db0482048d5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Altitud estimada a partir de la presión barométrica en metros.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Conjunto completo de medidas calculadas por el módulo 10DoF. </p>
+<p>La estructura agrupa todas las magnitudes derivadas de una lectura para que la aplicación pueda mover una muestra coherente entre tareas. Las unidades se expresan en formato físico de alto nivel y no en cuentas ADC o registros del sensor. </p>
+</div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Documentación de campos</h2>
+<a id="aa1a31abd984c23dc8ee2a4ff85444798" name="aa1a31abd984c23dc8ee2a4ff85444798"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1a31abd984c23dc8ee2a4ff85444798">&#9670;&#160;</a></span>accel_x_ms2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Sensor10DoF_t::accel_x_ms2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Aceleración en el eje X expresada en m/s². </p>
+
+</div>
+</div>
+<a id="a62971bc8c5fbd91ac100eb5ef6fd6ae2" name="a62971bc8c5fbd91ac100eb5ef6fd6ae2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62971bc8c5fbd91ac100eb5ef6fd6ae2">&#9670;&#160;</a></span>accel_y_ms2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Sensor10DoF_t::accel_y_ms2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Aceleración en el eje Y expresada en m/s². </p>
+
+</div>
+</div>
+<a id="a8f638798518ccd5d9739de8a0ab8d84f" name="a8f638798518ccd5d9739de8a0ab8d84f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f638798518ccd5d9739de8a0ab8d84f">&#9670;&#160;</a></span>accel_z_ms2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Sensor10DoF_t::accel_z_ms2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Aceleración en el eje Z expresada en m/s². </p>
+
+</div>
+</div>
+<a id="a67ddcbd4279b410e81b8db0482048d5c" name="a67ddcbd4279b410e81b8db0482048d5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67ddcbd4279b410e81b8db0482048d5c">&#9670;&#160;</a></span>altitude_m</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Sensor10DoF_t::altitude_m</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Altitud estimada a partir de la presión barométrica en metros. </p>
+
+</div>
+</div>
+<a id="a265758e317a736d407b0a5bc246f816d" name="a265758e317a736d407b0a5bc246f816d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a265758e317a736d407b0a5bc246f816d">&#9670;&#160;</a></span>gyro_x_dps</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Sensor10DoF_t::gyro_x_dps</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Velocidad angular en el eje X expresada en grados/s. </p>
+
+</div>
+</div>
+<a id="a33b4fcc5c7ff72b86d462378c4e423e8" name="a33b4fcc5c7ff72b86d462378c4e423e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33b4fcc5c7ff72b86d462378c4e423e8">&#9670;&#160;</a></span>gyro_y_dps</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Sensor10DoF_t::gyro_y_dps</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Velocidad angular en el eje Y expresada en grados/s. </p>
+
+</div>
+</div>
+<a id="a41fb0f77162e02ff868b4dc8224f9732" name="a41fb0f77162e02ff868b4dc8224f9732"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41fb0f77162e02ff868b4dc8224f9732">&#9670;&#160;</a></span>gyro_z_dps</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Sensor10DoF_t::gyro_z_dps</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Velocidad angular en el eje Z expresada en grados/s. </p>
+
+</div>
+</div>
+<a id="a3e222cb315c3326870ed7784f148a2f8" name="a3e222cb315c3326870ed7784f148a2f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e222cb315c3326870ed7784f148a2f8">&#9670;&#160;</a></span>heading_deg</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Sensor10DoF_t::heading_deg</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Rumbo horizontal estimado en grados. </p>
+
+</div>
+</div>
+<a id="adade1c66b93deb5ff835141c180505d3" name="adade1c66b93deb5ff835141c180505d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adade1c66b93deb5ff835141c180505d3">&#9670;&#160;</a></span>mag_x_uT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Sensor10DoF_t::mag_x_uT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Campo magnético en el eje X expresado en microteslas. </p>
+
+</div>
+</div>
+<a id="a1534c128d71efdfdc4a6c7dbe854ffef" name="a1534c128d71efdfdc4a6c7dbe854ffef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1534c128d71efdfdc4a6c7dbe854ffef">&#9670;&#160;</a></span>mag_y_uT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Sensor10DoF_t::mag_y_uT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Campo magnético en el eje Y expresado en microteslas. </p>
+
+</div>
+</div>
+<a id="a1e45b6a7e3417692d01214fb13816a53" name="a1e45b6a7e3417692d01214fb13816a53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e45b6a7e3417692d01214fb13816a53">&#9670;&#160;</a></span>mag_z_uT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Sensor10DoF_t::mag_z_uT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Campo magnético en el eje Z expresado en microteslas. </p>
+
+</div>
+</div>
+<a id="a0ade405858f65a93eb92fbb7d4eb4e20" name="a0ade405858f65a93eb92fbb7d4eb4e20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ade405858f65a93eb92fbb7d4eb4e20">&#9670;&#160;</a></span>pitch_deg</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Sensor10DoF_t::pitch_deg</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ángulo de pitch estimado en grados. </p>
+
+</div>
+</div>
+<a id="aed41824328898379e8ef076635010267" name="aed41824328898379e8ef076635010267"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed41824328898379e8ef076635010267">&#9670;&#160;</a></span>pressure_atm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Sensor10DoF_t::pressure_atm</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Presión atmosférica expresada en atmósferas. </p>
+
+</div>
+</div>
+<a id="a225f65d3f6aa0490493ab67c0592ea94" name="a225f65d3f6aa0490493ab67c0592ea94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a225f65d3f6aa0490493ab67c0592ea94">&#9670;&#160;</a></span>pressure_hpa</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Sensor10DoF_t::pressure_hpa</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Presión atmosférica en hectopascales. </p>
+
+</div>
+</div>
+<a id="a310b695bb1d6a33d702e193705fdc425" name="a310b695bb1d6a33d702e193705fdc425"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a310b695bb1d6a33d702e193705fdc425">&#9670;&#160;</a></span>pressure_pa</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Sensor10DoF_t::pressure_pa</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Presión atmosférica en pascales. </p>
+
+</div>
+</div>
+<a id="ac74169a0c8d9ccabb217f08979bef09f" name="ac74169a0c8d9ccabb217f08979bef09f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac74169a0c8d9ccabb217f08979bef09f">&#9670;&#160;</a></span>roll_deg</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Sensor10DoF_t::roll_deg</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ángulo de roll estimado en grados. </p>
+
+</div>
+</div>
+<a id="ae4b5d897e1d9550cda0333e25458ae6c" name="ae4b5d897e1d9550cda0333e25458ae6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4b5d897e1d9550cda0333e25458ae6c">&#9670;&#160;</a></span>temperature_c</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Sensor10DoF_t::temperature_c</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Temperatura medida por el barómetro en grados Celsius. </p>
+
+</div>
+</div>
+<a id="a9c4e4ecef897e2cd0b0ff059fa65b829" name="a9c4e4ecef897e2cd0b0ff059fa65b829"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c4e4ecef897e2cd0b0ff059fa65b829">&#9670;&#160;</a></span>timestamp_ms</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t Sensor10DoF_t::timestamp_ms</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Marca temporal de la muestra en milisegundos. </p>
+
+</div>
+</div>
+<hr/>La documentación de esta estructura está generada del siguiente archivo:<ul>
+<li>Core/Inc/<a class="el" href="sensor10_do_f_8h_source.html">sensor10DoF.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="struct_sensor10_do_f__t.html">Sensor10DoF_t</a></li>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.17.0 </li>
+  </ul>
+</div>
+</body>
+</html>

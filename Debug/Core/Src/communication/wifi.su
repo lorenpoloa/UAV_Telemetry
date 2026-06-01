@@ -1,0 +1,17 @@
+../Core/Src/communication/wifi.c:62:17:get_dma_write_index	4	static
+../Core/Src/communication/wifi.c:75:13:flush_ring_buffer	8	static
+../Core/Src/communication/wifi.c:92:12:search_in_ring_buffer	48	static
+../Core/Src/communication/wifi.c:128:6:HAL_UART_TxCpltCallback	16	static
+../Core/Src/communication/wifi.c:155:22:wifi_send_cmd	48	static
+../Core/Src/communication/wifi.c:202:15:WIFI_Init	16	static
+../Core/Src/communication/wifi.c:232:15:WIFI_Test	8	static
+../Core/Src/communication/wifi.c:241:15:WIFI_Reset	8	static
+../Core/Src/communication/wifi.c:250:15:WIFI_SetStationMode	8	static
+../Core/Src/communication/wifi.c:265:15:WIFI_ConnectAP	32	static
+../Core/Src/communication/wifi.c:287:15:WIFI_DisconnectAP	8	static
+../Core/Src/communication/wifi.c:294:15:WIFI_GetState	4	static
+../Core/Src/communication/wifi.c:308:15:WIFI_MQTT_UserConfig	16	static
+../Core/Src/communication/wifi.c:329:15:WIFI_MQTT_Connect	32	static
+../Core/Src/communication/wifi.c:358:15:WIFI_MQTT_Publish	48	static
+../Core/Src/communication/wifi.c:378:15:WIFI_MQTT_Disconnect	8	static
+../Core/Src/communication/wifi.c:397:15:WIFI_Reconnect	8	static

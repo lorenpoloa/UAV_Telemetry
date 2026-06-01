@@ -1,0 +1,72 @@
+\doxysection{wifi.\+h}
+\hypertarget{wifi_8h_source}{}\label{wifi_8h_source}\index{Core/Inc/wifi.h@{Core/Inc/wifi.h}}
+\doxymbox{\hyperlink{wifi_8h}{Ir a la documentación de este archivo.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#ifndef\ WIFI\_H}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#define\ WIFI\_H}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{main_8h}{main.h}}"{}}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{wifi__types_8h}{wifi\_types.h}}"{}}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ <stdint.h>}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#ifdef\ \_\_cplusplus}}
+\DoxyCodeLine{00023\ \textcolor{keyword}{extern}\ \textcolor{stringliteral}{"{}C"{}}\ \{}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00036\ \doxymbox{\hyperlink{wifi__types_8h_aacb4bf20b6b92924d603518fe15874d2}{wifi\_status\_t}}\ \doxymbox{\hyperlink{wifi_8h_ad7ba0a0beada20c448bbc88a93c2ee5e}{WIFI\_Init}}(UART\_HandleTypeDef\ *huart);}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00049\ \doxymbox{\hyperlink{wifi__types_8h_aacb4bf20b6b92924d603518fe15874d2}{wifi\_status\_t}}\ \doxymbox{\hyperlink{wifi_8h_a7747574249adc0e0daf6b4ed9d0062ce}{WIFI\_Reset}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00058\ \doxymbox{\hyperlink{wifi__types_8h_aacb4bf20b6b92924d603518fe15874d2}{wifi\_status\_t}}\ \doxymbox{\hyperlink{wifi_8h_acfaca1eea2072d0ca3cd4b5db1783dd9}{WIFI\_Test}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00070\ \doxymbox{\hyperlink{wifi__types_8h_aacb4bf20b6b92924d603518fe15874d2}{wifi\_status\_t}}\ \doxymbox{\hyperlink{wifi_8h_a1f2c5609610021e450931fa3a38c03b9}{WIFI\_SetStationMode}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00084\ \doxymbox{\hyperlink{wifi__types_8h_aacb4bf20b6b92924d603518fe15874d2}{wifi\_status\_t}}\ \doxymbox{\hyperlink{wifi_8h_a39f3b93115207ae63db616da2e291bff}{WIFI\_ConnectAP}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *ssid,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *pass);}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00092\ \doxymbox{\hyperlink{wifi__types_8h_aacb4bf20b6b92924d603518fe15874d2}{wifi\_status\_t}}\ \doxymbox{\hyperlink{wifi_8h_a75bbb0398c0a03ed639b264ad2b096f2}{WIFI\_DisconnectAP}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00102\ \doxymbox{\hyperlink{wifi__types_8h_a5f847547d1654ba6664de98abb0ee37c}{wifi\_state\_t}}\ \ \doxymbox{\hyperlink{wifi_8h_a8979de139d7d93ca4b9e5f6f63fadb95}{WIFI\_GetState}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00116\ \doxymbox{\hyperlink{wifi__types_8h_aacb4bf20b6b92924d603518fe15874d2}{wifi\_status\_t}}\ \doxymbox{\hyperlink{wifi_8h_a6b44e23754cca97389330d3b6cbf52ea}{WIFI\_GetIP}}(\textcolor{keywordtype}{char}\ *ip,\ uint16\_t\ len);}
+\DoxyCodeLine{00117\ }
+\DoxyCodeLine{00129\ \doxymbox{\hyperlink{wifi__types_8h_aacb4bf20b6b92924d603518fe15874d2}{wifi\_status\_t}}\ \doxymbox{\hyperlink{wifi_8h_ab15097d974cfefeaf3cfb0efa0467aec}{WIFI\_GetRSSI}}(\textcolor{keywordtype}{int}\ *rssi);}
+\DoxyCodeLine{00130\ }
+\DoxyCodeLine{00141\ \doxymbox{\hyperlink{wifi__types_8h_aacb4bf20b6b92924d603518fe15874d2}{wifi\_status\_t}}\ \doxymbox{\hyperlink{wifi_8h_a56c17530ef3f91f4872221d8027f2d04}{WIFI\_TCPConnect}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *host,\ uint16\_t\ port);}
+\DoxyCodeLine{00142\ }
+\DoxyCodeLine{00149\ \doxymbox{\hyperlink{wifi__types_8h_aacb4bf20b6b92924d603518fe15874d2}{wifi\_status\_t}}\ \doxymbox{\hyperlink{wifi_8h_a572fefcfcdef32399be655dba8bb059e}{WIFI\_TCPClose}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00150\ }
+\DoxyCodeLine{00160\ \doxymbox{\hyperlink{wifi__types_8h_aacb4bf20b6b92924d603518fe15874d2}{wifi\_status\_t}}\ \doxymbox{\hyperlink{wifi_8h_a0c8912a840f8f8724afa067d36f5923e}{WIFI\_SendRaw}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *data);}
+\DoxyCodeLine{00161\ }
+\DoxyCodeLine{00175\ \doxymbox{\hyperlink{wifi__types_8h_aacb4bf20b6b92924d603518fe15874d2}{wifi\_status\_t}}\ \doxymbox{\hyperlink{wifi_8h_acd57efc1a26efc2d18627ea6e1568efb}{WIFI\_SendJSON}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *json);}
+\DoxyCodeLine{00176\ }
+\DoxyCodeLine{00187\ \doxymbox{\hyperlink{wifi__types_8h_aacb4bf20b6b92924d603518fe15874d2}{wifi\_status\_t}}\ \doxymbox{\hyperlink{wifi_8h_a1d9fadf4213ccd2311ce0fc2a06afca3}{WIFI\_Reconnect}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00188\ }
+\DoxyCodeLine{00196\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{wifi_8h_a31ff91c6d95ef644f730f3cb892ef634}{WIFI\_Process}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00197\ }
+\DoxyCodeLine{00213\ \doxymbox{\hyperlink{wifi__types_8h_aacb4bf20b6b92924d603518fe15874d2}{wifi\_status\_t}}\ \doxymbox{\hyperlink{wifi_8h_a0e5735c17066d67391c749d3452df96b}{WIFI\_HTTP\_PostJSON}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *host,}
+\DoxyCodeLine{00214\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *path,}
+\DoxyCodeLine{00215\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *json);}
+\DoxyCodeLine{00216\ }
+\DoxyCodeLine{00227\ \doxymbox{\hyperlink{wifi__types_8h_aacb4bf20b6b92924d603518fe15874d2}{wifi\_status\_t}}\ \doxymbox{\hyperlink{wifi_8h_a71aae5bbf4169cfcd1a9d837a65eaf53}{WIFI\_MQTT\_UserConfig}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *client\_id);}
+\DoxyCodeLine{00228\ }
+\DoxyCodeLine{00239\ \doxymbox{\hyperlink{wifi__types_8h_aacb4bf20b6b92924d603518fe15874d2}{wifi\_status\_t}}\ \doxymbox{\hyperlink{wifi_8h_ac6919200b1e3953136e059f9116e47f4}{WIFI\_MQTT\_Connect}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *broker,\ uint16\_t\ port);}
+\DoxyCodeLine{00240\ }
+\DoxyCodeLine{00257\ \doxymbox{\hyperlink{wifi__types_8h_aacb4bf20b6b92924d603518fe15874d2}{wifi\_status\_t}}\ \doxymbox{\hyperlink{wifi_8h_addc561002e88e333d80cc8949357b748}{WIFI\_MQTT\_Publish}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *topic,}
+\DoxyCodeLine{00258\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *payload,}
+\DoxyCodeLine{00259\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ uint8\_t\ qos,}
+\DoxyCodeLine{00260\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ uint8\_t\ retain);}
+\DoxyCodeLine{00261\ }
+\DoxyCodeLine{00272\ \doxymbox{\hyperlink{wifi__types_8h_aacb4bf20b6b92924d603518fe15874d2}{wifi\_status\_t}}\ \doxymbox{\hyperlink{wifi_8h_a032255cc4569e63ffb08160e6098afd2}{WIFI\_MQTT\_Subscribe}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *topic,}
+\DoxyCodeLine{00273\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ uint8\_t\ qos);}
+\DoxyCodeLine{00274\ }
+\DoxyCodeLine{00281\ \doxymbox{\hyperlink{wifi__types_8h_aacb4bf20b6b92924d603518fe15874d2}{wifi\_status\_t}}\ \doxymbox{\hyperlink{wifi_8h_a0aa3d38b06472f563555f8697216c2c6}{WIFI\_MQTT\_Disconnect}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00282\ }
+\DoxyCodeLine{00283\ \textcolor{preprocessor}{\#ifdef\ \_\_cplusplus}}
+\DoxyCodeLine{00284\ \}}
+\DoxyCodeLine{00285\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00286\ }
+\DoxyCodeLine{00287\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ WIFI\_H\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

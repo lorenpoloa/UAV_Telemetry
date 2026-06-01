@@ -1,0 +1,14 @@
+../Core/Src/sensors/sensor10DoF.c:75:26:I2C_Read	40	static
+../Core/Src/sensors/sensor10DoF.c:92:26:I2C_Write	32	static
+../Core/Src/sensors/sensor10DoF.c:105:6:Sensor10DoF_I2CRecover	32	static
+../Core/Src/sensors/sensor10DoF.c:140:23:ACC_Init	8	static
+../Core/Src/sensors/sensor10DoF.c:154:23:MAG_Init	8	static
+../Core/Src/sensors/sensor10DoF.c:169:23:GYR_Init	8	static
+../Core/Src/sensors/sensor10DoF.c:187:23:BMP180_ReadCalibration	32	static
+../Core/Src/sensors/sensor10DoF.c:216:23:BMP180_ReadUT	24	static
+../Core/Src/sensors/sensor10DoF.c:244:23:BMP180_ReadUP	24	static
+../Core/Src/sensors/sensor10DoF.c:282:23:Sensor10DoF_CalibrateGyro_Internal	40	static
+../Core/Src/sensors/sensor10DoF.c:329:16:Sensor10DoF_Init	8	static
+../Core/Src/sensors/sensor10DoF.c:371:16:Sensor10DoF_Read	112	static
+../Core/Src/sensors/sensor10DoF.c:506:6:Sensor10DoF_Reset	8	static
+../Core/Src/sensors/sensor10DoF.c:520:6:Sensor10DoF_Calibrate	8	static

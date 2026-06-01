@@ -1,0 +1,75 @@
+\doxysection{sensor10\+Do\+F.\+h}
+\hypertarget{sensor10_do_f_8h_source}{}\label{sensor10_do_f_8h_source}\index{Core/Inc/sensor10DoF.h@{Core/Inc/sensor10DoF.h}}
+\doxymbox{\hyperlink{sensor10_do_f_8h}{Ir a la documentación de este archivo.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#ifndef\ SENSOR10DOF\_H}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ SENSOR10DOF\_H}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{main_8h}{main.h}}"{}}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <stdint.h>}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}}
+\DoxyCodeLine{00027\ \{}
+\DoxyCodeLine{00029\ \ \ \ \ \doxymbox{\hyperlink{sensor10_do_f_8h_a2d321db4d1c1bdad7da1082cc9d2da90aa6cd2e3b0a7c51a390945e41e6dc1db8}{SENSOR\_OK}}\ =\ 0,}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00032\ \ \ \ \ \doxymbox{\hyperlink{sensor10_do_f_8h_a2d321db4d1c1bdad7da1082cc9d2da90a3606d5ad89db20322e69051227332a0f}{SENSOR\_ERROR}},}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00035\ \ \ \ \ \doxymbox{\hyperlink{sensor10_do_f_8h_a2d321db4d1c1bdad7da1082cc9d2da90ab269ae21112e87a45bf7708d7a217e19}{SENSOR\_TIMEOUT}},}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00038\ \ \ \ \ \doxymbox{\hyperlink{sensor10_do_f_8h_a2d321db4d1c1bdad7da1082cc9d2da90ad6da2b13bdfc13b3959320862249847a}{SENSOR\_BUSY}}}
+\DoxyCodeLine{00039\ \}\ \doxymbox{\hyperlink{sensor10_do_f_8h_a2d321db4d1c1bdad7da1082cc9d2da90}{SensorStatus\_t}};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00050\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct}}
+\DoxyCodeLine{00051\ \{}
+\DoxyCodeLine{00053\ \ \ \ \ uint32\_t\ \doxymbox{\hyperlink{struct_sensor10_do_f__t_a9c4e4ecef897e2cd0b0ff059fa65b829}{timestamp\_ms}};}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{struct_sensor10_do_f__t_aa1a31abd984c23dc8ee2a4ff85444798}{accel\_x\_ms2}};}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{struct_sensor10_do_f__t_a62971bc8c5fbd91ac100eb5ef6fd6ae2}{accel\_y\_ms2}};}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{struct_sensor10_do_f__t_a8f638798518ccd5d9739de8a0ab8d84f}{accel\_z\_ms2}};}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{struct_sensor10_do_f__t_a265758e317a736d407b0a5bc246f816d}{gyro\_x\_dps}};}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{struct_sensor10_do_f__t_a33b4fcc5c7ff72b86d462378c4e423e8}{gyro\_y\_dps}};}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{struct_sensor10_do_f__t_a41fb0f77162e02ff868b4dc8224f9732}{gyro\_z\_dps}};}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{struct_sensor10_do_f__t_adade1c66b93deb5ff835141c180505d3}{mag\_x\_uT}};}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{struct_sensor10_do_f__t_a1534c128d71efdfdc4a6c7dbe854ffef}{mag\_y\_uT}};}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{struct_sensor10_do_f__t_a1e45b6a7e3417692d01214fb13816a53}{mag\_z\_uT}};}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{struct_sensor10_do_f__t_a3e222cb315c3326870ed7784f148a2f8}{heading\_deg}};}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{struct_sensor10_do_f__t_ac74169a0c8d9ccabb217f08979bef09f}{roll\_deg}};}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00089\ \ \ \ \ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{struct_sensor10_do_f__t_a0ade405858f65a93eb92fbb7d4eb4e20}{pitch\_deg}};}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{struct_sensor10_do_f__t_ae4b5d897e1d9550cda0333e25458ae6c}{temperature\_c}};}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00095\ \ \ \ \ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{struct_sensor10_do_f__t_a310b695bb1d6a33d702e193705fdc425}{pressure\_pa}};}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{struct_sensor10_do_f__t_a225f65d3f6aa0490493ab67c0592ea94}{pressure\_hpa}};}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00101\ \ \ \ \ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{struct_sensor10_do_f__t_aed41824328898379e8ef076635010267}{pressure\_atm}};}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00104\ \ \ \ \ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{struct_sensor10_do_f__t_a67ddcbd4279b410e81b8db0482048d5c}{altitude\_m}};}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00106\ \}\ \doxymbox{\hyperlink{struct_sensor10_do_f__t}{Sensor10DoF\_t}};}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00119\ \doxymbox{\hyperlink{sensor10_do_f_8h_a2d321db4d1c1bdad7da1082cc9d2da90}{SensorStatus\_t}}\ \doxymbox{\hyperlink{sensor10_do_f_8h_a40d60a406a5f724ddb728f6335c660be}{Sensor10DoF\_Init}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00137\ \doxymbox{\hyperlink{sensor10_do_f_8h_a2d321db4d1c1bdad7da1082cc9d2da90}{SensorStatus\_t}}\ \doxymbox{\hyperlink{sensor10_do_f_8h_a9513ab16635801c9f5470c7f859489f4}{Sensor10DoF\_Read}}(\doxymbox{\hyperlink{struct_sensor10_do_f__t}{Sensor10DoF\_t}}\ *data);}
+\DoxyCodeLine{00138\ }
+\DoxyCodeLine{00146\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{sensor10_do_f_8h_ac4c6b274050321d5e7e1a48532870982}{Sensor10DoF\_Reset}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00147\ }
+\DoxyCodeLine{00155\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{sensor10_do_f_8h_a8286f829ac13dbc25471ead91feac263}{Sensor10DoF\_I2CRecover}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00156\ }
+\DoxyCodeLine{00165\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{sensor10_do_f_8h_a0b850440969ed2c0142b67744da3a201}{Sensor10DoF\_Calibrate}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00166\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

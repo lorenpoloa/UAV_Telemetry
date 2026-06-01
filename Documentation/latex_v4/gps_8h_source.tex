@@ -1,0 +1,70 @@
+\doxysection{gps.\+h}
+\hypertarget{gps_8h_source}{}\label{gps_8h_source}\index{Core/Inc/gps.h@{Core/Inc/gps.h}}
+\doxymbox{\hyperlink{gps_8h}{Ir a la documentación de este archivo.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#ifndef\ GPS\_H}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#define\ GPS\_H}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}stm32f4xx\_hal.h"{}}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <stdint.h>}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ <stdbool.h>}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#define\ GPS\_RX\_BUFFER\_SIZE\ \ \ \ \ \ \ \ \ \ 512}}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#define\ GPS\_SENTENCE\_MAX\_LENGTH\ \ \ \ \ 128}}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00049\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}}
+\DoxyCodeLine{00050\ \{}
+\DoxyCodeLine{00052\ \ \ \ \ \doxymbox{\hyperlink{gps_8h_a5d5ba38e4f60946cf9c4271ea2c214c0aecdc7525f2a1b0a816dd8586d86b8445}{GPS\_OK}}\ =\ 0,}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00055\ \ \ \ \ \doxymbox{\hyperlink{gps_8h_a5d5ba38e4f60946cf9c4271ea2c214c0a6ee5a874e9e7acbeedcb88926bc43986}{GPS\_ERROR}},}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00058\ \ \ \ \ \doxymbox{\hyperlink{gps_8h_a5d5ba38e4f60946cf9c4271ea2c214c0acf7edfe7f8912d8b1aafbf7020110cdf}{GPS\_TIMEOUT}}}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \}\ \doxymbox{\hyperlink{gps_8h_a5d5ba38e4f60946cf9c4271ea2c214c0}{gps\_status\_t}};}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00069\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}}
+\DoxyCodeLine{00070\ \{}
+\DoxyCodeLine{00072\ \ \ \ \ \doxymbox{\hyperlink{gps_8h_a097936e7c0e34deb761eaec8f528e574a8f223f7b67de244b4ba89af487e7fc81}{GPS\_NO\_FIX}}\ =\ 0,}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00075\ \ \ \ \ \doxymbox{\hyperlink{gps_8h_a097936e7c0e34deb761eaec8f528e574a2bef43a22a100b864e47e0b97756534c}{GPS\_FIX}}}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ \}\ \doxymbox{\hyperlink{gps_8h_a097936e7c0e34deb761eaec8f528e574}{gps\_fix\_t}};}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00087\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct}}
+\DoxyCodeLine{00088\ \{}
+\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{structgps__data__t_ad8d2f4a6a738fec4bc5bf63f6e084120}{latitude}};}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00093\ \ \ \ \ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{structgps__data__t_a363ee632267ad6970a4c4c675ca13eca}{longitude}};}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00096\ \ \ \ \ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{structgps__data__t_a314661f70c489a57e1014e81e115a373}{altitude}};}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00099\ \ \ \ \ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{structgps__data__t_a3a9d2311006e28d93e835c64dd95969c}{speed\_knots}};}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00102\ \ \ \ \ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{structgps__data__t_a411d432c84eda3e201b025a1aafa1755}{speed\_kmh}};}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00105\ \ \ \ \ uint8\_t\ \doxymbox{\hyperlink{structgps__data__t_ac660bf8d350c3867099ec712e9813f44}{satellites}};}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00108\ \ \ \ \ \doxymbox{\hyperlink{gps_8h_a097936e7c0e34deb761eaec8f528e574}{gps\_fix\_t}}\ \doxymbox{\hyperlink{structgps__data__t_a36e7674176ed489a32c2bf94f6874bad}{fix}};}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00111\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{structgps__data__t_a8f9667fc80d224cf1707acdac7bd14bc}{valid}};}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00113\ \}\ \doxymbox{\hyperlink{structgps__data__t}{gps\_data\_t}};}
+\DoxyCodeLine{00114\ }
+\DoxyCodeLine{00126\ \doxymbox{\hyperlink{gps_8h_a5d5ba38e4f60946cf9c4271ea2c214c0}{gps\_status\_t}}\ \doxymbox{\hyperlink{gps_8h_aa1f922617a2b14aed16e06fd71ec92b9}{GPS\_Init}}(UART\_HandleTypeDef\ *huart);}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00137\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{gps_8h_acdcba5064c6e85eb613cad8fd86c1907}{GPS\_UARTCallback}}(UART\_HandleTypeDef\ *huart);}
+\DoxyCodeLine{00138\ }
+\DoxyCodeLine{00146\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{gps_8h_a2ccf1f8cca3e41f514b406e5496477a1}{GPS\_Process}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00147\ }
+\DoxyCodeLine{00156\ \doxymbox{\hyperlink{structgps__data__t}{gps\_data\_t}}\ \doxymbox{\hyperlink{gps_8h_a926d8a2d10d292efb5227f45a5e73391}{GPS\_GetData}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00157\ }
+\DoxyCodeLine{00164\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{gps_8h_a3bbbf5e2a84e095094067619def607ba}{GPS\_DataValid}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00165\ }
+\DoxyCodeLine{00173\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{gps_8h_af81b3ecef88fbb0bf40f9dbd4ee77972}{GPS\_RestartReceive}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00174\ }
+\DoxyCodeLine{00175\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

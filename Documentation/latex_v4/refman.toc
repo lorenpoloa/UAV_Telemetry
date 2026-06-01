@@ -1,0 +1,610 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\babel@toc {spanish}{}\relax 
+\contentsline {chapter}{\numberline {1}Topic Index}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Topics}{1}{section.1.1}%
+\contentsline {chapter}{\numberline {2}Jerarquía de directorios}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Directorios}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Índice de estructuras de datos}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Estructuras de datos}{5}{section.3.1}%
+\contentsline {chapter}{\numberline {4}Índice de archivos}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Lista de archivos}{7}{section.4.1}%
+\contentsline {chapter}{\numberline {5}Topic Documentation}{9}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Estado interno del driver GPS }{9}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Descripción detallada}{9}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Documentación de variables}{9}{subsection.5.1.2}%
+\contentsline {subsubsection}{\numberline {5.1.2.1}gps\_data}{9}{subsubsection.5.1.2.1}%
+\contentsline {subsubsection}{\numberline {5.1.2.2}gps\_rx\_buffer}{10}{subsubsection.5.1.2.2}%
+\contentsline {subsubsection}{\numberline {5.1.2.3}gps\_uart}{10}{subsubsection.5.1.2.3}%
+\contentsline {subsubsection}{\numberline {5.1.2.4}rx\_head}{10}{subsubsection.5.1.2.4}%
+\contentsline {subsubsection}{\numberline {5.1.2.5}rx\_tail}{10}{subsubsection.5.1.2.5}%
+\contentsline {subsubsection}{\numberline {5.1.2.6}sentence}{10}{subsubsection.5.1.2.6}%
+\contentsline {subsubsection}{\numberline {5.1.2.7}sentence\_index}{10}{subsubsection.5.1.2.7}%
+\contentsline {subsubsection}{\numberline {5.1.2.8}uart\_rx\_byte}{10}{subsubsection.5.1.2.8}%
+\contentsline {section}{\numberline {5.2}Direcciones I2C }{10}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Descripción detallada}{11}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Documentación de «define»}{11}{subsection.5.2.2}%
+\contentsline {subsubsection}{\numberline {5.2.2.1}ACC\_ADDR}{11}{subsubsection.5.2.2.1}%
+\contentsline {subsubsection}{\numberline {5.2.2.2}BMP\_ADDR}{11}{subsubsection.5.2.2.2}%
+\contentsline {subsubsection}{\numberline {5.2.2.3}GYR\_ADDR}{11}{subsubsection.5.2.2.3}%
+\contentsline {subsubsection}{\numberline {5.2.2.4}MAG\_ADDR}{11}{subsubsection.5.2.2.4}%
+\contentsline {section}{\numberline {5.3}Constantes de conversión }{11}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Descripción detallada}{12}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Documentación de «define»}{12}{subsection.5.3.2}%
+\contentsline {subsubsection}{\numberline {5.3.2.1}ACC\_SENS\_2G}{12}{subsubsection.5.3.2.1}%
+\contentsline {subsubsection}{\numberline {5.3.2.2}BMP180\_OSS}{12}{subsubsection.5.3.2.2}%
+\contentsline {subsubsection}{\numberline {5.3.2.3}BMP180\_SEA\_HPA}{12}{subsubsection.5.3.2.3}%
+\contentsline {subsubsection}{\numberline {5.3.2.4}G\_CONST}{12}{subsubsection.5.3.2.4}%
+\contentsline {subsubsection}{\numberline {5.3.2.5}GAUSS\_TO\_UT}{12}{subsubsection.5.3.2.5}%
+\contentsline {subsubsection}{\numberline {5.3.2.6}GYRO\_SENS\_250DPS}{13}{subsubsection.5.3.2.6}%
+\contentsline {subsubsection}{\numberline {5.3.2.7}MAG\_XY\_LSB\_GAUSS}{13}{subsubsection.5.3.2.7}%
+\contentsline {subsubsection}{\numberline {5.3.2.8}MAG\_Z\_LSB\_GAUSS}{13}{subsubsection.5.3.2.8}%
+\contentsline {chapter}{\numberline {6}Documentación de directorios}{15}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Referencia del directorio Core}{15}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Referencia del directorio Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Inc}{15}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Referencia del directorio Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Src}{16}{section.6.3}%
+\contentsline {chapter}{\numberline {7}Documentación de estructuras de datos}{17}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Referencia de la estructura Env\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Data\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Packet\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}t}{17}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Descripción detallada}{17}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.1.2}Documentación de campos}{17}{subsection.7.1.2}%
+\contentsline {subsubsection}{\numberline {7.1.2.1}checksum}{17}{subsubsection.7.1.2.1}%
+\contentsline {subsubsection}{\numberline {7.1.2.2}env\_timestamp}{18}{subsubsection.7.1.2.2}%
+\contentsline {subsubsection}{\numberline {7.1.2.3}env\_updated}{18}{subsubsection.7.1.2.3}%
+\contentsline {subsubsection}{\numberline {7.1.2.4}heading}{18}{subsubsection.7.1.2.4}%
+\contentsline {subsubsection}{\numberline {7.1.2.5}pressure}{18}{subsubsection.7.1.2.5}%
+\contentsline {subsubsection}{\numberline {7.1.2.6}temperature}{18}{subsubsection.7.1.2.6}%
+\contentsline {section}{\numberline {7.2}Referencia de la estructura gps\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}data\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}t}{18}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Descripción detallada}{19}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}Documentación de campos}{19}{subsection.7.2.2}%
+\contentsline {subsubsection}{\numberline {7.2.2.1}altitude}{19}{subsubsection.7.2.2.1}%
+\contentsline {subsubsection}{\numberline {7.2.2.2}fix}{19}{subsubsection.7.2.2.2}%
+\contentsline {subsubsection}{\numberline {7.2.2.3}latitude}{19}{subsubsection.7.2.2.3}%
+\contentsline {subsubsection}{\numberline {7.2.2.4}longitude}{20}{subsubsection.7.2.2.4}%
+\contentsline {subsubsection}{\numberline {7.2.2.5}satellites}{20}{subsubsection.7.2.2.5}%
+\contentsline {subsubsection}{\numberline {7.2.2.6}speed\_kmh}{20}{subsubsection.7.2.2.6}%
+\contentsline {subsubsection}{\numberline {7.2.2.7}speed\_knots}{20}{subsubsection.7.2.2.7}%
+\contentsline {subsubsection}{\numberline {7.2.2.8}valid}{20}{subsubsection.7.2.2.8}%
+\contentsline {section}{\numberline {7.3}Referencia de la estructura Gps\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Data\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Packet\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}t}{20}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}Descripción detallada}{21}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.2}Documentación de campos}{21}{subsection.7.3.2}%
+\contentsline {subsubsection}{\numberline {7.3.2.1}altitude}{21}{subsubsection.7.3.2.1}%
+\contentsline {subsubsection}{\numberline {7.3.2.2}checksum}{21}{subsubsection.7.3.2.2}%
+\contentsline {subsubsection}{\numberline {7.3.2.3}gps\_timestamp}{21}{subsubsection.7.3.2.3}%
+\contentsline {subsubsection}{\numberline {7.3.2.4}gps\_updated}{21}{subsubsection.7.3.2.4}%
+\contentsline {subsubsection}{\numberline {7.3.2.5}latitude}{22}{subsubsection.7.3.2.5}%
+\contentsline {subsubsection}{\numberline {7.3.2.6}longitude}{22}{subsubsection.7.3.2.6}%
+\contentsline {section}{\numberline {7.4}Referencia de la estructura Imu\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Data\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Packet\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}t}{22}{section.7.4}%
+\contentsline {subsection}{\numberline {7.4.1}Descripción detallada}{22}{subsection.7.4.1}%
+\contentsline {subsection}{\numberline {7.4.2}Documentación de campos}{23}{subsection.7.4.2}%
+\contentsline {subsubsection}{\numberline {7.4.2.1}accel}{23}{subsubsection.7.4.2.1}%
+\contentsline {subsubsection}{\numberline {7.4.2.2}checksum}{23}{subsubsection.7.4.2.2}%
+\contentsline {subsubsection}{\numberline {7.4.2.3}gyro}{23}{subsubsection.7.4.2.3}%
+\contentsline {subsubsection}{\numberline {7.4.2.4}imu\_timestamp}{23}{subsubsection.7.4.2.4}%
+\contentsline {subsubsection}{\numberline {7.4.2.5}imu\_updated}{23}{subsubsection.7.4.2.5}%
+\contentsline {subsubsection}{\numberline {7.4.2.6}mag}{23}{subsubsection.7.4.2.6}%
+\contentsline {section}{\numberline {7.5}Referencia de la estructura Sensor10\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Do\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}F\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}t}{23}{section.7.5}%
+\contentsline {subsection}{\numberline {7.5.1}Descripción detallada}{24}{subsection.7.5.1}%
+\contentsline {subsection}{\numberline {7.5.2}Documentación de campos}{25}{subsection.7.5.2}%
+\contentsline {subsubsection}{\numberline {7.5.2.1}accel\_x\_ms2}{25}{subsubsection.7.5.2.1}%
+\contentsline {subsubsection}{\numberline {7.5.2.2}accel\_y\_ms2}{25}{subsubsection.7.5.2.2}%
+\contentsline {subsubsection}{\numberline {7.5.2.3}accel\_z\_ms2}{25}{subsubsection.7.5.2.3}%
+\contentsline {subsubsection}{\numberline {7.5.2.4}altitude\_m}{25}{subsubsection.7.5.2.4}%
+\contentsline {subsubsection}{\numberline {7.5.2.5}gyro\_x\_dps}{25}{subsubsection.7.5.2.5}%
+\contentsline {subsubsection}{\numberline {7.5.2.6}gyro\_y\_dps}{25}{subsubsection.7.5.2.6}%
+\contentsline {subsubsection}{\numberline {7.5.2.7}gyro\_z\_dps}{25}{subsubsection.7.5.2.7}%
+\contentsline {subsubsection}{\numberline {7.5.2.8}heading\_deg}{26}{subsubsection.7.5.2.8}%
+\contentsline {subsubsection}{\numberline {7.5.2.9}mag\_x\_uT}{26}{subsubsection.7.5.2.9}%
+\contentsline {subsubsection}{\numberline {7.5.2.10}mag\_y\_uT}{26}{subsubsection.7.5.2.10}%
+\contentsline {subsubsection}{\numberline {7.5.2.11}mag\_z\_uT}{26}{subsubsection.7.5.2.11}%
+\contentsline {subsubsection}{\numberline {7.5.2.12}pitch\_deg}{26}{subsubsection.7.5.2.12}%
+\contentsline {subsubsection}{\numberline {7.5.2.13}pressure\_atm}{26}{subsubsection.7.5.2.13}%
+\contentsline {subsubsection}{\numberline {7.5.2.14}pressure\_hpa}{26}{subsubsection.7.5.2.14}%
+\contentsline {subsubsection}{\numberline {7.5.2.15}pressure\_pa}{26}{subsubsection.7.5.2.15}%
+\contentsline {subsubsection}{\numberline {7.5.2.16}roll\_deg}{27}{subsubsection.7.5.2.16}%
+\contentsline {subsubsection}{\numberline {7.5.2.17}temperature\_c}{27}{subsubsection.7.5.2.17}%
+\contentsline {subsubsection}{\numberline {7.5.2.18}timestamp\_ms}{27}{subsubsection.7.5.2.18}%
+\contentsline {chapter}{\numberline {8}Documentación de archivos}{29}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Referencia del archivo Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Inc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}dma.h}{29}{section.8.1}%
+\contentsline {subsection}{\numberline {8.1.1}Descripción detallada}{29}{subsection.8.1.1}%
+\contentsline {subsection}{\numberline {8.1.2}Documentación de funciones}{29}{subsection.8.1.2}%
+\contentsline {subsubsection}{\numberline {8.1.2.1}MX\_DMA\_Init()}{29}{subsubsection.8.1.2.1}%
+\contentsline {section}{\numberline {8.2}dma.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{30}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Referencia del archivo Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Inc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}formatter\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}data.h}{30}{section.8.3}%
+\contentsline {subsection}{\numberline {8.3.1}Descripción detallada}{31}{subsection.8.3.1}%
+\contentsline {subsection}{\numberline {8.3.2}Documentación de funciones}{31}{subsection.8.3.2}%
+\contentsline {subsubsection}{\numberline {8.3.2.1}EnvData\_to\_json()}{31}{subsubsection.8.3.2.1}%
+\contentsline {subsubsection}{\numberline {8.3.2.2}EnvDataPacket\_Init()}{32}{subsubsection.8.3.2.2}%
+\contentsline {subsubsection}{\numberline {8.3.2.3}GpsData\_to\_json()}{33}{subsubsection.8.3.2.3}%
+\contentsline {subsubsection}{\numberline {8.3.2.4}GpsDataPacket\_Init()}{34}{subsubsection.8.3.2.4}%
+\contentsline {subsubsection}{\numberline {8.3.2.5}ImuData\_to\_json()}{35}{subsubsection.8.3.2.5}%
+\contentsline {subsubsection}{\numberline {8.3.2.6}ImuDataPacket\_Init()}{36}{subsubsection.8.3.2.6}%
+\contentsline {section}{\numberline {8.4}formatter\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}data.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{36}{section.8.4}%
+\contentsline {section}{\numberline {8.5}Referencia del archivo Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Inc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Free\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}RTOSConfig.h}{37}{section.8.5}%
+\contentsline {subsection}{\numberline {8.5.1}Documentación de «define»}{38}{subsection.8.5.1}%
+\contentsline {subsubsection}{\numberline {8.5.1.1}CMSIS\_device\_header}{38}{subsubsection.8.5.1.1}%
+\contentsline {subsubsection}{\numberline {8.5.1.2}configASSERT}{39}{subsubsection.8.5.1.2}%
+\contentsline {subsubsection}{\numberline {8.5.1.3}configCPU\_CLOCK\_HZ}{39}{subsubsection.8.5.1.3}%
+\contentsline {subsubsection}{\numberline {8.5.1.4}configENABLE\_FPU}{39}{subsubsection.8.5.1.4}%
+\contentsline {subsubsection}{\numberline {8.5.1.5}configENABLE\_MPU}{39}{subsubsection.8.5.1.5}%
+\contentsline {subsubsection}{\numberline {8.5.1.6}configKERNEL\_INTERRUPT\_PRIORITY}{39}{subsubsection.8.5.1.6}%
+\contentsline {subsubsection}{\numberline {8.5.1.7}configLIBRARY\_LOWEST\_INTERRUPT\_PRIORITY}{39}{subsubsection.8.5.1.7}%
+\contentsline {subsubsection}{\numberline {8.5.1.8}configLIBRARY\_MAX\_SYSCALL\_INTERRUPT\_PRIORITY}{39}{subsubsection.8.5.1.8}%
+\contentsline {subsubsection}{\numberline {8.5.1.9}configMAX\_CO\_ROUTINE\_PRIORITIES}{39}{subsubsection.8.5.1.9}%
+\contentsline {subsubsection}{\numberline {8.5.1.10}configMAX\_PRIORITIES}{39}{subsubsection.8.5.1.10}%
+\contentsline {subsubsection}{\numberline {8.5.1.11}configMAX\_SYSCALL\_INTERRUPT\_PRIORITY}{40}{subsubsection.8.5.1.11}%
+\contentsline {subsubsection}{\numberline {8.5.1.12}configMAX\_TASK\_NAME\_LEN}{40}{subsubsection.8.5.1.12}%
+\contentsline {subsubsection}{\numberline {8.5.1.13}configMESSAGE\_BUFFER\_LENGTH\_TYPE}{40}{subsubsection.8.5.1.13}%
+\contentsline {subsubsection}{\numberline {8.5.1.14}configMINIMAL\_STACK\_SIZE}{40}{subsubsection.8.5.1.14}%
+\contentsline {subsubsection}{\numberline {8.5.1.15}configPRIO\_BITS}{40}{subsubsection.8.5.1.15}%
+\contentsline {subsubsection}{\numberline {8.5.1.16}configQUEUE\_REGISTRY\_SIZE}{40}{subsubsection.8.5.1.16}%
+\contentsline {subsubsection}{\numberline {8.5.1.17}configSUPPORT\_DYNAMIC\_ALLOCATION}{40}{subsubsection.8.5.1.17}%
+\contentsline {subsubsection}{\numberline {8.5.1.18}configSUPPORT\_STATIC\_ALLOCATION}{40}{subsubsection.8.5.1.18}%
+\contentsline {subsubsection}{\numberline {8.5.1.19}configTICK\_RATE\_HZ}{40}{subsubsection.8.5.1.19}%
+\contentsline {subsubsection}{\numberline {8.5.1.20}configTIMER\_QUEUE\_LENGTH}{40}{subsubsection.8.5.1.20}%
+\contentsline {subsubsection}{\numberline {8.5.1.21}configTIMER\_TASK\_PRIORITY}{41}{subsubsection.8.5.1.21}%
+\contentsline {subsubsection}{\numberline {8.5.1.22}configTIMER\_TASK\_STACK\_DEPTH}{41}{subsubsection.8.5.1.22}%
+\contentsline {subsubsection}{\numberline {8.5.1.23}configTOTAL\_HEAP\_SIZE}{41}{subsubsection.8.5.1.23}%
+\contentsline {subsubsection}{\numberline {8.5.1.24}configUSE\_16\_BIT\_TICKS}{41}{subsubsection.8.5.1.24}%
+\contentsline {subsubsection}{\numberline {8.5.1.25}configUSE\_CO\_ROUTINES}{41}{subsubsection.8.5.1.25}%
+\contentsline {subsubsection}{\numberline {8.5.1.26}configUSE\_COUNTING\_SEMAPHORES}{41}{subsubsection.8.5.1.26}%
+\contentsline {subsubsection}{\numberline {8.5.1.27}configUSE\_IDLE\_HOOK}{41}{subsubsection.8.5.1.27}%
+\contentsline {subsubsection}{\numberline {8.5.1.28}configUSE\_MUTEXES}{41}{subsubsection.8.5.1.28}%
+\contentsline {subsubsection}{\numberline {8.5.1.29}configUSE\_NEWLIB\_REENTRANT}{41}{subsubsection.8.5.1.29}%
+\contentsline {subsubsection}{\numberline {8.5.1.30}configUSE\_OS2\_EVENTFLAGS\_FROM\_ISR}{41}{subsubsection.8.5.1.30}%
+\contentsline {subsubsection}{\numberline {8.5.1.31}configUSE\_OS2\_MUTEX}{42}{subsubsection.8.5.1.31}%
+\contentsline {subsubsection}{\numberline {8.5.1.32}configUSE\_OS2\_THREAD\_ENUMERATE}{42}{subsubsection.8.5.1.32}%
+\contentsline {subsubsection}{\numberline {8.5.1.33}configUSE\_OS2\_THREAD\_FLAGS}{42}{subsubsection.8.5.1.33}%
+\contentsline {subsubsection}{\numberline {8.5.1.34}configUSE\_OS2\_THREAD\_SUSPEND\_RESUME}{42}{subsubsection.8.5.1.34}%
+\contentsline {subsubsection}{\numberline {8.5.1.35}configUSE\_OS2\_TIMER}{42}{subsubsection.8.5.1.35}%
+\contentsline {subsubsection}{\numberline {8.5.1.36}configUSE\_PORT\_OPTIMISED\_TASK\_SELECTION}{42}{subsubsection.8.5.1.36}%
+\contentsline {subsubsection}{\numberline {8.5.1.37}configUSE\_PREEMPTION}{42}{subsubsection.8.5.1.37}%
+\contentsline {subsubsection}{\numberline {8.5.1.38}configUSE\_RECURSIVE\_MUTEXES}{42}{subsubsection.8.5.1.38}%
+\contentsline {subsubsection}{\numberline {8.5.1.39}configUSE\_TICK\_HOOK}{42}{subsubsection.8.5.1.39}%
+\contentsline {subsubsection}{\numberline {8.5.1.40}configUSE\_TIMERS}{42}{subsubsection.8.5.1.40}%
+\contentsline {subsubsection}{\numberline {8.5.1.41}configUSE\_TRACE\_FACILITY}{43}{subsubsection.8.5.1.41}%
+\contentsline {subsubsection}{\numberline {8.5.1.42}INCLUDE\_eTaskGetState}{43}{subsubsection.8.5.1.42}%
+\contentsline {subsubsection}{\numberline {8.5.1.43}INCLUDE\_uxTaskGetStackHighWaterMark}{43}{subsubsection.8.5.1.43}%
+\contentsline {subsubsection}{\numberline {8.5.1.44}INCLUDE\_uxTaskPriorityGet}{43}{subsubsection.8.5.1.44}%
+\contentsline {subsubsection}{\numberline {8.5.1.45}INCLUDE\_vTaskCleanUpResources}{43}{subsubsection.8.5.1.45}%
+\contentsline {subsubsection}{\numberline {8.5.1.46}INCLUDE\_vTaskDelay}{43}{subsubsection.8.5.1.46}%
+\contentsline {subsubsection}{\numberline {8.5.1.47}INCLUDE\_vTaskDelayUntil}{43}{subsubsection.8.5.1.47}%
+\contentsline {subsubsection}{\numberline {8.5.1.48}INCLUDE\_vTaskDelete}{43}{subsubsection.8.5.1.48}%
+\contentsline {subsubsection}{\numberline {8.5.1.49}INCLUDE\_vTaskPrioritySet}{43}{subsubsection.8.5.1.49}%
+\contentsline {subsubsection}{\numberline {8.5.1.50}INCLUDE\_vTaskSuspend}{43}{subsubsection.8.5.1.50}%
+\contentsline {subsubsection}{\numberline {8.5.1.51}INCLUDE\_xQueueGetMutexHolder}{44}{subsubsection.8.5.1.51}%
+\contentsline {subsubsection}{\numberline {8.5.1.52}INCLUDE\_xTaskGetCurrentTaskHandle}{44}{subsubsection.8.5.1.52}%
+\contentsline {subsubsection}{\numberline {8.5.1.53}INCLUDE\_xTaskGetSchedulerState}{44}{subsubsection.8.5.1.53}%
+\contentsline {subsubsection}{\numberline {8.5.1.54}INCLUDE\_xTimerPendFunctionCall}{44}{subsubsection.8.5.1.54}%
+\contentsline {subsubsection}{\numberline {8.5.1.55}USE\_CUSTOM\_SYSTICK\_HANDLER\_IMPLEMENTATION}{44}{subsubsection.8.5.1.55}%
+\contentsline {subsubsection}{\numberline {8.5.1.56}USE\_FreeRTOS\_HEAP\_4}{44}{subsubsection.8.5.1.56}%
+\contentsline {subsubsection}{\numberline {8.5.1.57}vPortSVCHandler}{44}{subsubsection.8.5.1.57}%
+\contentsline {subsubsection}{\numberline {8.5.1.58}xPortPendSVHandler}{44}{subsubsection.8.5.1.58}%
+\contentsline {section}{\numberline {8.6}Free\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}RTOSConfig.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{45}{section.8.6}%
+\contentsline {section}{\numberline {8.7}Referencia del archivo Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Inc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}gpio.h}{47}{section.8.7}%
+\contentsline {subsection}{\numberline {8.7.1}Descripción detallada}{47}{subsection.8.7.1}%
+\contentsline {subsection}{\numberline {8.7.2}Documentación de funciones}{47}{subsection.8.7.2}%
+\contentsline {subsubsection}{\numberline {8.7.2.1}MX\_GPIO\_Init()}{47}{subsubsection.8.7.2.1}%
+\contentsline {section}{\numberline {8.8}gpio.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{48}{section.8.8}%
+\contentsline {section}{\numberline {8.9}Referencia del archivo Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Inc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}gps.h}{48}{section.8.9}%
+\contentsline {subsection}{\numberline {8.9.1}Descripción detallada}{49}{subsection.8.9.1}%
+\contentsline {subsection}{\numberline {8.9.2}Documentación de «define»}{49}{subsection.8.9.2}%
+\contentsline {subsubsection}{\numberline {8.9.2.1}GPS\_RX\_BUFFER\_SIZE}{49}{subsubsection.8.9.2.1}%
+\contentsline {subsubsection}{\numberline {8.9.2.2}GPS\_SENTENCE\_MAX\_LENGTH}{49}{subsubsection.8.9.2.2}%
+\contentsline {subsection}{\numberline {8.9.3}Documentación de enumeraciones}{50}{subsection.8.9.3}%
+\contentsline {subsubsection}{\numberline {8.9.3.1}gps\_fix\_t}{50}{subsubsection.8.9.3.1}%
+\contentsline {subsubsection}{\numberline {8.9.3.2}gps\_status\_t}{50}{subsubsection.8.9.3.2}%
+\contentsline {subsection}{\numberline {8.9.4}Documentación de funciones}{50}{subsection.8.9.4}%
+\contentsline {subsubsection}{\numberline {8.9.4.1}GPS\_DataValid()}{50}{subsubsection.8.9.4.1}%
+\contentsline {subsubsection}{\numberline {8.9.4.2}GPS\_GetData()}{51}{subsubsection.8.9.4.2}%
+\contentsline {subsubsection}{\numberline {8.9.4.3}GPS\_Init()}{51}{subsubsection.8.9.4.3}%
+\contentsline {subsubsection}{\numberline {8.9.4.4}GPS\_Process()}{52}{subsubsection.8.9.4.4}%
+\contentsline {subsubsection}{\numberline {8.9.4.5}GPS\_RestartReceive()}{52}{subsubsection.8.9.4.5}%
+\contentsline {subsubsection}{\numberline {8.9.4.6}GPS\_UARTCallback()}{53}{subsubsection.8.9.4.6}%
+\contentsline {section}{\numberline {8.10}gps.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{53}{section.8.10}%
+\contentsline {section}{\numberline {8.11}Referencia del archivo Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Inc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}i2c.h}{54}{section.8.11}%
+\contentsline {subsection}{\numberline {8.11.1}Descripción detallada}{54}{subsection.8.11.1}%
+\contentsline {subsection}{\numberline {8.11.2}Documentación de funciones}{55}{subsection.8.11.2}%
+\contentsline {subsubsection}{\numberline {8.11.2.1}MX\_I2C1\_Init()}{55}{subsubsection.8.11.2.1}%
+\contentsline {subsection}{\numberline {8.11.3}Documentación de variables}{55}{subsection.8.11.3}%
+\contentsline {subsubsection}{\numberline {8.11.3.1}hi2c1}{55}{subsubsection.8.11.3.1}%
+\contentsline {section}{\numberline {8.12}i2c.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{55}{section.8.12}%
+\contentsline {section}{\numberline {8.13}Referencia del archivo Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Inc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main.h}{55}{section.8.13}%
+\contentsline {subsection}{\numberline {8.13.1}Descripción detallada}{57}{subsection.8.13.1}%
+\contentsline {subsection}{\numberline {8.13.2}Documentación de «define»}{57}{subsection.8.13.2}%
+\contentsline {subsubsection}{\numberline {8.13.2.1}Audio\_RST\_GPIO\_Port}{57}{subsubsection.8.13.2.1}%
+\contentsline {subsubsection}{\numberline {8.13.2.2}Audio\_RST\_Pin}{57}{subsubsection.8.13.2.2}%
+\contentsline {subsubsection}{\numberline {8.13.2.3}B1\_GPIO\_Port}{57}{subsubsection.8.13.2.3}%
+\contentsline {subsubsection}{\numberline {8.13.2.4}B1\_Pin}{58}{subsubsection.8.13.2.4}%
+\contentsline {subsubsection}{\numberline {8.13.2.5}BOOT1\_GPIO\_Port}{58}{subsubsection.8.13.2.5}%
+\contentsline {subsubsection}{\numberline {8.13.2.6}BOOT1\_Pin}{58}{subsubsection.8.13.2.6}%
+\contentsline {subsubsection}{\numberline {8.13.2.7}CLK\_IN\_GPIO\_Port}{58}{subsubsection.8.13.2.7}%
+\contentsline {subsubsection}{\numberline {8.13.2.8}CLK\_IN\_Pin}{58}{subsubsection.8.13.2.8}%
+\contentsline {subsubsection}{\numberline {8.13.2.9}CS\_I2C\_SPI\_GPIO\_Port}{58}{subsubsection.8.13.2.9}%
+\contentsline {subsubsection}{\numberline {8.13.2.10}CS\_I2C\_SPI\_Pin}{58}{subsubsection.8.13.2.10}%
+\contentsline {subsubsection}{\numberline {8.13.2.11}I2C1\_SCL\_IMU\_GPIO\_Port}{58}{subsubsection.8.13.2.11}%
+\contentsline {subsubsection}{\numberline {8.13.2.12}I2C1\_SCL\_IMU\_Pin}{58}{subsubsection.8.13.2.12}%
+\contentsline {subsubsection}{\numberline {8.13.2.13}I2C1\_SDA\_IMU\_GPIO\_Port}{58}{subsubsection.8.13.2.13}%
+\contentsline {subsubsection}{\numberline {8.13.2.14}I2C1\_SDA\_IMU\_Pin}{59}{subsubsection.8.13.2.14}%
+\contentsline {subsubsection}{\numberline {8.13.2.15}I2S3\_MCK\_GPIO\_Port}{59}{subsubsection.8.13.2.15}%
+\contentsline {subsubsection}{\numberline {8.13.2.16}I2S3\_MCK\_Pin}{59}{subsubsection.8.13.2.16}%
+\contentsline {subsubsection}{\numberline {8.13.2.17}I2S3\_SCK\_GPIO\_Port}{59}{subsubsection.8.13.2.17}%
+\contentsline {subsubsection}{\numberline {8.13.2.18}I2S3\_SCK\_Pin}{59}{subsubsection.8.13.2.18}%
+\contentsline {subsubsection}{\numberline {8.13.2.19}I2S3\_SD\_GPIO\_Port}{59}{subsubsection.8.13.2.19}%
+\contentsline {subsubsection}{\numberline {8.13.2.20}I2S3\_SD\_Pin}{59}{subsubsection.8.13.2.20}%
+\contentsline {subsubsection}{\numberline {8.13.2.21}I2S3\_WS\_GPIO\_Port}{59}{subsubsection.8.13.2.21}%
+\contentsline {subsubsection}{\numberline {8.13.2.22}I2S3\_WS\_Pin}{59}{subsubsection.8.13.2.22}%
+\contentsline {subsubsection}{\numberline {8.13.2.23}LD3\_GPIO\_Port}{59}{subsubsection.8.13.2.23}%
+\contentsline {subsubsection}{\numberline {8.13.2.24}LD3\_Pin}{60}{subsubsection.8.13.2.24}%
+\contentsline {subsubsection}{\numberline {8.13.2.25}LD4\_GPIO\_Port}{60}{subsubsection.8.13.2.25}%
+\contentsline {subsubsection}{\numberline {8.13.2.26}LD4\_Pin}{60}{subsubsection.8.13.2.26}%
+\contentsline {subsubsection}{\numberline {8.13.2.27}LD5\_GPIO\_Port}{60}{subsubsection.8.13.2.27}%
+\contentsline {subsubsection}{\numberline {8.13.2.28}LD5\_Pin}{60}{subsubsection.8.13.2.28}%
+\contentsline {subsubsection}{\numberline {8.13.2.29}LD6\_GPIO\_Port}{60}{subsubsection.8.13.2.29}%
+\contentsline {subsubsection}{\numberline {8.13.2.30}LD6\_Pin}{60}{subsubsection.8.13.2.30}%
+\contentsline {subsubsection}{\numberline {8.13.2.31}MEMS\_INT2\_GPIO\_Port}{60}{subsubsection.8.13.2.31}%
+\contentsline {subsubsection}{\numberline {8.13.2.32}MEMS\_INT2\_Pin}{60}{subsubsection.8.13.2.32}%
+\contentsline {subsubsection}{\numberline {8.13.2.33}OTG\_FS\_DM\_GPIO\_Port}{60}{subsubsection.8.13.2.33}%
+\contentsline {subsubsection}{\numberline {8.13.2.34}OTG\_FS\_DM\_Pin}{61}{subsubsection.8.13.2.34}%
+\contentsline {subsubsection}{\numberline {8.13.2.35}OTG\_FS\_DP\_GPIO\_Port}{61}{subsubsection.8.13.2.35}%
+\contentsline {subsubsection}{\numberline {8.13.2.36}OTG\_FS\_DP\_Pin}{61}{subsubsection.8.13.2.36}%
+\contentsline {subsubsection}{\numberline {8.13.2.37}OTG\_FS\_ID\_GPIO\_Port}{61}{subsubsection.8.13.2.37}%
+\contentsline {subsubsection}{\numberline {8.13.2.38}OTG\_FS\_ID\_Pin}{61}{subsubsection.8.13.2.38}%
+\contentsline {subsubsection}{\numberline {8.13.2.39}OTG\_FS\_OverCurrent\_GPIO\_Port}{61}{subsubsection.8.13.2.39}%
+\contentsline {subsubsection}{\numberline {8.13.2.40}OTG\_FS\_OverCurrent\_Pin}{61}{subsubsection.8.13.2.40}%
+\contentsline {subsubsection}{\numberline {8.13.2.41}OTG\_FS\_PowerSwitchOn\_GPIO\_Port}{61}{subsubsection.8.13.2.41}%
+\contentsline {subsubsection}{\numberline {8.13.2.42}OTG\_FS\_PowerSwitchOn\_Pin}{61}{subsubsection.8.13.2.42}%
+\contentsline {subsubsection}{\numberline {8.13.2.43}PC14\_OSC32\_IN\_GPIO\_Port}{61}{subsubsection.8.13.2.43}%
+\contentsline {subsubsection}{\numberline {8.13.2.44}PC14\_OSC32\_IN\_Pin}{62}{subsubsection.8.13.2.44}%
+\contentsline {subsubsection}{\numberline {8.13.2.45}PC15\_OSC32\_OUT\_GPIO\_Port}{62}{subsubsection.8.13.2.45}%
+\contentsline {subsubsection}{\numberline {8.13.2.46}PC15\_OSC32\_OUT\_Pin}{62}{subsubsection.8.13.2.46}%
+\contentsline {subsubsection}{\numberline {8.13.2.47}PDM\_OUT\_GPIO\_Port}{62}{subsubsection.8.13.2.47}%
+\contentsline {subsubsection}{\numberline {8.13.2.48}PDM\_OUT\_Pin}{62}{subsubsection.8.13.2.48}%
+\contentsline {subsubsection}{\numberline {8.13.2.49}PH0\_OSC\_IN\_GPIO\_Port}{62}{subsubsection.8.13.2.49}%
+\contentsline {subsubsection}{\numberline {8.13.2.50}PH0\_OSC\_IN\_Pin}{62}{subsubsection.8.13.2.50}%
+\contentsline {subsubsection}{\numberline {8.13.2.51}PH1\_OSC\_OUT\_GPIO\_Port}{62}{subsubsection.8.13.2.51}%
+\contentsline {subsubsection}{\numberline {8.13.2.52}PH1\_OSC\_OUT\_Pin}{62}{subsubsection.8.13.2.52}%
+\contentsline {subsubsection}{\numberline {8.13.2.53}SPI1\_MISO\_GPIO\_Port}{62}{subsubsection.8.13.2.53}%
+\contentsline {subsubsection}{\numberline {8.13.2.54}SPI1\_MISO\_Pin}{63}{subsubsection.8.13.2.54}%
+\contentsline {subsubsection}{\numberline {8.13.2.55}SPI1\_MOSI\_GPIO\_Port}{63}{subsubsection.8.13.2.55}%
+\contentsline {subsubsection}{\numberline {8.13.2.56}SPI1\_MOSI\_Pin}{63}{subsubsection.8.13.2.56}%
+\contentsline {subsubsection}{\numberline {8.13.2.57}SPI1\_SCK\_GPIO\_Port}{63}{subsubsection.8.13.2.57}%
+\contentsline {subsubsection}{\numberline {8.13.2.58}SPI1\_SCK\_Pin}{63}{subsubsection.8.13.2.58}%
+\contentsline {subsubsection}{\numberline {8.13.2.59}SWCLK\_GPIO\_Port}{63}{subsubsection.8.13.2.59}%
+\contentsline {subsubsection}{\numberline {8.13.2.60}SWCLK\_Pin}{63}{subsubsection.8.13.2.60}%
+\contentsline {subsubsection}{\numberline {8.13.2.61}SWDIO\_GPIO\_Port}{63}{subsubsection.8.13.2.61}%
+\contentsline {subsubsection}{\numberline {8.13.2.62}SWDIO\_Pin}{63}{subsubsection.8.13.2.62}%
+\contentsline {subsubsection}{\numberline {8.13.2.63}SWO\_GPIO\_Port}{63}{subsubsection.8.13.2.63}%
+\contentsline {subsubsection}{\numberline {8.13.2.64}SWO\_Pin}{64}{subsubsection.8.13.2.64}%
+\contentsline {subsubsection}{\numberline {8.13.2.65}VBUS\_FS\_GPIO\_Port}{64}{subsubsection.8.13.2.65}%
+\contentsline {subsubsection}{\numberline {8.13.2.66}VBUS\_FS\_Pin}{64}{subsubsection.8.13.2.66}%
+\contentsline {subsection}{\numberline {8.13.3}Documentación de funciones}{64}{subsection.8.13.3}%
+\contentsline {subsubsection}{\numberline {8.13.3.1}Error\_Handler()}{64}{subsubsection.8.13.3.1}%
+\contentsline {section}{\numberline {8.14}main.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{64}{section.8.14}%
+\contentsline {section}{\numberline {8.15}Referencia del archivo Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Inc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}sensor10\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}DoF.h}{65}{section.8.15}%
+\contentsline {subsection}{\numberline {8.15.1}Descripción detallada}{66}{subsection.8.15.1}%
+\contentsline {subsection}{\numberline {8.15.2}Documentación de enumeraciones}{66}{subsection.8.15.2}%
+\contentsline {subsubsection}{\numberline {8.15.2.1}SensorStatus\_t}{66}{subsubsection.8.15.2.1}%
+\contentsline {subsection}{\numberline {8.15.3}Documentación de funciones}{67}{subsection.8.15.3}%
+\contentsline {subsubsection}{\numberline {8.15.3.1}Sensor10DoF\_Calibrate()}{67}{subsubsection.8.15.3.1}%
+\contentsline {subsubsection}{\numberline {8.15.3.2}Sensor10DoF\_I2CRecover()}{67}{subsubsection.8.15.3.2}%
+\contentsline {subsubsection}{\numberline {8.15.3.3}Sensor10DoF\_Init()}{68}{subsubsection.8.15.3.3}%
+\contentsline {subsubsection}{\numberline {8.15.3.4}Sensor10DoF\_Read()}{68}{subsubsection.8.15.3.4}%
+\contentsline {subsubsection}{\numberline {8.15.3.5}Sensor10DoF\_Reset()}{69}{subsubsection.8.15.3.5}%
+\contentsline {section}{\numberline {8.16}sensor10\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Do\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}F.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{70}{section.8.16}%
+\contentsline {section}{\numberline {8.17}Referencia del archivo Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Inc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}stm32f4xx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hal\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}conf.h}{70}{section.8.17}%
+\contentsline {subsection}{\numberline {8.17.1}Documentación de «define»}{73}{subsection.8.17.1}%
+\contentsline {subsubsection}{\numberline {8.17.1.1}assert\_param}{73}{subsubsection.8.17.1.1}%
+\contentsline {subsubsection}{\numberline {8.17.1.2}DATA\_CACHE\_ENABLE}{73}{subsubsection.8.17.1.2}%
+\contentsline {subsubsection}{\numberline {8.17.1.3}DP83848\_PHY\_ADDRESS}{73}{subsubsection.8.17.1.3}%
+\contentsline {subsubsection}{\numberline {8.17.1.4}ETH\_RX\_BUF\_SIZE}{73}{subsubsection.8.17.1.4}%
+\contentsline {subsubsection}{\numberline {8.17.1.5}ETH\_RXBUFNB}{73}{subsubsection.8.17.1.5}%
+\contentsline {subsubsection}{\numberline {8.17.1.6}ETH\_TX\_BUF\_SIZE}{74}{subsubsection.8.17.1.6}%
+\contentsline {subsubsection}{\numberline {8.17.1.7}ETH\_TXBUFNB}{74}{subsubsection.8.17.1.7}%
+\contentsline {subsubsection}{\numberline {8.17.1.8}EXTERNAL\_CLOCK\_VALUE}{74}{subsubsection.8.17.1.8}%
+\contentsline {subsubsection}{\numberline {8.17.1.9}HAL\_CORTEX\_MODULE\_ENABLED}{74}{subsubsection.8.17.1.9}%
+\contentsline {subsubsection}{\numberline {8.17.1.10}HAL\_DMA\_MODULE\_ENABLED}{74}{subsubsection.8.17.1.10}%
+\contentsline {subsubsection}{\numberline {8.17.1.11}HAL\_EXTI\_MODULE\_ENABLED}{74}{subsubsection.8.17.1.11}%
+\contentsline {subsubsection}{\numberline {8.17.1.12}HAL\_FLASH\_MODULE\_ENABLED}{74}{subsubsection.8.17.1.12}%
+\contentsline {subsubsection}{\numberline {8.17.1.13}HAL\_GPIO\_MODULE\_ENABLED}{74}{subsubsection.8.17.1.13}%
+\contentsline {subsubsection}{\numberline {8.17.1.14}HAL\_I2C\_MODULE\_ENABLED}{74}{subsubsection.8.17.1.14}%
+\contentsline {subsubsection}{\numberline {8.17.1.15}HAL\_MODULE\_ENABLED}{75}{subsubsection.8.17.1.15}%
+\contentsline {subsubsection}{\numberline {8.17.1.16}HAL\_PWR\_MODULE\_ENABLED}{75}{subsubsection.8.17.1.16}%
+\contentsline {subsubsection}{\numberline {8.17.1.17}HAL\_RCC\_MODULE\_ENABLED}{75}{subsubsection.8.17.1.17}%
+\contentsline {subsubsection}{\numberline {8.17.1.18}HAL\_TIM\_MODULE\_ENABLED}{75}{subsubsection.8.17.1.18}%
+\contentsline {subsubsection}{\numberline {8.17.1.19}HAL\_UART\_MODULE\_ENABLED}{75}{subsubsection.8.17.1.19}%
+\contentsline {subsubsection}{\numberline {8.17.1.20}HSE\_STARTUP\_TIMEOUT}{75}{subsubsection.8.17.1.20}%
+\contentsline {subsubsection}{\numberline {8.17.1.21}HSE\_VALUE}{75}{subsubsection.8.17.1.21}%
+\contentsline {subsubsection}{\numberline {8.17.1.22}HSI\_VALUE}{75}{subsubsection.8.17.1.22}%
+\contentsline {subsubsection}{\numberline {8.17.1.23}INSTRUCTION\_CACHE\_ENABLE}{76}{subsubsection.8.17.1.23}%
+\contentsline {subsubsection}{\numberline {8.17.1.24}LSE\_STARTUP\_TIMEOUT}{76}{subsubsection.8.17.1.24}%
+\contentsline {subsubsection}{\numberline {8.17.1.25}LSE\_VALUE}{76}{subsubsection.8.17.1.25}%
+\contentsline {subsubsection}{\numberline {8.17.1.26}LSI\_VALUE}{76}{subsubsection.8.17.1.26}%
+\contentsline {subsubsection}{\numberline {8.17.1.27}MAC\_ADDR0}{76}{subsubsection.8.17.1.27}%
+\contentsline {subsubsection}{\numberline {8.17.1.28}MAC\_ADDR1}{76}{subsubsection.8.17.1.28}%
+\contentsline {subsubsection}{\numberline {8.17.1.29}MAC\_ADDR2}{76}{subsubsection.8.17.1.29}%
+\contentsline {subsubsection}{\numberline {8.17.1.30}MAC\_ADDR3}{76}{subsubsection.8.17.1.30}%
+\contentsline {subsubsection}{\numberline {8.17.1.31}MAC\_ADDR4}{77}{subsubsection.8.17.1.31}%
+\contentsline {subsubsection}{\numberline {8.17.1.32}MAC\_ADDR5}{77}{subsubsection.8.17.1.32}%
+\contentsline {subsubsection}{\numberline {8.17.1.33}PHY\_AUTONEGO\_COMPLETE}{77}{subsubsection.8.17.1.33}%
+\contentsline {subsubsection}{\numberline {8.17.1.34}PHY\_AUTONEGOTIATION}{77}{subsubsection.8.17.1.34}%
+\contentsline {subsubsection}{\numberline {8.17.1.35}PHY\_BCR}{77}{subsubsection.8.17.1.35}%
+\contentsline {subsubsection}{\numberline {8.17.1.36}PHY\_BSR}{77}{subsubsection.8.17.1.36}%
+\contentsline {subsubsection}{\numberline {8.17.1.37}PHY\_CONFIG\_DELAY}{77}{subsubsection.8.17.1.37}%
+\contentsline {subsubsection}{\numberline {8.17.1.38}PHY\_DUPLEX\_STATUS}{77}{subsubsection.8.17.1.38}%
+\contentsline {subsubsection}{\numberline {8.17.1.39}PHY\_FULLDUPLEX\_100M}{78}{subsubsection.8.17.1.39}%
+\contentsline {subsubsection}{\numberline {8.17.1.40}PHY\_FULLDUPLEX\_10M}{78}{subsubsection.8.17.1.40}%
+\contentsline {subsubsection}{\numberline {8.17.1.41}PHY\_HALFDUPLEX\_100M}{78}{subsubsection.8.17.1.41}%
+\contentsline {subsubsection}{\numberline {8.17.1.42}PHY\_HALFDUPLEX\_10M}{78}{subsubsection.8.17.1.42}%
+\contentsline {subsubsection}{\numberline {8.17.1.43}PHY\_ISOLATE}{78}{subsubsection.8.17.1.43}%
+\contentsline {subsubsection}{\numberline {8.17.1.44}PHY\_JABBER\_DETECTION}{78}{subsubsection.8.17.1.44}%
+\contentsline {subsubsection}{\numberline {8.17.1.45}PHY\_LINKED\_STATUS}{78}{subsubsection.8.17.1.45}%
+\contentsline {subsubsection}{\numberline {8.17.1.46}PHY\_LOOPBACK}{78}{subsubsection.8.17.1.46}%
+\contentsline {subsubsection}{\numberline {8.17.1.47}PHY\_POWERDOWN}{79}{subsubsection.8.17.1.47}%
+\contentsline {subsubsection}{\numberline {8.17.1.48}PHY\_READ\_TO}{79}{subsubsection.8.17.1.48}%
+\contentsline {subsubsection}{\numberline {8.17.1.49}PHY\_RESET}{79}{subsubsection.8.17.1.49}%
+\contentsline {subsubsection}{\numberline {8.17.1.50}PHY\_RESET\_DELAY}{79}{subsubsection.8.17.1.50}%
+\contentsline {subsubsection}{\numberline {8.17.1.51}PHY\_RESTART\_AUTONEGOTIATION}{79}{subsubsection.8.17.1.51}%
+\contentsline {subsubsection}{\numberline {8.17.1.52}PHY\_SPEED\_STATUS}{79}{subsubsection.8.17.1.52}%
+\contentsline {subsubsection}{\numberline {8.17.1.53}PHY\_SR}{79}{subsubsection.8.17.1.53}%
+\contentsline {subsubsection}{\numberline {8.17.1.54}PHY\_WRITE\_TO}{79}{subsubsection.8.17.1.54}%
+\contentsline {subsubsection}{\numberline {8.17.1.55}PREFETCH\_ENABLE}{80}{subsubsection.8.17.1.55}%
+\contentsline {subsubsection}{\numberline {8.17.1.56}TICK\_INT\_PRIORITY}{80}{subsubsection.8.17.1.56}%
+\contentsline {subsubsection}{\numberline {8.17.1.57}USE\_HAL\_ADC\_REGISTER\_CALLBACKS}{80}{subsubsection.8.17.1.57}%
+\contentsline {subsubsection}{\numberline {8.17.1.58}USE\_HAL\_CAN\_REGISTER\_CALLBACKS}{80}{subsubsection.8.17.1.58}%
+\contentsline {subsubsection}{\numberline {8.17.1.59}USE\_HAL\_CEC\_REGISTER\_CALLBACKS}{80}{subsubsection.8.17.1.59}%
+\contentsline {subsubsection}{\numberline {8.17.1.60}USE\_HAL\_CRYP\_REGISTER\_CALLBACKS}{80}{subsubsection.8.17.1.60}%
+\contentsline {subsubsection}{\numberline {8.17.1.61}USE\_HAL\_DAC\_REGISTER\_CALLBACKS}{80}{subsubsection.8.17.1.61}%
+\contentsline {subsubsection}{\numberline {8.17.1.62}USE\_HAL\_DCMI\_REGISTER\_CALLBACKS}{80}{subsubsection.8.17.1.62}%
+\contentsline {subsubsection}{\numberline {8.17.1.63}USE\_HAL\_DFSDM\_REGISTER\_CALLBACKS}{80}{subsubsection.8.17.1.63}%
+\contentsline {subsubsection}{\numberline {8.17.1.64}USE\_HAL\_DMA2D\_REGISTER\_CALLBACKS}{80}{subsubsection.8.17.1.64}%
+\contentsline {subsubsection}{\numberline {8.17.1.65}USE\_HAL\_DSI\_REGISTER\_CALLBACKS}{81}{subsubsection.8.17.1.65}%
+\contentsline {subsubsection}{\numberline {8.17.1.66}USE\_HAL\_ETH\_REGISTER\_CALLBACKS}{81}{subsubsection.8.17.1.66}%
+\contentsline {subsubsection}{\numberline {8.17.1.67}USE\_HAL\_FMPI2C\_REGISTER\_CALLBACKS}{81}{subsubsection.8.17.1.67}%
+\contentsline {subsubsection}{\numberline {8.17.1.68}USE\_HAL\_FMPSMBUS\_REGISTER\_CALLBACKS}{81}{subsubsection.8.17.1.68}%
+\contentsline {subsubsection}{\numberline {8.17.1.69}USE\_HAL\_HASH\_REGISTER\_CALLBACKS}{81}{subsubsection.8.17.1.69}%
+\contentsline {subsubsection}{\numberline {8.17.1.70}USE\_HAL\_HCD\_REGISTER\_CALLBACKS}{81}{subsubsection.8.17.1.70}%
+\contentsline {subsubsection}{\numberline {8.17.1.71}USE\_HAL\_I2C\_REGISTER\_CALLBACKS}{81}{subsubsection.8.17.1.71}%
+\contentsline {subsubsection}{\numberline {8.17.1.72}USE\_HAL\_I2S\_REGISTER\_CALLBACKS}{81}{subsubsection.8.17.1.72}%
+\contentsline {subsubsection}{\numberline {8.17.1.73}USE\_HAL\_IRDA\_REGISTER\_CALLBACKS}{81}{subsubsection.8.17.1.73}%
+\contentsline {subsubsection}{\numberline {8.17.1.74}USE\_HAL\_LPTIM\_REGISTER\_CALLBACKS}{81}{subsubsection.8.17.1.74}%
+\contentsline {subsubsection}{\numberline {8.17.1.75}USE\_HAL\_LTDC\_REGISTER\_CALLBACKS}{82}{subsubsection.8.17.1.75}%
+\contentsline {subsubsection}{\numberline {8.17.1.76}USE\_HAL\_MMC\_REGISTER\_CALLBACKS}{82}{subsubsection.8.17.1.76}%
+\contentsline {subsubsection}{\numberline {8.17.1.77}USE\_HAL\_NAND\_REGISTER\_CALLBACKS}{82}{subsubsection.8.17.1.77}%
+\contentsline {subsubsection}{\numberline {8.17.1.78}USE\_HAL\_NOR\_REGISTER\_CALLBACKS}{82}{subsubsection.8.17.1.78}%
+\contentsline {subsubsection}{\numberline {8.17.1.79}USE\_HAL\_PCCARD\_REGISTER\_CALLBACKS}{82}{subsubsection.8.17.1.79}%
+\contentsline {subsubsection}{\numberline {8.17.1.80}USE\_HAL\_PCD\_REGISTER\_CALLBACKS}{82}{subsubsection.8.17.1.80}%
+\contentsline {subsubsection}{\numberline {8.17.1.81}USE\_HAL\_QSPI\_REGISTER\_CALLBACKS}{82}{subsubsection.8.17.1.81}%
+\contentsline {subsubsection}{\numberline {8.17.1.82}USE\_HAL\_RNG\_REGISTER\_CALLBACKS}{82}{subsubsection.8.17.1.82}%
+\contentsline {subsubsection}{\numberline {8.17.1.83}USE\_HAL\_RTC\_REGISTER\_CALLBACKS}{82}{subsubsection.8.17.1.83}%
+\contentsline {subsubsection}{\numberline {8.17.1.84}USE\_HAL\_SAI\_REGISTER\_CALLBACKS}{82}{subsubsection.8.17.1.84}%
+\contentsline {subsubsection}{\numberline {8.17.1.85}USE\_HAL\_SD\_REGISTER\_CALLBACKS}{83}{subsubsection.8.17.1.85}%
+\contentsline {subsubsection}{\numberline {8.17.1.86}USE\_HAL\_SDRAM\_REGISTER\_CALLBACKS}{83}{subsubsection.8.17.1.86}%
+\contentsline {subsubsection}{\numberline {8.17.1.87}USE\_HAL\_SMARTCARD\_REGISTER\_CALLBACKS}{83}{subsubsection.8.17.1.87}%
+\contentsline {subsubsection}{\numberline {8.17.1.88}USE\_HAL\_SMBUS\_REGISTER\_CALLBACKS}{83}{subsubsection.8.17.1.88}%
+\contentsline {subsubsection}{\numberline {8.17.1.89}USE\_HAL\_SPDIFRX\_REGISTER\_CALLBACKS}{83}{subsubsection.8.17.1.89}%
+\contentsline {subsubsection}{\numberline {8.17.1.90}USE\_HAL\_SPI\_REGISTER\_CALLBACKS}{83}{subsubsection.8.17.1.90}%
+\contentsline {subsubsection}{\numberline {8.17.1.91}USE\_HAL\_SRAM\_REGISTER\_CALLBACKS}{83}{subsubsection.8.17.1.91}%
+\contentsline {subsubsection}{\numberline {8.17.1.92}USE\_HAL\_TIM\_REGISTER\_CALLBACKS}{83}{subsubsection.8.17.1.92}%
+\contentsline {subsubsection}{\numberline {8.17.1.93}USE\_HAL\_UART\_REGISTER\_CALLBACKS}{83}{subsubsection.8.17.1.93}%
+\contentsline {subsubsection}{\numberline {8.17.1.94}USE\_HAL\_USART\_REGISTER\_CALLBACKS}{83}{subsubsection.8.17.1.94}%
+\contentsline {subsubsection}{\numberline {8.17.1.95}USE\_HAL\_WWDG\_REGISTER\_CALLBACKS}{84}{subsubsection.8.17.1.95}%
+\contentsline {subsubsection}{\numberline {8.17.1.96}USE\_RTOS}{84}{subsubsection.8.17.1.96}%
+\contentsline {subsubsection}{\numberline {8.17.1.97}USE\_SPI\_CRC}{84}{subsubsection.8.17.1.97}%
+\contentsline {subsubsection}{\numberline {8.17.1.98}VDD\_VALUE}{84}{subsubsection.8.17.1.98}%
+\contentsline {section}{\numberline {8.18}stm32f4xx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hal\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}conf.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{84}{section.8.18}%
+\contentsline {section}{\numberline {8.19}Referencia del archivo Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Inc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}tim.h}{89}{section.8.19}%
+\contentsline {subsection}{\numberline {8.19.1}Descripción detallada}{90}{subsection.8.19.1}%
+\contentsline {subsection}{\numberline {8.19.2}Documentación de funciones}{90}{subsection.8.19.2}%
+\contentsline {subsubsection}{\numberline {8.19.2.1}MX\_TIM1\_Init()}{90}{subsubsection.8.19.2.1}%
+\contentsline {subsubsection}{\numberline {8.19.2.2}MX\_TIM3\_Init()}{90}{subsubsection.8.19.2.2}%
+\contentsline {subsection}{\numberline {8.19.3}Documentación de variables}{90}{subsection.8.19.3}%
+\contentsline {subsubsection}{\numberline {8.19.3.1}htim1}{90}{subsubsection.8.19.3.1}%
+\contentsline {subsubsection}{\numberline {8.19.3.2}htim3}{90}{subsubsection.8.19.3.2}%
+\contentsline {section}{\numberline {8.20}tim.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{91}{section.8.20}%
+\contentsline {section}{\numberline {8.21}Referencia del archivo Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Inc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}usart.h}{91}{section.8.21}%
+\contentsline {subsection}{\numberline {8.21.1}Descripción detallada}{92}{subsection.8.21.1}%
+\contentsline {subsection}{\numberline {8.21.2}Documentación de funciones}{92}{subsection.8.21.2}%
+\contentsline {subsubsection}{\numberline {8.21.2.1}MX\_USART2\_UART\_Init()}{92}{subsubsection.8.21.2.1}%
+\contentsline {subsubsection}{\numberline {8.21.2.2}MX\_USART3\_UART\_Init()}{92}{subsubsection.8.21.2.2}%
+\contentsline {subsection}{\numberline {8.21.3}Documentación de variables}{92}{subsection.8.21.3}%
+\contentsline {subsubsection}{\numberline {8.21.3.1}huart2}{92}{subsubsection.8.21.3.1}%
+\contentsline {subsubsection}{\numberline {8.21.3.2}huart3}{92}{subsubsection.8.21.3.2}%
+\contentsline {section}{\numberline {8.22}usart.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{93}{section.8.22}%
+\contentsline {section}{\numberline {8.23}Referencia del archivo Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Inc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}wifi.h}{93}{section.8.23}%
+\contentsline {subsection}{\numberline {8.23.1}Descripción detallada}{94}{subsection.8.23.1}%
+\contentsline {subsection}{\numberline {8.23.2}Documentación de funciones}{95}{subsection.8.23.2}%
+\contentsline {subsubsection}{\numberline {8.23.2.1}WIFI\_ConnectAP()}{95}{subsubsection.8.23.2.1}%
+\contentsline {subsubsection}{\numberline {8.23.2.2}WIFI\_DisconnectAP()}{96}{subsubsection.8.23.2.2}%
+\contentsline {subsubsection}{\numberline {8.23.2.3}WIFI\_GetIP()}{96}{subsubsection.8.23.2.3}%
+\contentsline {subsubsection}{\numberline {8.23.2.4}WIFI\_GetRSSI()}{97}{subsubsection.8.23.2.4}%
+\contentsline {subsubsection}{\numberline {8.23.2.5}WIFI\_GetState()}{97}{subsubsection.8.23.2.5}%
+\contentsline {subsubsection}{\numberline {8.23.2.6}WIFI\_HTTP\_PostJSON()}{98}{subsubsection.8.23.2.6}%
+\contentsline {subsubsection}{\numberline {8.23.2.7}WIFI\_Init()}{98}{subsubsection.8.23.2.7}%
+\contentsline {subsubsection}{\numberline {8.23.2.8}WIFI\_MQTT\_Connect()}{99}{subsubsection.8.23.2.8}%
+\contentsline {subsubsection}{\numberline {8.23.2.9}WIFI\_MQTT\_Disconnect()}{100}{subsubsection.8.23.2.9}%
+\contentsline {subsubsection}{\numberline {8.23.2.10}WIFI\_MQTT\_Publish()}{100}{subsubsection.8.23.2.10}%
+\contentsline {subsubsection}{\numberline {8.23.2.11}WIFI\_MQTT\_Subscribe()}{101}{subsubsection.8.23.2.11}%
+\contentsline {subsubsection}{\numberline {8.23.2.12}WIFI\_MQTT\_UserConfig()}{102}{subsubsection.8.23.2.12}%
+\contentsline {subsubsection}{\numberline {8.23.2.13}WIFI\_Process()}{102}{subsubsection.8.23.2.13}%
+\contentsline {subsubsection}{\numberline {8.23.2.14}WIFI\_Reconnect()}{103}{subsubsection.8.23.2.14}%
+\contentsline {subsubsection}{\numberline {8.23.2.15}WIFI\_Reset()}{103}{subsubsection.8.23.2.15}%
+\contentsline {subsubsection}{\numberline {8.23.2.16}WIFI\_SendJSON()}{104}{subsubsection.8.23.2.16}%
+\contentsline {subsubsection}{\numberline {8.23.2.17}WIFI\_SendRaw()}{104}{subsubsection.8.23.2.17}%
+\contentsline {subsubsection}{\numberline {8.23.2.18}WIFI\_SetStationMode()}{105}{subsubsection.8.23.2.18}%
+\contentsline {subsubsection}{\numberline {8.23.2.19}WIFI\_TCPClose()}{105}{subsubsection.8.23.2.19}%
+\contentsline {subsubsection}{\numberline {8.23.2.20}WIFI\_TCPConnect()}{105}{subsubsection.8.23.2.20}%
+\contentsline {subsubsection}{\numberline {8.23.2.21}WIFI\_Test()}{106}{subsubsection.8.23.2.21}%
+\contentsline {section}{\numberline {8.24}wifi.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{106}{section.8.24}%
+\contentsline {section}{\numberline {8.25}Referencia del archivo Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Inc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}wifi\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}types.h}{107}{section.8.25}%
+\contentsline {subsection}{\numberline {8.25.1}Descripción detallada}{107}{subsection.8.25.1}%
+\contentsline {subsection}{\numberline {8.25.2}Documentación de enumeraciones}{108}{subsection.8.25.2}%
+\contentsline {subsubsection}{\numberline {8.25.2.1}wifi\_state\_t}{108}{subsubsection.8.25.2.1}%
+\contentsline {subsubsection}{\numberline {8.25.2.2}wifi\_status\_t}{108}{subsubsection.8.25.2.2}%
+\contentsline {section}{\numberline {8.26}wifi\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}types.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{108}{section.8.26}%
+\contentsline {section}{\numberline {8.27}Referencia del archivo Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}formatter\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}data.c}{109}{section.8.27}%
+\contentsline {subsection}{\numberline {8.27.1}Descripción detallada}{109}{subsection.8.27.1}%
+\contentsline {subsection}{\numberline {8.27.2}Documentación de funciones}{110}{subsection.8.27.2}%
+\contentsline {subsubsection}{\numberline {8.27.2.1}EnvData\_to\_json()}{110}{subsubsection.8.27.2.1}%
+\contentsline {subsubsection}{\numberline {8.27.2.2}EnvDataPacket\_Init()}{111}{subsubsection.8.27.2.2}%
+\contentsline {subsubsection}{\numberline {8.27.2.3}GpsData\_to\_json()}{111}{subsubsection.8.27.2.3}%
+\contentsline {subsubsection}{\numberline {8.27.2.4}GpsDataPacket\_Init()}{112}{subsubsection.8.27.2.4}%
+\contentsline {subsubsection}{\numberline {8.27.2.5}ImuData\_to\_json()}{113}{subsubsection.8.27.2.5}%
+\contentsline {subsubsection}{\numberline {8.27.2.6}ImuDataPacket\_Init()}{114}{subsubsection.8.27.2.6}%
+\contentsline {section}{\numberline {8.28}Referencia del archivo Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}freertos.c}{115}{section.8.28}%
+\contentsline {subsection}{\numberline {8.28.1}Descripción detallada}{117}{subsection.8.28.1}%
+\contentsline {subsection}{\numberline {8.28.2}Documentación de «define»}{117}{subsection.8.28.2}%
+\contentsline {subsubsection}{\numberline {8.28.2.1}PAYLOAD\_LENGHT}{117}{subsubsection.8.28.2.1}%
+\contentsline {subsubsection}{\numberline {8.28.2.2}SERVER\_HOST}{117}{subsubsection.8.28.2.2}%
+\contentsline {subsubsection}{\numberline {8.28.2.3}WIFI\_TEST\_PASS}{118}{subsubsection.8.28.2.3}%
+\contentsline {subsubsection}{\numberline {8.28.2.4}WIFI\_TEST\_SSID}{118}{subsubsection.8.28.2.4}%
+\contentsline {subsection}{\numberline {8.28.3}Documentación de funciones}{118}{subsection.8.28.3}%
+\contentsline {subsubsection}{\numberline {8.28.3.1}MX\_FREERTOS\_Init()}{118}{subsubsection.8.28.3.1}%
+\contentsline {subsubsection}{\numberline {8.28.3.2}StartGpsTask()}{118}{subsubsection.8.28.3.2}%
+\contentsline {subsubsection}{\numberline {8.28.3.3}StartImuTask()}{119}{subsubsection.8.28.3.3}%
+\contentsline {subsubsection}{\numberline {8.28.3.4}StartPacketTask()}{119}{subsubsection.8.28.3.4}%
+\contentsline {subsubsection}{\numberline {8.28.3.5}StartWifiTask()}{119}{subsubsection.8.28.3.5}%
+\contentsline {subsection}{\numberline {8.28.4}Documentación de variables}{120}{subsection.8.28.4}%
+\contentsline {subsubsection}{\numberline {8.28.4.1}envPacket}{120}{subsubsection.8.28.4.1}%
+\contentsline {subsubsection}{\numberline {8.28.4.2}gps\_st}{120}{subsubsection.8.28.4.2}%
+\contentsline {subsubsection}{\numberline {8.28.4.3}gpsDataUpdated}{120}{subsubsection.8.28.4.3}%
+\contentsline {subsubsection}{\numberline {8.28.4.4}gpsMutex}{120}{subsubsection.8.28.4.4}%
+\contentsline {subsubsection}{\numberline {8.28.4.5}gpsPacket}{120}{subsubsection.8.28.4.5}%
+\contentsline {subsubsection}{\numberline {8.28.4.6}gpsPacketToSend}{120}{subsubsection.8.28.4.6}%
+\contentsline {subsubsection}{\numberline {8.28.4.7}gpsPacketToUpdate}{120}{subsubsection.8.28.4.7}%
+\contentsline {subsubsection}{\numberline {8.28.4.8}gpsTask\_attributes}{121}{subsubsection.8.28.4.8}%
+\contentsline {subsubsection}{\numberline {8.28.4.9}gpsTaskHandle}{121}{subsubsection.8.28.4.9}%
+\contentsline {subsubsection}{\numberline {8.28.4.10}huart2}{121}{subsubsection.8.28.4.10}%
+\contentsline {subsubsection}{\numberline {8.28.4.11}huart3}{121}{subsubsection.8.28.4.11}%
+\contentsline {subsubsection}{\numberline {8.28.4.12}imu\_data}{121}{subsubsection.8.28.4.12}%
+\contentsline {subsubsection}{\numberline {8.28.4.13}imuDataUpdated}{122}{subsubsection.8.28.4.13}%
+\contentsline {subsubsection}{\numberline {8.28.4.14}imuMutex}{122}{subsubsection.8.28.4.14}%
+\contentsline {subsubsection}{\numberline {8.28.4.15}imuPacket}{122}{subsubsection.8.28.4.15}%
+\contentsline {subsubsection}{\numberline {8.28.4.16}imuPacketToSend}{122}{subsubsection.8.28.4.16}%
+\contentsline {subsubsection}{\numberline {8.28.4.17}imuPacketToUpdate}{122}{subsubsection.8.28.4.17}%
+\contentsline {subsubsection}{\numberline {8.28.4.18}imuTask\_attributes}{122}{subsubsection.8.28.4.18}%
+\contentsline {subsubsection}{\numberline {8.28.4.19}imuTaskHandle}{123}{subsubsection.8.28.4.19}%
+\contentsline {subsubsection}{\numberline {8.28.4.20}packetMutex}{123}{subsubsection.8.28.4.20}%
+\contentsline {subsubsection}{\numberline {8.28.4.21}packetTask\_attributes}{123}{subsubsection.8.28.4.21}%
+\contentsline {subsubsection}{\numberline {8.28.4.22}packetTaskHandle}{123}{subsubsection.8.28.4.22}%
+\contentsline {subsubsection}{\numberline {8.28.4.23}payload\_envPacket}{123}{subsubsection.8.28.4.23}%
+\contentsline {subsubsection}{\numberline {8.28.4.24}payload\_gpsPacket}{123}{subsubsection.8.28.4.24}%
+\contentsline {subsubsection}{\numberline {8.28.4.25}payload\_imuPacket}{124}{subsubsection.8.28.4.25}%
+\contentsline {subsubsection}{\numberline {8.28.4.26}wifi\_st}{124}{subsubsection.8.28.4.26}%
+\contentsline {subsubsection}{\numberline {8.28.4.27}wifiTask\_attributes}{124}{subsubsection.8.28.4.27}%
+\contentsline {subsubsection}{\numberline {8.28.4.28}wifiTaskHandle}{124}{subsubsection.8.28.4.28}%
+\contentsline {section}{\numberline {8.29}Referencia del archivo Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}gps.c}{124}{section.8.29}%
+\contentsline {subsection}{\numberline {8.29.1}Descripción detallada}{126}{subsection.8.29.1}%
+\contentsline {subsection}{\numberline {8.29.2}Documentación de funciones}{126}{subsection.8.29.2}%
+\contentsline {subsubsection}{\numberline {8.29.2.1}GPS\_DataValid()}{126}{subsubsection.8.29.2.1}%
+\contentsline {subsubsection}{\numberline {8.29.2.2}GPS\_GetData()}{127}{subsubsection.8.29.2.2}%
+\contentsline {subsubsection}{\numberline {8.29.2.3}GPS\_Init()}{127}{subsubsection.8.29.2.3}%
+\contentsline {subsubsection}{\numberline {8.29.2.4}gps\_nmea\_to\_decimal()}{128}{subsubsection.8.29.2.4}%
+\contentsline {subsubsection}{\numberline {8.29.2.5}gps\_parse\_gga()}{128}{subsubsection.8.29.2.5}%
+\contentsline {subsubsection}{\numberline {8.29.2.6}gps\_parse\_rmc()}{129}{subsubsection.8.29.2.6}%
+\contentsline {subsubsection}{\numberline {8.29.2.7}GPS\_Process()}{129}{subsubsection.8.29.2.7}%
+\contentsline {subsubsection}{\numberline {8.29.2.8}GPS\_RestartReceive()}{129}{subsubsection.8.29.2.8}%
+\contentsline {subsubsection}{\numberline {8.29.2.9}gps\_rx\_pop()}{130}{subsubsection.8.29.2.9}%
+\contentsline {subsubsection}{\numberline {8.29.2.10}gps\_rx\_push()}{130}{subsubsection.8.29.2.10}%
+\contentsline {subsubsection}{\numberline {8.29.2.11}GPS\_UARTCallback()}{130}{subsubsection.8.29.2.11}%
+\contentsline {section}{\numberline {8.30}Referencia del archivo Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}sensor10\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}DoF.c}{131}{section.8.30}%
+\contentsline {subsection}{\numberline {8.30.1}Descripción detallada}{132}{subsection.8.30.1}%
+\contentsline {subsection}{\numberline {8.30.2}Documentación de funciones}{133}{subsection.8.30.2}%
+\contentsline {subsubsection}{\numberline {8.30.2.1}ACC\_Init()}{133}{subsubsection.8.30.2.1}%
+\contentsline {subsubsection}{\numberline {8.30.2.2}BMP180\_ReadCalibration()}{133}{subsubsection.8.30.2.2}%
+\contentsline {subsubsection}{\numberline {8.30.2.3}BMP180\_ReadUP()}{133}{subsubsection.8.30.2.3}%
+\contentsline {subsubsection}{\numberline {8.30.2.4}BMP180\_ReadUT()}{134}{subsubsection.8.30.2.4}%
+\contentsline {subsubsection}{\numberline {8.30.2.5}GYR\_Init()}{134}{subsubsection.8.30.2.5}%
+\contentsline {subsubsection}{\numberline {8.30.2.6}I2C\_Read()}{134}{subsubsection.8.30.2.6}%
+\contentsline {subsubsection}{\numberline {8.30.2.7}I2C\_Write()}{135}{subsubsection.8.30.2.7}%
+\contentsline {subsubsection}{\numberline {8.30.2.8}MAG\_Init()}{135}{subsubsection.8.30.2.8}%
+\contentsline {subsubsection}{\numberline {8.30.2.9}Sensor10DoF\_Calibrate()}{136}{subsubsection.8.30.2.9}%
+\contentsline {subsubsection}{\numberline {8.30.2.10}Sensor10DoF\_CalibrateGyro\_Internal()}{136}{subsubsection.8.30.2.10}%
+\contentsline {subsubsection}{\numberline {8.30.2.11}Sensor10DoF\_I2CRecover()}{136}{subsubsection.8.30.2.11}%
+\contentsline {subsubsection}{\numberline {8.30.2.12}Sensor10DoF\_Init()}{137}{subsubsection.8.30.2.12}%
+\contentsline {subsubsection}{\numberline {8.30.2.13}Sensor10DoF\_Read()}{137}{subsubsection.8.30.2.13}%
+\contentsline {subsubsection}{\numberline {8.30.2.14}Sensor10DoF\_Reset()}{138}{subsubsection.8.30.2.14}%
+\contentsline {subsection}{\numberline {8.30.3}Documentación de variables}{138}{subsection.8.30.3}%
+\contentsline {subsubsection}{\numberline {8.30.3.1}AC1}{138}{subsubsection.8.30.3.1}%
+\contentsline {subsubsection}{\numberline {8.30.3.2}AC2}{139}{subsubsection.8.30.3.2}%
+\contentsline {subsubsection}{\numberline {8.30.3.3}AC3}{139}{subsubsection.8.30.3.3}%
+\contentsline {subsubsection}{\numberline {8.30.3.4}AC4}{139}{subsubsection.8.30.3.4}%
+\contentsline {subsubsection}{\numberline {8.30.3.5}AC5}{139}{subsubsection.8.30.3.5}%
+\contentsline {subsubsection}{\numberline {8.30.3.6}AC6}{139}{subsubsection.8.30.3.6}%
+\contentsline {subsubsection}{\numberline {8.30.3.7}B1}{139}{subsubsection.8.30.3.7}%
+\contentsline {subsubsection}{\numberline {8.30.3.8}B2}{139}{subsubsection.8.30.3.8}%
+\contentsline {subsubsection}{\numberline {8.30.3.9}gyro\_x\_offset}{139}{subsubsection.8.30.3.9}%
+\contentsline {subsubsection}{\numberline {8.30.3.10}gyro\_y\_offset}{139}{subsubsection.8.30.3.10}%
+\contentsline {subsubsection}{\numberline {8.30.3.11}gyro\_z\_offset}{140}{subsubsection.8.30.3.11}%
+\contentsline {subsubsection}{\numberline {8.30.3.12}hi2c1}{140}{subsubsection.8.30.3.12}%
+\contentsline {subsubsection}{\numberline {8.30.3.13}MB}{140}{subsubsection.8.30.3.13}%
+\contentsline {subsubsection}{\numberline {8.30.3.14}MC}{140}{subsubsection.8.30.3.14}%
+\contentsline {subsubsection}{\numberline {8.30.3.15}MD}{140}{subsubsection.8.30.3.15}%
+\contentsline {section}{\numberline {8.31}Referencia del archivo Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}stm32f4xx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hal\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}msp.c}{140}{section.8.31}%
+\contentsline {subsection}{\numberline {8.31.1}Descripción detallada}{140}{subsection.8.31.1}%
+\contentsline {subsection}{\numberline {8.31.2}Documentación de funciones}{141}{subsection.8.31.2}%
+\contentsline {subsubsection}{\numberline {8.31.2.1}HAL\_MspInit()}{141}{subsubsection.8.31.2.1}%
+\contentsline {section}{\numberline {8.32}Referencia del archivo Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}stm32f4xx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hal\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}timebase\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}tim.c}{141}{section.8.32}%
+\contentsline {subsection}{\numberline {8.32.1}Descripción detallada}{141}{subsection.8.32.1}%
+\contentsline {subsection}{\numberline {8.32.2}Documentación de funciones}{142}{subsection.8.32.2}%
+\contentsline {subsubsection}{\numberline {8.32.2.1}HAL\_InitTick()}{142}{subsubsection.8.32.2.1}%
+\contentsline {subsubsection}{\numberline {8.32.2.2}HAL\_ResumeTick()}{142}{subsubsection.8.32.2.2}%
+\contentsline {subsubsection}{\numberline {8.32.2.3}HAL\_SuspendTick()}{143}{subsubsection.8.32.2.3}%
+\contentsline {subsection}{\numberline {8.32.3}Documentación de variables}{143}{subsection.8.32.3}%
+\contentsline {subsubsection}{\numberline {8.32.3.1}htim2}{143}{subsubsection.8.32.3.1}%
+\contentsline {section}{\numberline {8.33}Referencia del archivo Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}syscalls.c}{143}{section.8.33}%
+\contentsline {subsection}{\numberline {8.33.1}Descripción detallada}{144}{subsection.8.33.1}%
+\contentsline {subsection}{\numberline {8.33.2}Documentación de funciones}{144}{subsection.8.33.2}%
+\contentsline {subsubsection}{\numberline {8.33.2.1}\_\_attribute\_\_()}{144}{subsubsection.8.33.2.1}%
+\contentsline {subsubsection}{\numberline {8.33.2.2}\_\_io\_getchar()}{145}{subsubsection.8.33.2.2}%
+\contentsline {subsubsection}{\numberline {8.33.2.3}\_\_io\_putchar()}{145}{subsubsection.8.33.2.3}%
+\contentsline {subsubsection}{\numberline {8.33.2.4}\_close()}{145}{subsubsection.8.33.2.4}%
+\contentsline {subsubsection}{\numberline {8.33.2.5}\_execve()}{145}{subsubsection.8.33.2.5}%
+\contentsline {subsubsection}{\numberline {8.33.2.6}\_exit()}{145}{subsubsection.8.33.2.6}%
+\contentsline {subsubsection}{\numberline {8.33.2.7}\_fork()}{145}{subsubsection.8.33.2.7}%
+\contentsline {subsubsection}{\numberline {8.33.2.8}\_fstat()}{145}{subsubsection.8.33.2.8}%
+\contentsline {subsubsection}{\numberline {8.33.2.9}\_getpid()}{145}{subsubsection.8.33.2.9}%
+\contentsline {subsubsection}{\numberline {8.33.2.10}\_isatty()}{146}{subsubsection.8.33.2.10}%
+\contentsline {subsubsection}{\numberline {8.33.2.11}\_kill()}{146}{subsubsection.8.33.2.11}%
+\contentsline {subsubsection}{\numberline {8.33.2.12}\_link()}{146}{subsubsection.8.33.2.12}%
+\contentsline {subsubsection}{\numberline {8.33.2.13}\_lseek()}{146}{subsubsection.8.33.2.13}%
+\contentsline {subsubsection}{\numberline {8.33.2.14}\_open()}{146}{subsubsection.8.33.2.14}%
+\contentsline {subsubsection}{\numberline {8.33.2.15}\_stat()}{146}{subsubsection.8.33.2.15}%
+\contentsline {subsubsection}{\numberline {8.33.2.16}\_times()}{146}{subsubsection.8.33.2.16}%
+\contentsline {subsubsection}{\numberline {8.33.2.17}\_unlink()}{147}{subsubsection.8.33.2.17}%
+\contentsline {subsubsection}{\numberline {8.33.2.18}\_wait()}{147}{subsubsection.8.33.2.18}%
+\contentsline {subsubsection}{\numberline {8.33.2.19}initialise\_monitor\_handles()}{147}{subsubsection.8.33.2.19}%
+\contentsline {subsection}{\numberline {8.33.3}Documentación de variables}{147}{subsection.8.33.3}%
+\contentsline {subsubsection}{\numberline {8.33.3.1}environ}{147}{subsubsection.8.33.3.1}%
+\contentsline {section}{\numberline {8.34}Referencia del archivo Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}wifi.c}{147}{section.8.34}%
+\contentsline {subsection}{\numberline {8.34.1}Descripción detallada}{149}{subsection.8.34.1}%
+\contentsline {subsection}{\numberline {8.34.2}Documentación de «define»}{149}{subsection.8.34.2}%
+\contentsline {subsubsection}{\numberline {8.34.2.1}RING\_BUFFER\_SIZE}{149}{subsubsection.8.34.2.1}%
+\contentsline {subsection}{\numberline {8.34.3}Documentación de funciones}{149}{subsection.8.34.3}%
+\contentsline {subsubsection}{\numberline {8.34.3.1}flush\_ring\_buffer()}{149}{subsubsection.8.34.3.1}%
+\contentsline {subsubsection}{\numberline {8.34.3.2}get\_dma\_write\_index()}{149}{subsubsection.8.34.3.2}%
+\contentsline {subsubsection}{\numberline {8.34.3.3}HAL\_UART\_TxCpltCallback()}{150}{subsubsection.8.34.3.3}%
+\contentsline {subsubsection}{\numberline {8.34.3.4}search\_in\_ring\_buffer()}{150}{subsubsection.8.34.3.4}%
+\contentsline {subsubsection}{\numberline {8.34.3.5}WIFI\_ConnectAP()}{150}{subsubsection.8.34.3.5}%
+\contentsline {subsubsection}{\numberline {8.34.3.6}WIFI\_DisconnectAP()}{151}{subsubsection.8.34.3.6}%
+\contentsline {subsubsection}{\numberline {8.34.3.7}WIFI\_GetState()}{152}{subsubsection.8.34.3.7}%
+\contentsline {subsubsection}{\numberline {8.34.3.8}WIFI\_Init()}{152}{subsubsection.8.34.3.8}%
+\contentsline {subsubsection}{\numberline {8.34.3.9}WIFI\_MQTT\_Connect()}{153}{subsubsection.8.34.3.9}%
+\contentsline {subsubsection}{\numberline {8.34.3.10}WIFI\_MQTT\_Disconnect()}{154}{subsubsection.8.34.3.10}%
+\contentsline {subsubsection}{\numberline {8.34.3.11}WIFI\_MQTT\_Publish()}{154}{subsubsection.8.34.3.11}%
+\contentsline {subsubsection}{\numberline {8.34.3.12}WIFI\_MQTT\_UserConfig()}{155}{subsubsection.8.34.3.12}%
+\contentsline {subsubsection}{\numberline {8.34.3.13}WIFI\_Reconnect()}{156}{subsubsection.8.34.3.13}%
+\contentsline {subsubsection}{\numberline {8.34.3.14}WIFI\_Reset()}{156}{subsubsection.8.34.3.14}%
+\contentsline {subsubsection}{\numberline {8.34.3.15}wifi\_send\_cmd()}{157}{subsubsection.8.34.3.15}%
+\contentsline {subsubsection}{\numberline {8.34.3.16}WIFI\_SetStationMode()}{158}{subsubsection.8.34.3.16}%
+\contentsline {subsubsection}{\numberline {8.34.3.17}WIFI\_Test()}{158}{subsubsection.8.34.3.17}%
+\contentsline {subsection}{\numberline {8.34.4}Documentación de variables}{159}{subsection.8.34.4}%
+\contentsline {subsubsection}{\numberline {8.34.4.1}cached\_broker}{159}{subsubsection.8.34.4.1}%
+\contentsline {subsubsection}{\numberline {8.34.4.2}cached\_client\_id}{159}{subsubsection.8.34.4.2}%
+\contentsline {subsubsection}{\numberline {8.34.4.3}cached\_pass}{159}{subsubsection.8.34.4.3}%
+\contentsline {subsubsection}{\numberline {8.34.4.4}cached\_port}{159}{subsubsection.8.34.4.4}%
+\contentsline {subsubsection}{\numberline {8.34.4.5}cached\_ssid}{159}{subsubsection.8.34.4.5}%
+\contentsline {subsubsection}{\numberline {8.34.4.6}read\_index}{159}{subsubsection.8.34.4.6}%
+\contentsline {subsubsection}{\numberline {8.34.4.7}ring\_buffer}{159}{subsubsection.8.34.4.7}%
+\contentsline {subsubsection}{\numberline {8.34.4.8}wifi\_state}{160}{subsubsection.8.34.4.8}%
+\contentsline {subsubsection}{\numberline {8.34.4.9}wifi\_tx\_sem}{160}{subsubsection.8.34.4.9}%
+\contentsline {subsubsection}{\numberline {8.34.4.10}wifi\_uart}{160}{subsubsection.8.34.4.10}%
+\contentsline {chapter}{\'{I}ndice alfab\'{e}tico}{161}{section*.52}%

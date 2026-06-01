@@ -1,0 +1,1094 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.17.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Mi Proyecto STM32: Referencia del archivo Core/Inc/wifi.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+const theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'default';
+mermaid.initialize({ startOnLoad: true, theme: theme });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Mi Proyecto STM32<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.17.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', () => {
+  initMenu('',true);
+  init_search();
+});
+</script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1" style="position:absolute;right:8px;top:8px;height:36px;"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2" style="float:right">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('wifi_8h.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Referencia del archivo wifi.h</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Interfaz pública del driver WiFi basado en comandos AT.  
+<a href="#details">Más...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="main_8h_source.html">main.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="wifi__types_8h_source.html">wifi_types.h</a>&quot;</code><br />
+<code>#include &lt;stdint.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Gráfico de dependencias incluidas en wifi.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="wifi_8h__incl.png" border="0" usemap="#a_core_2_inc_2wifi_8h" loading="lazy" alt=""/></div>
+<!-- MAP 0 -->
+</div>
+</div><div class="textblock"><div class="dynheader">
+Gráfico de los archivos que directa o indirectamente incluyen a este archivo:</div>
+<div class="dyncontent">
+<div class="center"><img src="wifi_8h__dep__incl.png" border="0" usemap="#a_core_2_inc_2wifi_8hdep" loading="lazy" alt=""/></div>
+<!-- MAP 1 -->
+</div>
+</div>
+<p><a href="wifi_8h_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:ad7ba0a0beada20c448bbc88a93c2ee5e" id="r_ad7ba0a0beada20c448bbc88a93c2ee5e"><td class="memItemLeft"><a class="el" href="wifi__types_8h.html#aacb4bf20b6b92924d603518fe15874d2">wifi_status_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#ad7ba0a0beada20c448bbc88a93c2ee5e">WIFI_Init</a> (<a class="el" href="group___u_a_r_t___exported___types.html#ga5de4a49eb132735325e706f406c69d6e">UART_HandleTypeDef</a> *huart)</td></tr>
+<tr class="memdesc:ad7ba0a0beada20c448bbc88a93c2ee5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicializa el driver WiFi y asocia la UART del módulo.  <br /></td></tr>
+<tr class="memitem:a7747574249adc0e0daf6b4ed9d0062ce" id="r_a7747574249adc0e0daf6b4ed9d0062ce"><td class="memItemLeft"><a class="el" href="wifi__types_8h.html#aacb4bf20b6b92924d603518fe15874d2">wifi_status_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#a7747574249adc0e0daf6b4ed9d0062ce">WIFI_Reset</a> (void)</td></tr>
+<tr class="memdesc:a7747574249adc0e0daf6b4ed9d0062ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reinicia el módulo WiFi.  <br /></td></tr>
+<tr class="memitem:acfaca1eea2072d0ca3cd4b5db1783dd9" id="r_acfaca1eea2072d0ca3cd4b5db1783dd9"><td class="memItemLeft"><a class="el" href="wifi__types_8h.html#aacb4bf20b6b92924d603518fe15874d2">wifi_status_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#acfaca1eea2072d0ca3cd4b5db1783dd9">WIFI_Test</a> (void)</td></tr>
+<tr class="memdesc:acfaca1eea2072d0ca3cd4b5db1783dd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comprueba la comunicación básica con el módulo WiFi.  <br /></td></tr>
+<tr class="memitem:a1f2c5609610021e450931fa3a38c03b9" id="r_a1f2c5609610021e450931fa3a38c03b9"><td class="memItemLeft"><a class="el" href="wifi__types_8h.html#aacb4bf20b6b92924d603518fe15874d2">wifi_status_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#a1f2c5609610021e450931fa3a38c03b9">WIFI_SetStationMode</a> (void)</td></tr>
+<tr class="memdesc:a1f2c5609610021e450931fa3a38c03b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configura el módulo WiFi en modo estación.  <br /></td></tr>
+<tr class="memitem:a39f3b93115207ae63db616da2e291bff" id="r_a39f3b93115207ae63db616da2e291bff"><td class="memItemLeft"><a class="el" href="wifi__types_8h.html#aacb4bf20b6b92924d603518fe15874d2">wifi_status_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#a39f3b93115207ae63db616da2e291bff">WIFI_ConnectAP</a> (const char *ssid, const char *pass)</td></tr>
+<tr class="memdesc:a39f3b93115207ae63db616da2e291bff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Conecta el módulo WiFi a un punto de acceso.  <br /></td></tr>
+<tr class="memitem:a75bbb0398c0a03ed639b264ad2b096f2" id="r_a75bbb0398c0a03ed639b264ad2b096f2"><td class="memItemLeft"><a class="el" href="wifi__types_8h.html#aacb4bf20b6b92924d603518fe15874d2">wifi_status_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#a75bbb0398c0a03ed639b264ad2b096f2">WIFI_DisconnectAP</a> (void)</td></tr>
+<tr class="memdesc:a75bbb0398c0a03ed639b264ad2b096f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Desconecta el módulo del punto de acceso actual.  <br /></td></tr>
+<tr class="memitem:a8979de139d7d93ca4b9e5f6f63fadb95" id="r_a8979de139d7d93ca4b9e5f6f63fadb95"><td class="memItemLeft"><a class="el" href="wifi__types_8h.html#a5f847547d1654ba6664de98abb0ee37c">wifi_state_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#a8979de139d7d93ca4b9e5f6f63fadb95">WIFI_GetState</a> (void)</td></tr>
+<tr class="memdesc:a8979de139d7d93ca4b9e5f6f63fadb95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Devuelve el estado lógico actual del driver WiFi.  <br /></td></tr>
+<tr class="memitem:a6b44e23754cca97389330d3b6cbf52ea" id="r_a6b44e23754cca97389330d3b6cbf52ea"><td class="memItemLeft"><a class="el" href="wifi__types_8h.html#aacb4bf20b6b92924d603518fe15874d2">wifi_status_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#a6b44e23754cca97389330d3b6cbf52ea">WIFI_GetIP</a> (char *ip, uint16_t len)</td></tr>
+<tr class="memdesc:a6b44e23754cca97389330d3b6cbf52ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solicita la dirección IP asignada al módulo.  <br /></td></tr>
+<tr class="memitem:ab15097d974cfefeaf3cfb0efa0467aec" id="r_ab15097d974cfefeaf3cfb0efa0467aec"><td class="memItemLeft"><a class="el" href="wifi__types_8h.html#aacb4bf20b6b92924d603518fe15874d2">wifi_status_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#ab15097d974cfefeaf3cfb0efa0467aec">WIFI_GetRSSI</a> (int *rssi)</td></tr>
+<tr class="memdesc:ab15097d974cfefeaf3cfb0efa0467aec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solicita el nivel RSSI de la conexión WiFi.  <br /></td></tr>
+<tr class="memitem:a56c17530ef3f91f4872221d8027f2d04" id="r_a56c17530ef3f91f4872221d8027f2d04"><td class="memItemLeft"><a class="el" href="wifi__types_8h.html#aacb4bf20b6b92924d603518fe15874d2">wifi_status_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#a56c17530ef3f91f4872221d8027f2d04">WIFI_TCPConnect</a> (const char *host, uint16_t port)</td></tr>
+<tr class="memdesc:a56c17530ef3f91f4872221d8027f2d04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abre una conexión TCP con un host remoto.  <br /></td></tr>
+<tr class="memitem:a572fefcfcdef32399be655dba8bb059e" id="r_a572fefcfcdef32399be655dba8bb059e"><td class="memItemLeft"><a class="el" href="wifi__types_8h.html#aacb4bf20b6b92924d603518fe15874d2">wifi_status_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#a572fefcfcdef32399be655dba8bb059e">WIFI_TCPClose</a> (void)</td></tr>
+<tr class="memdesc:a572fefcfcdef32399be655dba8bb059e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cierra la conexión TCP activa.  <br /></td></tr>
+<tr class="memitem:a0c8912a840f8f8724afa067d36f5923e" id="r_a0c8912a840f8f8724afa067d36f5923e"><td class="memItemLeft"><a class="el" href="wifi__types_8h.html#aacb4bf20b6b92924d603518fe15874d2">wifi_status_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#a0c8912a840f8f8724afa067d36f5923e">WIFI_SendRaw</a> (const char *data)</td></tr>
+<tr class="memdesc:a0c8912a840f8f8724afa067d36f5923e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Envía datos sin procesar por la conexión activa.  <br /></td></tr>
+<tr class="memitem:acd57efc1a26efc2d18627ea6e1568efb" id="r_acd57efc1a26efc2d18627ea6e1568efb"><td class="memItemLeft"><a class="el" href="wifi__types_8h.html#aacb4bf20b6b92924d603518fe15874d2">wifi_status_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#acd57efc1a26efc2d18627ea6e1568efb">WIFI_SendJSON</a> (const char *json)</td></tr>
+<tr class="memdesc:acd57efc1a26efc2d18627ea6e1568efb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Envía una cadena JSON por la conexión activa.  <br /></td></tr>
+<tr class="memitem:a1d9fadf4213ccd2311ce0fc2a06afca3" id="r_a1d9fadf4213ccd2311ce0fc2a06afca3"><td class="memItemLeft"><a class="el" href="wifi__types_8h.html#aacb4bf20b6b92924d603518fe15874d2">wifi_status_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#a1d9fadf4213ccd2311ce0fc2a06afca3">WIFI_Reconnect</a> (void)</td></tr>
+<tr class="memdesc:a1d9fadf4213ccd2311ce0fc2a06afca3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ejecuta la secuencia de reconexión WiFi definida por el driver.  <br /></td></tr>
+<tr class="memitem:a31ff91c6d95ef644f730f3cb892ef634" id="r_a31ff91c6d95ef644f730f3cb892ef634"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a31ff91c6d95ef644f730f3cb892ef634">WIFI_Process</a> (void)</td></tr>
+<tr class="memdesc:a31ff91c6d95ef644f730f3cb892ef634"><td class="mdescLeft">&#160;</td><td class="mdescRight">Procesa tareas internas periódicas del módulo WiFi.  <br /></td></tr>
+<tr class="memitem:a0e5735c17066d67391c749d3452df96b" id="r_a0e5735c17066d67391c749d3452df96b"><td class="memItemLeft"><a class="el" href="wifi__types_8h.html#aacb4bf20b6b92924d603518fe15874d2">wifi_status_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#a0e5735c17066d67391c749d3452df96b">WIFI_HTTP_PostJSON</a> (const char *host, const char *path, const char *json)</td></tr>
+<tr class="memdesc:a0e5735c17066d67391c749d3452df96b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Realiza una petición HTTP POST con contenido JSON.  <br /></td></tr>
+<tr class="memitem:a71aae5bbf4169cfcd1a9d837a65eaf53" id="r_a71aae5bbf4169cfcd1a9d837a65eaf53"><td class="memItemLeft"><a class="el" href="wifi__types_8h.html#aacb4bf20b6b92924d603518fe15874d2">wifi_status_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#a71aae5bbf4169cfcd1a9d837a65eaf53">WIFI_MQTT_UserConfig</a> (const char *client_id)</td></tr>
+<tr class="memdesc:a71aae5bbf4169cfcd1a9d837a65eaf53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configura el identificador de cliente MQTT.  <br /></td></tr>
+<tr class="memitem:ac6919200b1e3953136e059f9116e47f4" id="r_ac6919200b1e3953136e059f9116e47f4"><td class="memItemLeft"><a class="el" href="wifi__types_8h.html#aacb4bf20b6b92924d603518fe15874d2">wifi_status_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#ac6919200b1e3953136e059f9116e47f4">WIFI_MQTT_Connect</a> (const char *broker, uint16_t port)</td></tr>
+<tr class="memdesc:ac6919200b1e3953136e059f9116e47f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Establece la conexión MQTT con el broker.  <br /></td></tr>
+<tr class="memitem:addc561002e88e333d80cc8949357b748" id="r_addc561002e88e333d80cc8949357b748"><td class="memItemLeft"><a class="el" href="wifi__types_8h.html#aacb4bf20b6b92924d603518fe15874d2">wifi_status_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#addc561002e88e333d80cc8949357b748">WIFI_MQTT_Publish</a> (const char *topic, const char *payload, uint8_t qos, uint8_t retain)</td></tr>
+<tr class="memdesc:addc561002e88e333d80cc8949357b748"><td class="mdescLeft">&#160;</td><td class="mdescRight">Publica un payload en un topic MQTT.  <br /></td></tr>
+<tr class="memitem:a032255cc4569e63ffb08160e6098afd2" id="r_a032255cc4569e63ffb08160e6098afd2"><td class="memItemLeft"><a class="el" href="wifi__types_8h.html#aacb4bf20b6b92924d603518fe15874d2">wifi_status_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#a032255cc4569e63ffb08160e6098afd2">WIFI_MQTT_Subscribe</a> (const char *topic, uint8_t qos)</td></tr>
+<tr class="memdesc:a032255cc4569e63ffb08160e6098afd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Suscribe el cliente MQTT a un topic.  <br /></td></tr>
+<tr class="memitem:a0aa3d38b06472f563555f8697216c2c6" id="r_a0aa3d38b06472f563555f8697216c2c6"><td class="memItemLeft"><a class="el" href="wifi__types_8h.html#aacb4bf20b6b92924d603518fe15874d2">wifi_status_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#a0aa3d38b06472f563555f8697216c2c6">WIFI_MQTT_Disconnect</a> (void)</td></tr>
+<tr class="memdesc:a0aa3d38b06472f563555f8697216c2c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cierra la sesión MQTT activa.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Interfaz pública del driver WiFi basado en comandos AT. </p>
+<dl class="section author"><dt>Autor</dt><dd>Lorenzo </dd></dl>
+<dl class="section date"><dt>Fecha</dt><dd>25 abr 2026</dd></dl>
+<p>El módulo encapsula las operaciones de red necesarias para el proyecto: conexión al punto de acceso, transporte TCP, envío HTTP y publicación MQTT. La API mantiene una interfaz de alto nivel para que las tareas de FreeRTOS no dependan del formato concreto de los comandos AT ni de las respuestas del módulo WiFi. </p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentación de funciones</h2>
+<a id="a39f3b93115207ae63db616da2e291bff" name="a39f3b93115207ae63db616da2e291bff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39f3b93115207ae63db616da2e291bff">&#9670;&#160;</a></span>WIFI_ConnectAP()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="wifi__types_8h.html#aacb4bf20b6b92924d603518fe15874d2">wifi_status_t</a> WIFI_ConnectAP </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>ssid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>pass</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Conecta el módulo WiFi a un punto de acceso. </p>
+<p>Conecta el módulo a un punto de acceso WiFi.</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ssid</td><td>Nombre de la red WiFi. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pass</td><td>Contraseña de la red WiFi.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>WIFI_OK si la asociación se completa correctamente. </dd>
+<dd>
+WIFI_TIMEOUT si el punto de acceso no responde a tiempo. </dd>
+<dd>
+WIFI_ERROR si las credenciales o la negociación fallan.</dd></dl>
+<dl class="section pre"><dt>Precondición</dt><dd><span class="tt">ssid</span> y <span class="tt">pass</span> deben apuntar a cadenas válidas terminadas en cero.</dd></dl>
+<p>Conecta el módulo WiFi a un punto de acceso.</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ssid</td><td>Nombre de la red WiFi. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pass</td><td>Contraseña de la red WiFi. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valores devueltos</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">WIFI_OK</td><td>Conexión establecida y dirección IP obtenida. </td></tr>
+    <tr><td class="paramname">WIFI_ERROR</td><td>Error de conexión o transmisión. </td></tr>
+    <tr><td class="paramname">WIFI_TIMEOUT</td><td>No se obtuvo confirmación dentro del tiempo límite.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Las credenciales se almacenan localmente para que <a class="el" href="#a1d9fadf4213ccd2311ce0fc2a06afca3" title="Ejecuta la secuencia de reconexión WiFi definida por el driver.">WIFI_Reconnect()</a> pueda reconstruir la conexión sin depender de que la aplicación vuelva a pasarlas. </p>
+<div class="dynheader">
+Gráfico de llamadas de esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="wifi_8h_a39f3b93115207ae63db616da2e291bff_cgraph.png" border="0" usemap="#awifi_8h_a39f3b93115207ae63db616da2e291bff_cgraph" loading="lazy" alt=""/></div>
+<!-- MAP 2 -->
+</div>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="wifi_8h_a39f3b93115207ae63db616da2e291bff_icgraph.png" border="0" usemap="#awifi_8h_a39f3b93115207ae63db616da2e291bff_icgraph" loading="lazy" alt=""/></div>
+<!-- MAP 3 -->
+</div>
+
+</div>
+</div>
+<a id="a75bbb0398c0a03ed639b264ad2b096f2" name="a75bbb0398c0a03ed639b264ad2b096f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75bbb0398c0a03ed639b264ad2b096f2">&#9670;&#160;</a></span>WIFI_DisconnectAP()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="wifi__types_8h.html#aacb4bf20b6b92924d603518fe15874d2">wifi_status_t</a> WIFI_DisconnectAP </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Desconecta el módulo del punto de acceso actual. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>WIFI_OK si la desconexión se completa correctamente. </dd>
+<dd>
+WIFI_ERROR si el módulo no acepta la orden.</dd></dl>
+<dl class="retval"><dt>Valores devueltos</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">WIFI_OK</td><td>Desconexión aceptada. </td></tr>
+    <tr><td class="paramname">WIFI_ERROR</td><td>Error devuelto por el módulo o fallo de transmisión. </td></tr>
+    <tr><td class="paramname">WIFI_TIMEOUT</td><td>No hubo respuesta dentro del tiempo límite. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Gráfico de llamadas de esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="wifi_8h_a75bbb0398c0a03ed639b264ad2b096f2_cgraph.png" border="0" usemap="#awifi_8h_a75bbb0398c0a03ed639b264ad2b096f2_cgraph" loading="lazy" alt=""/></div>
+<!-- MAP 4 -->
+</div>
+
+</div>
+</div>
+<a id="a6b44e23754cca97389330d3b6cbf52ea" name="a6b44e23754cca97389330d3b6cbf52ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b44e23754cca97389330d3b6cbf52ea">&#9670;&#160;</a></span>WIFI_GetIP()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="wifi__types_8h.html#aacb4bf20b6b92924d603518fe15874d2">wifi_status_t</a> WIFI_GetIP </td>
+          <td>(</td>
+          <td class="paramtype">char *</td>          <td class="paramname"><span class="paramname"><em>ip</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>len</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Solicita la dirección IP asignada al módulo. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">ip</td><td>Buffer donde se copiará la dirección IP. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>Tamaño disponible en el buffer <span class="tt">ip</span>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>WIFI_OK si se obtiene una dirección IP válida. </dd>
+<dd>
+WIFI_NOT_CONNECTED si el módulo no tiene red activa. </dd>
+<dd>
+WIFI_ERROR si no puede parsearse la respuesta.</dd></dl>
+<dl class="section pre"><dt>Precondición</dt><dd><span class="tt">ip</span> debe apuntar a un buffer válido. </dd></dl>
+
+</div>
+</div>
+<a id="ab15097d974cfefeaf3cfb0efa0467aec" name="ab15097d974cfefeaf3cfb0efa0467aec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab15097d974cfefeaf3cfb0efa0467aec">&#9670;&#160;</a></span>WIFI_GetRSSI()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="wifi__types_8h.html#aacb4bf20b6b92924d603518fe15874d2">wifi_status_t</a> WIFI_GetRSSI </td>
+          <td>(</td>
+          <td class="paramtype">int *</td>          <td class="paramname"><span class="paramname"><em>rssi</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Solicita el nivel RSSI de la conexión WiFi. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">rssi</td><td>Variable donde se almacena la potencia recibida.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>WIFI_OK si el RSSI se obtiene correctamente. </dd>
+<dd>
+WIFI_NOT_CONNECTED si no hay conexión activa. </dd>
+<dd>
+WIFI_ERROR si la respuesta no puede interpretarse.</dd></dl>
+<dl class="section pre"><dt>Precondición</dt><dd><span class="tt">rssi</span> debe apuntar a memoria válida. </dd></dl>
+
+</div>
+</div>
+<a id="a8979de139d7d93ca4b9e5f6f63fadb95" name="a8979de139d7d93ca4b9e5f6f63fadb95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8979de139d7d93ca4b9e5f6f63fadb95">&#9670;&#160;</a></span>WIFI_GetState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="wifi__types_8h.html#a5f847547d1654ba6664de98abb0ee37c">wifi_state_t</a> WIFI_GetState </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Devuelve el estado lógico actual del driver WiFi. </p>
+<p>Devuelve el estado lógico actual del módulo WiFi/MQTT.</p>
+<dl class="section return"><dt>Devuelve</dt><dd>Estado de conexión almacenado por el módulo.</dd></dl>
+<dl class="section note"><dt>Nota</dt><dd>El estado permite a la aplicación evitar publicaciones cuando todavía no existe conectividad suficiente.</dd></dl>
+<p>Devuelve el estado lógico actual del driver WiFi.</p>
+<dl class="section return"><dt>Devuelve</dt><dd>Estado interno de conexión. </dd></dl>
+
+</div>
+</div>
+<a id="a0e5735c17066d67391c749d3452df96b" name="a0e5735c17066d67391c749d3452df96b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e5735c17066d67391c749d3452df96b">&#9670;&#160;</a></span>WIFI_HTTP_PostJSON()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="wifi__types_8h.html#aacb4bf20b6b92924d603518fe15874d2">wifi_status_t</a> WIFI_HTTP_PostJSON </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>host</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>json</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Realiza una petición HTTP POST con contenido JSON. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">host</td><td>Servidor HTTP de destino. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>Ruta del recurso al que se envía la petición. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">json</td><td>Cuerpo JSON de la petición.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>WIFI_OK si la petición se envía correctamente. </dd>
+<dd>
+WIFI_NOT_CONNECTED si no existe conectividad suficiente. </dd>
+<dd>
+WIFI_ERROR si falla la conexión o el envío.</dd></dl>
+<p>La función ofrece una vía de telemetría alternativa a MQTT manteniendo el mismo formato de datos de aplicación. </p>
+
+</div>
+</div>
+<a id="ad7ba0a0beada20c448bbc88a93c2ee5e" name="ad7ba0a0beada20c448bbc88a93c2ee5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7ba0a0beada20c448bbc88a93c2ee5e">&#9670;&#160;</a></span>WIFI_Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="wifi__types_8h.html#aacb4bf20b6b92924d603518fe15874d2">wifi_status_t</a> WIFI_Init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___u_a_r_t___exported___types.html#ga5de4a49eb132735325e706f406c69d6e">UART_HandleTypeDef</a> *</td>          <td class="paramname"><span class="paramname"><em>huart</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inicializa el driver WiFi y asocia la UART del módulo. </p>
+<p>Inicializa el driver WiFi y prepara la recepción DMA circular.</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">huart</td><td>Handler HAL de la UART conectada al módulo WiFi.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>WIFI_OK si el módulo queda preparado para recibir comandos. </dd>
+<dd>
+WIFI_ERROR si la UART o el módulo no pueden inicializarse.</dd></dl>
+<dl class="section pre"><dt>Precondición</dt><dd><span class="tt">huart</span> debe estar inicializado por la capa HAL.</dd></dl>
+<p>Inicializa el driver WiFi y asocia la UART del módulo.</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">huart</td><td>UART conectada al módulo WiFi. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valores devueltos</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">WIFI_OK</td><td>El módulo respondió y quedó en modo estación. </td></tr>
+    <tr><td class="paramname">WIFI_ERROR</td><td>No se pudo comunicar o configurar el módulo.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>La recepción DMA se arranca antes de probar el módulo para capturar cualquier respuesta o evento que emita el ESP. Se desactivan interrupciones de mitad y fin de recepción porque el consumo se realiza por software consultando el índice del DMA. </p>
+<div class="dynheader">
+Gráfico de llamadas de esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="wifi_8h_ad7ba0a0beada20c448bbc88a93c2ee5e_cgraph.png" border="0" usemap="#awifi_8h_ad7ba0a0beada20c448bbc88a93c2ee5e_cgraph" loading="lazy" alt=""/></div>
+<!-- MAP 5 -->
+</div>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="wifi_8h_ad7ba0a0beada20c448bbc88a93c2ee5e_icgraph.png" border="0" usemap="#awifi_8h_ad7ba0a0beada20c448bbc88a93c2ee5e_icgraph" loading="lazy" alt=""/></div>
+<!-- MAP 6 -->
+</div>
+
+</div>
+</div>
+<a id="ac6919200b1e3953136e059f9116e47f4" name="ac6919200b1e3953136e059f9116e47f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6919200b1e3953136e059f9116e47f4">&#9670;&#160;</a></span>WIFI_MQTT_Connect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="wifi__types_8h.html#aacb4bf20b6b92924d603518fe15874d2">wifi_status_t</a> WIFI_MQTT_Connect </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>broker</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>port</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Establece la conexión MQTT con el broker. </p>
+<p>Abre la conexión MQTT contra el broker indicado.</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">broker</td><td>Nombre DNS o dirección IP del broker MQTT. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>Puerto TCP del broker MQTT.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>WIFI_OK si la sesión MQTT queda establecida. </dd>
+<dd>
+WIFI_TIMEOUT si el broker no responde. </dd>
+<dd>
+WIFI_ERROR si falla la negociación MQTT.</dd></dl>
+<p>Establece la conexión MQTT con el broker.</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">broker</td><td>Dirección IP o nombre del broker MQTT. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>Puerto TCP del broker MQTT. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valores devueltos</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">WIFI_OK</td><td>Conexión MQTT establecida. </td></tr>
+    <tr><td class="paramname">WIFI_ERROR</td><td>Error devuelto por el módulo o fallo de transmisión. </td></tr>
+    <tr><td class="paramname">WIFI_TIMEOUT</td><td>No hubo respuesta dentro del tiempo límite.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>El broker y puerto se conservan para recuperar la sesión tras pérdidas de red sin obligar al resto de tareas a conocer la secuencia AT de reconexión. </p>
+<div class="dynheader">
+Gráfico de llamadas de esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="wifi_8h_ac6919200b1e3953136e059f9116e47f4_cgraph.png" border="0" usemap="#awifi_8h_ac6919200b1e3953136e059f9116e47f4_cgraph" loading="lazy" alt=""/></div>
+<!-- MAP 7 -->
+</div>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="wifi_8h_ac6919200b1e3953136e059f9116e47f4_icgraph.png" border="0" usemap="#awifi_8h_ac6919200b1e3953136e059f9116e47f4_icgraph" loading="lazy" alt=""/></div>
+<!-- MAP 8 -->
+</div>
+
+</div>
+</div>
+<a id="a0aa3d38b06472f563555f8697216c2c6" name="a0aa3d38b06472f563555f8697216c2c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0aa3d38b06472f563555f8697216c2c6">&#9670;&#160;</a></span>WIFI_MQTT_Disconnect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="wifi__types_8h.html#aacb4bf20b6b92924d603518fe15874d2">wifi_status_t</a> WIFI_MQTT_Disconnect </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cierra la sesión MQTT activa. </p>
+<p>Cierra la sesión MQTT actual.</p>
+<dl class="section return"><dt>Devuelve</dt><dd>WIFI_OK si la desconexión se completa correctamente. </dd>
+<dd>
+WIFI_ERROR si el módulo no confirma el cierre de sesión.</dd></dl>
+<p>Cierra la sesión MQTT activa.</p>
+<dl class="retval"><dt>Valores devueltos</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">WIFI_OK</td><td>Sesión MQTT liberada. </td></tr>
+    <tr><td class="paramname">WIFI_ERROR</td><td>Error devuelto por el módulo o fallo de transmisión. </td></tr>
+    <tr><td class="paramname">WIFI_TIMEOUT</td><td>No hubo respuesta dentro del tiempo límite. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Gráfico de llamadas de esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="wifi_8h_a0aa3d38b06472f563555f8697216c2c6_cgraph.png" border="0" usemap="#awifi_8h_a0aa3d38b06472f563555f8697216c2c6_cgraph" loading="lazy" alt=""/></div>
+<!-- MAP 9 -->
+</div>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="wifi_8h_a0aa3d38b06472f563555f8697216c2c6_icgraph.png" border="0" usemap="#awifi_8h_a0aa3d38b06472f563555f8697216c2c6_icgraph" loading="lazy" alt=""/></div>
+<!-- MAP 10 -->
+</div>
+
+</div>
+</div>
+<a id="addc561002e88e333d80cc8949357b748" name="addc561002e88e333d80cc8949357b748"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addc561002e88e333d80cc8949357b748">&#9670;&#160;</a></span>WIFI_MQTT_Publish()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="wifi__types_8h.html#aacb4bf20b6b92924d603518fe15874d2">wifi_status_t</a> WIFI_MQTT_Publish </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>topic</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>payload</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>qos</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>retain</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Publica un payload en un topic MQTT. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">topic</td><td>Topic MQTT de destino. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">payload</td><td>Contenido que se publicará. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">qos</td><td>Nivel QoS solicitado para la publicación. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">retain</td><td>Flag retain enviado al broker.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>WIFI_OK si el módulo acepta la publicación. </dd>
+<dd>
+WIFI_NOT_CONNECTED si no existe sesión MQTT activa. </dd>
+<dd>
+WIFI_ERROR si el comando de publicación falla.</dd></dl>
+<p>La función permite a las tareas publicar telemetría sin conocer el comando AT concreto ni la sintaxis interna del módulo WiFi.</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">topic</td><td>Topic MQTT de destino. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">payload</td><td>Cadena que se publica como contenido del mensaje. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">qos</td><td>Nivel QoS solicitado al módulo WiFi. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">retain</td><td>Flag retain del mensaje MQTT. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valores devueltos</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">WIFI_OK</td><td>Publicación aceptada por el módulo. </td></tr>
+    <tr><td class="paramname">WIFI_ERROR</td><td>Error devuelto por el módulo o fallo de transmisión. </td></tr>
+    <tr><td class="paramname">WIFI_TIMEOUT</td><td>No hubo confirmación dentro del tiempo límite.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Si la publicación falla, el estado se degrada a WIFI_CONNECTED porque la red puede seguir activa aunque la sesión MQTT haya quedado inválida. Esta decisión permite que la capa superior intente reconstruir solo MQTT antes de reiniciar toda la conexión WiFi. </p>
+<div class="dynheader">
+Gráfico de llamadas de esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="wifi_8h_addc561002e88e333d80cc8949357b748_cgraph.png" border="0" usemap="#awifi_8h_addc561002e88e333d80cc8949357b748_cgraph" loading="lazy" alt=""/></div>
+<!-- MAP 11 -->
+</div>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="wifi_8h_addc561002e88e333d80cc8949357b748_icgraph.png" border="0" usemap="#awifi_8h_addc561002e88e333d80cc8949357b748_icgraph" loading="lazy" alt=""/></div>
+<!-- MAP 12 -->
+</div>
+
+</div>
+</div>
+<a id="a032255cc4569e63ffb08160e6098afd2" name="a032255cc4569e63ffb08160e6098afd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a032255cc4569e63ffb08160e6098afd2">&#9670;&#160;</a></span>WIFI_MQTT_Subscribe()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="wifi__types_8h.html#aacb4bf20b6b92924d603518fe15874d2">wifi_status_t</a> WIFI_MQTT_Subscribe </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>topic</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>qos</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Suscribe el cliente MQTT a un topic. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">topic</td><td>Topic MQTT que se desea recibir. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">qos</td><td>Nivel QoS solicitado para la suscripción.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>WIFI_OK si la suscripción se completa correctamente. </dd>
+<dd>
+WIFI_NOT_CONNECTED si no existe sesión MQTT activa. </dd>
+<dd>
+WIFI_ERROR si el broker o el módulo rechazan la suscripción. </dd></dl>
+
+</div>
+</div>
+<a id="a71aae5bbf4169cfcd1a9d837a65eaf53" name="a71aae5bbf4169cfcd1a9d837a65eaf53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71aae5bbf4169cfcd1a9d837a65eaf53">&#9670;&#160;</a></span>WIFI_MQTT_UserConfig()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="wifi__types_8h.html#aacb4bf20b6b92924d603518fe15874d2">wifi_status_t</a> WIFI_MQTT_UserConfig </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>client_id</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Configura el identificador de cliente MQTT. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">client_id</td><td>Identificador usado por el broker para reconocer el nodo.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>WIFI_OK si la configuración se acepta correctamente. </dd>
+<dd>
+WIFI_ERROR si el módulo rechaza el identificador.</dd></dl>
+<dl class="section pre"><dt>Precondición</dt><dd><span class="tt">client_id</span> debe apuntar a una cadena válida terminada en cero.</dd></dl>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">client_id</td><td>Identificador usado por el cliente MQTT del módulo. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valores devueltos</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">WIFI_OK</td><td>Configuración aceptada. </td></tr>
+    <tr><td class="paramname">WIFI_ERROR</td><td>Error devuelto por el módulo o fallo de transmisión. </td></tr>
+    <tr><td class="paramname">WIFI_TIMEOUT</td><td>No hubo respuesta dentro del tiempo límite.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>El identificador se guarda para poder repetir la configuración después de una reconexión WiFi o reinicio del módulo. </p>
+<div class="dynheader">
+Gráfico de llamadas de esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="wifi_8h_a71aae5bbf4169cfcd1a9d837a65eaf53_cgraph.png" border="0" usemap="#awifi_8h_a71aae5bbf4169cfcd1a9d837a65eaf53_cgraph" loading="lazy" alt=""/></div>
+<!-- MAP 13 -->
+</div>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="wifi_8h_a71aae5bbf4169cfcd1a9d837a65eaf53_icgraph.png" border="0" usemap="#awifi_8h_a71aae5bbf4169cfcd1a9d837a65eaf53_icgraph" loading="lazy" alt=""/></div>
+<!-- MAP 14 -->
+</div>
+
+</div>
+</div>
+<a id="a31ff91c6d95ef644f730f3cb892ef634" name="a31ff91c6d95ef644f730f3cb892ef634"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31ff91c6d95ef644f730f3cb892ef634">&#9670;&#160;</a></span>WIFI_Process()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WIFI_Process </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Procesa tareas internas periódicas del módulo WiFi. </p>
+<p>Se expone para que una tarea de FreeRTOS pueda mantener el estado del driver sin bloquear al resto del sistema. </p>
+
+</div>
+</div>
+<a id="a1d9fadf4213ccd2311ce0fc2a06afca3" name="a1d9fadf4213ccd2311ce0fc2a06afca3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d9fadf4213ccd2311ce0fc2a06afca3">&#9670;&#160;</a></span>WIFI_Reconnect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="wifi__types_8h.html#aacb4bf20b6b92924d603518fe15874d2">wifi_status_t</a> WIFI_Reconnect </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ejecuta la secuencia de reconexión WiFi definida por el driver. </p>
+<p>Reconstruye la conexión WiFi y MQTT usando la configuración almacenada.</p>
+<dl class="section return"><dt>Devuelve</dt><dd>WIFI_OK si se recupera la conectividad. </dd>
+<dd>
+WIFI_ERROR si la reconexión falla.</dd></dl>
+<p>Centralizar la reconexión evita que varias tareas intenten recuperar el módem con secuencias distintas.</p>
+<p>Ejecuta la secuencia de reconexión WiFi definida por el driver.</p>
+<dl class="retval"><dt>Valores devueltos</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">WIFI_OK</td><td>Reconexión completada hasta MQTT. </td></tr>
+    <tr><td class="paramname">WIFI_ERROR</td><td>No se pudo restaurar WiFi o MQTT.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>La rutina distingue entre pérdida total de WiFi y pérdida solo de MQTT para no reiniciar más capas de las necesarias. Esto reduce tiempo de recuperación y evita cortes innecesarios cuando el punto de acceso sigue disponible. </p>
+<div class="dynheader">
+Gráfico de llamadas de esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="wifi_8h_a1d9fadf4213ccd2311ce0fc2a06afca3_cgraph.png" border="0" usemap="#awifi_8h_a1d9fadf4213ccd2311ce0fc2a06afca3_cgraph" loading="lazy" alt=""/></div>
+<!-- MAP 15 -->
+</div>
+
+</div>
+</div>
+<a id="a7747574249adc0e0daf6b4ed9d0062ce" name="a7747574249adc0e0daf6b4ed9d0062ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7747574249adc0e0daf6b4ed9d0062ce">&#9670;&#160;</a></span>WIFI_Reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="wifi__types_8h.html#aacb4bf20b6b92924d603518fe15874d2">wifi_status_t</a> WIFI_Reset </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reinicia el módulo WiFi. </p>
+<p>Reinicia el módulo WiFi mediante comando AT.</p>
+<dl class="section return"><dt>Devuelve</dt><dd>WIFI_OK si el reinicio se acepta correctamente. </dd>
+<dd>
+WIFI_TIMEOUT si el módulo no responde. </dd>
+<dd>
+WIFI_ERROR si la secuencia de reinicio falla.</dd></dl>
+<p>Se usa para devolver el módem a un estado conocido cuando la comunicación AT o la conexión de red dejan de ser fiables.</p>
+<p>Reinicia el módulo WiFi.</p>
+<dl class="retval"><dt>Valores devueltos</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">WIFI_OK</td><td>El módulo confirmó el reinicio con <span class="tt">ready</span>. </td></tr>
+    <tr><td class="paramname">WIFI_ERROR</td><td>Error devuelto por el módulo o fallo de transmisión. </td></tr>
+    <tr><td class="paramname">WIFI_TIMEOUT</td><td>No hubo respuesta dentro del tiempo límite. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Gráfico de llamadas de esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="wifi_8h_a7747574249adc0e0daf6b4ed9d0062ce_cgraph.png" border="0" usemap="#awifi_8h_a7747574249adc0e0daf6b4ed9d0062ce_cgraph" loading="lazy" alt=""/></div>
+<!-- MAP 16 -->
+</div>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="wifi_8h_a7747574249adc0e0daf6b4ed9d0062ce_icgraph.png" border="0" usemap="#awifi_8h_a7747574249adc0e0daf6b4ed9d0062ce_icgraph" loading="lazy" alt=""/></div>
+<!-- MAP 17 -->
+</div>
+
+</div>
+</div>
+<a id="acd57efc1a26efc2d18627ea6e1568efb" name="acd57efc1a26efc2d18627ea6e1568efb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd57efc1a26efc2d18627ea6e1568efb">&#9670;&#160;</a></span>WIFI_SendJSON()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="wifi__types_8h.html#aacb4bf20b6b92924d603518fe15874d2">wifi_status_t</a> WIFI_SendJSON </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>json</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Envía una cadena JSON por la conexión activa. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">json</td><td>Cadena JSON terminada en cero.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>WIFI_OK si el envío se completa correctamente. </dd>
+<dd>
+WIFI_NOT_CONNECTED si no existe transporte disponible. </dd>
+<dd>
+WIFI_ERROR si el módulo rechaza los datos.</dd></dl>
+<p>Esta función mantiene separada la generación del contenido JSON de la mecánica de transmisión por el módem. </p>
+
+</div>
+</div>
+<a id="a0c8912a840f8f8724afa067d36f5923e" name="a0c8912a840f8f8724afa067d36f5923e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c8912a840f8f8724afa067d36f5923e">&#9670;&#160;</a></span>WIFI_SendRaw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="wifi__types_8h.html#aacb4bf20b6b92924d603518fe15874d2">wifi_status_t</a> WIFI_SendRaw </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>data</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Envía datos sin procesar por la conexión activa. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>Cadena de datos a transmitir.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>WIFI_OK si el módulo acepta el envío. </dd>
+<dd>
+WIFI_NOT_CONNECTED si no existe transporte disponible. </dd>
+<dd>
+WIFI_ERROR si se produce un fallo durante la transmisión. </dd></dl>
+
+</div>
+</div>
+<a id="a1f2c5609610021e450931fa3a38c03b9" name="a1f2c5609610021e450931fa3a38c03b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f2c5609610021e450931fa3a38c03b9">&#9670;&#160;</a></span>WIFI_SetStationMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="wifi__types_8h.html#aacb4bf20b6b92924d603518fe15874d2">wifi_status_t</a> WIFI_SetStationMode </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Configura el módulo WiFi en modo estación. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>WIFI_OK si el modo queda configurado correctamente. </dd>
+<dd>
+WIFI_ERROR si el módulo rechaza la configuración.</dd></dl>
+<p>El modo estación es necesario para que el dispositivo se conecte a la red local y pueda alcanzar el broker MQTT o servicios HTTP externos.</p>
+<dl class="retval"><dt>Valores devueltos</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">WIFI_OK</td><td>Configuración aceptada. </td></tr>
+    <tr><td class="paramname">WIFI_ERROR</td><td>Error devuelto por el módulo o fallo de transmisión. </td></tr>
+    <tr><td class="paramname">WIFI_TIMEOUT</td><td>No hubo respuesta dentro del tiempo límite. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Gráfico de llamadas de esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="wifi_8h_a1f2c5609610021e450931fa3a38c03b9_cgraph.png" border="0" usemap="#awifi_8h_a1f2c5609610021e450931fa3a38c03b9_cgraph" loading="lazy" alt=""/></div>
+<!-- MAP 18 -->
+</div>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="wifi_8h_a1f2c5609610021e450931fa3a38c03b9_icgraph.png" border="0" usemap="#awifi_8h_a1f2c5609610021e450931fa3a38c03b9_icgraph" loading="lazy" alt=""/></div>
+<!-- MAP 19 -->
+</div>
+
+</div>
+</div>
+<a id="a572fefcfcdef32399be655dba8bb059e" name="a572fefcfcdef32399be655dba8bb059e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a572fefcfcdef32399be655dba8bb059e">&#9670;&#160;</a></span>WIFI_TCPClose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="wifi__types_8h.html#aacb4bf20b6b92924d603518fe15874d2">wifi_status_t</a> WIFI_TCPClose </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cierra la conexión TCP activa. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>WIFI_OK si la conexión se cierra correctamente. </dd>
+<dd>
+WIFI_ERROR si no puede cerrarse la sesión. </dd></dl>
+
+</div>
+</div>
+<a id="a56c17530ef3f91f4872221d8027f2d04" name="a56c17530ef3f91f4872221d8027f2d04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56c17530ef3f91f4872221d8027f2d04">&#9670;&#160;</a></span>WIFI_TCPConnect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="wifi__types_8h.html#aacb4bf20b6b92924d603518fe15874d2">wifi_status_t</a> WIFI_TCPConnect </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>host</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>port</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Abre una conexión TCP con un host remoto. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">host</td><td>Nombre DNS o dirección IP del servidor remoto. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>Puerto TCP remoto.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>WIFI_OK si la conexión se establece correctamente. </dd>
+<dd>
+WIFI_TIMEOUT si el host no responde. </dd>
+<dd>
+WIFI_ERROR si el módulo rechaza la conexión. </dd></dl>
+
+</div>
+</div>
+<a id="acfaca1eea2072d0ca3cd4b5db1783dd9" name="acfaca1eea2072d0ca3cd4b5db1783dd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfaca1eea2072d0ca3cd4b5db1783dd9">&#9670;&#160;</a></span>WIFI_Test()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="wifi__types_8h.html#aacb4bf20b6b92924d603518fe15874d2">wifi_status_t</a> WIFI_Test </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Comprueba la comunicación básica con el módulo WiFi. </p>
+<p>Comprueba que el módulo WiFi responde a comandos AT.</p>
+<dl class="section return"><dt>Devuelve</dt><dd>WIFI_OK si el módulo responde al comando de prueba. </dd>
+<dd>
+WIFI_TIMEOUT si no hay respuesta. </dd>
+<dd>
+WIFI_ERROR si la respuesta recibida no es válida.</dd></dl>
+<p>Comprueba la comunicación básica con el módulo WiFi.</p>
+<dl class="retval"><dt>Valores devueltos</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">WIFI_OK</td><td>El módulo respondió con <span class="tt">OK</span>. </td></tr>
+    <tr><td class="paramname">WIFI_ERROR</td><td>Error devuelto por el módulo o fallo de transmisión. </td></tr>
+    <tr><td class="paramname">WIFI_TIMEOUT</td><td>No hubo respuesta dentro del tiempo límite. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Gráfico de llamadas de esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="wifi_8h_acfaca1eea2072d0ca3cd4b5db1783dd9_cgraph.png" border="0" usemap="#awifi_8h_acfaca1eea2072d0ca3cd4b5db1783dd9_cgraph" loading="lazy" alt=""/></div>
+<!-- MAP 20 -->
+</div>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="wifi_8h_acfaca1eea2072d0ca3cd4b5db1783dd9_icgraph.png" border="0" usemap="#awifi_8h_acfaca1eea2072d0ca3cd4b5db1783dd9_icgraph" loading="lazy" alt=""/></div>
+<!-- MAP 21 -->
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c6310732a22f63c0c2fc5595561e68f1.html">Core</a></li><li class="navelem"><a href="dir_e2489e887f17afa3cbc07a4ec152cdd2.html">Inc</a></li><li class="navelem"><a href="wifi_8h.html">wifi.h</a></li>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.17.0 </li>
+  </ul>
+</div>
+</body>
+</html>

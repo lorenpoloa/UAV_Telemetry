@@ -1,0 +1,292 @@
+\doxysection{Referencia del archivo Core/\+\+Src/\+formatter\+\_\+data.c}
+\hypertarget{formatter__data_8c}{}\label{formatter__data_8c}\index{Core/Src/formatter\_data.c@{Core/Src/formatter\_data.c}}
+
+
+Conversión de paquetes de telemetría a cadenas de texto para publicación.  
+
+
+{\ttfamily \+\#include "{}formatter\+\_\+data.\+h"{}}\newline
+{\ttfamily \+\#include $<$stdio.\+h$>$}\newline
+{\ttfamily \+\#include $<$string.\+h$>$}\newline
+Gráfico de dependencias incluidas en formatter\+\_\+data.\+c:\+
+% FIG 0
+\doxysubsubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{formatter__data_8c_ae9ef0eb14e10c6d73fcd9de44f1bf115}{Imu\+Data\+\_\+to\+\_\+json}} (char \texorpdfstring{$\ast$}{*}buffer, size\+\_\+t buffer\+\_\+size, \doxymbox{\hyperlink{struct_imu_data_packet__t}{Imu\+Data\+Packet\+\_\+t}} \texorpdfstring{$\ast$}{*}data)
+\begin{DoxyCompactList}\small\item\em Serializa el paquete inercial en el formato compacto de telemetría. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{formatter__data_8c_a28b5ca7c194bcc1332e9d96afd6b317f}{Env\+Data\+\_\+to\+\_\+json}} (char \texorpdfstring{$\ast$}{*}buffer, size\+\_\+t buffer\+\_\+size, \doxymbox{\hyperlink{struct_env_data_packet__t}{Env\+Data\+Packet\+\_\+t}} \texorpdfstring{$\ast$}{*}data)
+\begin{DoxyCompactList}\small\item\em Serializa el paquete ambiental en el formato compacto de telemetría. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{formatter__data_8c_addef3f02614d4204178afe4991a99ff2}{Gps\+Data\+\_\+to\+\_\+json}} (char \texorpdfstring{$\ast$}{*}buffer, size\+\_\+t buffer\+\_\+size, \doxymbox{\hyperlink{struct_gps_data_packet__t}{Gps\+Data\+Packet\+\_\+t}} \texorpdfstring{$\ast$}{*}data)
+\begin{DoxyCompactList}\small\item\em Serializa el paquete GPS en el formato compacto de telemetría. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{formatter__data_8c_a2c059d8a7f63ddf24fb3c4899487fa38}{Gps\+Data\+Packet\+\_\+\+Init}} (\doxymbox{\hyperlink{struct_gps_data_packet__t}{Gps\+Data\+Packet\+\_\+t}} \texorpdfstring{$\ast$}{*}packet)
+\begin{DoxyCompactList}\small\item\em Inicializa un paquete GPS a un estado conocido. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{formatter__data_8c_aa7dfe24eaf1db45d49d4c462acbf569b}{Imu\+Data\+Packet\+\_\+\+Init}} (\doxymbox{\hyperlink{struct_imu_data_packet__t}{Imu\+Data\+Packet\+\_\+t}} \texorpdfstring{$\ast$}{*}packet)
+\begin{DoxyCompactList}\small\item\em Inicializa un paquete IMU a un estado conocido. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{formatter__data_8c_ab99e42d398f1018fc1a459cc4bee1088}{Env\+Data\+Packet\+\_\+\+Init}} (\doxymbox{\hyperlink{struct_env_data_packet__t}{Env\+Data\+Packet\+\_\+t}} \texorpdfstring{$\ast$}{*}packet)
+\begin{DoxyCompactList}\small\item\em Inicializa un paquete ambiental a un estado conocido. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Conversión de paquetes de telemetría a cadenas de texto para publicación. 
+
+\begin{DoxyAuthor}{Autor}
+Lorenzo 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Fecha}
+15 may 2026
+\end{DoxyDate}
+Este módulo centraliza el formateo de los datos adquiridos antes de enviarlos por el canal de comunicaciones. Se mantiene un formato compacto basado en separadores para reducir el tamaño del payload y simplificar su transporte por MQTT/\+\+AT, evitando caracteres que anteriormente podían interferir con el encapsulado de comandos del módulo Wi\+Fi. 
+
+\label{formatter__data_8c_doc-func-members}
+\Hypertarget{formatter__data_8c_doc-func-members}
+\doxysubsection{Documentación de funciones}
+\Hypertarget{formatter__data_8c_a28b5ca7c194bcc1332e9d96afd6b317f}\index{formatter\_data.c@{formatter\_data.c}!EnvData\_to\_json@{EnvData\_to\_json}}
+\index{EnvData\_to\_json@{EnvData\_to\_json}!formatter\_data.c@{formatter\_data.c}}
+\doxysubsubsection{\texorpdfstring{EnvData\_to\_json()}{EnvData\_to\_json()}}
+{\footnotesize\ttfamily \label{formatter__data_8c_a28b5ca7c194bcc1332e9d96afd6b317f} 
+void Env\+Data\+\_\+to\+\_\+json (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{buffer}{, }\item[{size\+\_\+t}]{buffer\+\_\+size}{, }\item[{\doxymbox{\hyperlink{struct_env_data_packet__t}{Env\+Data\+Packet\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{data}{}\end{DoxyParamCaption})}
+
+
+
+Serializa el paquete ambiental en el formato compacto de telemetría. 
+
+Serializa un paquete ambiental en formato JSON.
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\doxymbox{\texttt{out}}  & {\em buffer} & Buffer donde se escribe la cadena generada. \\
+\hline
+\doxymbox{\texttt{in}}  & {\em buffer\+\_\+size} & Tamaño total disponible en {\ttfamily buffer}. \\
+\hline
+\doxymbox{\texttt{in}}  & {\em data} & Paquete ambiental con rumbo, temperatura y presión.\\
+\hline
+\end{DoxyParams}
+El formato se mantiene coherente con el resto de tramas del sistema para que el receptor pueda aplicar una única lógica de separación de campos, sin tratar este paquete como un caso especial.
+
+\begin{DoxyPrecond}{Precondición}
+{\ttfamily buffer} debe apuntar a memoria válida con al menos {\ttfamily buffer\+\_\+size} bytes. 
+
+{\ttfamily data} debe apuntar a un paquete ambiental válido.
+\end{DoxyPrecond}
+Serializa el paquete ambiental en el formato compacto de telemetría.
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\doxymbox{\texttt{out}}  & {\em buffer} & Buffer de salida donde se escribe la cadena JSON. \\
+\hline
+\doxymbox{\texttt{in}}  & {\em buffer\+\_\+size} & Tamaño disponible en el buffer de salida. \\
+\hline
+\doxymbox{\texttt{in}}  & {\em data} & Paquete ambiental que contiene la última muestra normalizada.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondición}
+{\ttfamily buffer} debe apuntar a memoria válida y {\ttfamily buffer\+\_\+size} debe ser suficiente para almacenar el JSON generado. 
+
+{\ttfamily data} debe apuntar a un paquete inicializado. 
+\end{DoxyPrecond}
+Gráfico de llamadas a esta función:\+
+% FIG 1
+\Hypertarget{formatter__data_8c_ab99e42d398f1018fc1a459cc4bee1088}\index{formatter\_data.c@{formatter\_data.c}!EnvDataPacket\_Init@{EnvDataPacket\_Init}}
+\index{EnvDataPacket\_Init@{EnvDataPacket\_Init}!formatter\_data.c@{formatter\_data.c}}
+\doxysubsubsection{\texorpdfstring{EnvDataPacket\_Init()}{EnvDataPacket\_Init()}}
+{\footnotesize\ttfamily \label{formatter__data_8c_ab99e42d398f1018fc1a459cc4bee1088} 
+void Env\+Data\+Packet\+\_\+\+Init (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{struct_env_data_packet__t}{Env\+Data\+Packet\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{packet}{}\end{DoxyParamCaption})}
+
+
+
+Inicializa un paquete ambiental a un estado conocido. 
+
+Inicializa un paquete ambiental con valores seguros.
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\doxymbox{\texttt{out}}  & {\em packet} & Paquete ambiental que se reinicia.\\
+\hline
+\end{DoxyParams}
+Se utiliza el mismo patrón que en el resto de paquetes para mantener una semántica uniforme entre productores y consumidores de datos en Free\+RTOS.
+
+\begin{DoxyPrecond}{Precondición}
+{\ttfamily packet} debe apuntar a una estructura válida.
+\end{DoxyPrecond}
+Inicializa un paquete ambiental a un estado conocido.
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\doxymbox{\texttt{out}}  & {\em packet} & Paquete ambiental a inicializar.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondición}
+El paquete queda preparado para ser usado por el pipeline antes de la primera lectura barométrica o magnética. 
+\end{DoxyPostcond}
+Gráfico de llamadas a esta función:\+
+% FIG 2
+\Hypertarget{formatter__data_8c_addef3f02614d4204178afe4991a99ff2}\index{formatter\_data.c@{formatter\_data.c}!GpsData\_to\_json@{GpsData\_to\_json}}
+\index{GpsData\_to\_json@{GpsData\_to\_json}!formatter\_data.c@{formatter\_data.c}}
+\doxysubsubsection{\texorpdfstring{GpsData\_to\_json()}{GpsData\_to\_json()}}
+{\footnotesize\ttfamily \label{formatter__data_8c_addef3f02614d4204178afe4991a99ff2} 
+void Gps\+Data\+\_\+to\+\_\+json (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{buffer}{, }\item[{size\+\_\+t}]{buffer\+\_\+size}{, }\item[{\doxymbox{\hyperlink{struct_gps_data_packet__t}{Gps\+Data\+Packet\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{data}{}\end{DoxyParamCaption})}
+
+
+
+Serializa el paquete GPS en el formato compacto de telemetría. 
+
+Serializa un paquete GPS en formato JSON.
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\doxymbox{\texttt{out}}  & {\em buffer} & Buffer donde se escribe la cadena generada. \\
+\hline
+\doxymbox{\texttt{in}}  & {\em buffer\+\_\+size} & Tamaño total disponible en {\ttfamily buffer}. \\
+\hline
+\doxymbox{\texttt{in}}  & {\em data} & Paquete GPS con altitud, latitud y longitud.\\
+\hline
+\end{DoxyParams}
+Las coordenadas se limitan a cuatro decimales para contener el tamaño del mensaje y porque la precisión resultante es suficiente para la visualización general de posición usada por la interfaz del proyecto.
+
+\begin{DoxyPrecond}{Precondición}
+{\ttfamily buffer} debe apuntar a memoria válida con al menos {\ttfamily buffer\+\_\+size} bytes. 
+
+{\ttfamily data} debe apuntar a un paquete GPS válido.
+\end{DoxyPrecond}
+Serializa el paquete GPS en el formato compacto de telemetría.
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\doxymbox{\texttt{out}}  & {\em buffer} & Buffer de salida donde se escribe la cadena JSON. \\
+\hline
+\doxymbox{\texttt{in}}  & {\em buffer\+\_\+size} & Tamaño disponible en el buffer de salida. \\
+\hline
+\doxymbox{\texttt{in}}  & {\em data} & Paquete GPS que contiene la última muestra normalizada.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondición}
+{\ttfamily buffer} debe apuntar a memoria válida y {\ttfamily buffer\+\_\+size} debe ser suficiente para almacenar el JSON generado. 
+
+{\ttfamily data} debe apuntar a un paquete inicializado.
+\end{DoxyPrecond}
+\begin{DoxyNote}{Nota}
+La función está pensada para preparar payloads MQTT sin exponer al publicador los detalles internos de la estructura GPS. 
+\end{DoxyNote}
+Gráfico de llamadas a esta función:\+
+% FIG 3
+\Hypertarget{formatter__data_8c_a2c059d8a7f63ddf24fb3c4899487fa38}\index{formatter\_data.c@{formatter\_data.c}!GpsDataPacket\_Init@{GpsDataPacket\_Init}}
+\index{GpsDataPacket\_Init@{GpsDataPacket\_Init}!formatter\_data.c@{formatter\_data.c}}
+\doxysubsubsection{\texorpdfstring{GpsDataPacket\_Init()}{GpsDataPacket\_Init()}}
+{\footnotesize\ttfamily \label{formatter__data_8c_a2c059d8a7f63ddf24fb3c4899487fa38} 
+void Gps\+Data\+Packet\+\_\+\+Init (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{struct_gps_data_packet__t}{Gps\+Data\+Packet\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{packet}{}\end{DoxyParamCaption})}
+
+
+
+Inicializa un paquete GPS a un estado conocido. 
+
+Inicializa un paquete GPS con valores seguros.
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\doxymbox{\texttt{out}}  & {\em packet} & Paquete GPS que se reinicia.\\
+\hline
+\end{DoxyParams}
+Se borra toda la estructura antes de fijar los flags de control para evitar que una lectura parcial o antigua se interprete como nueva telemetría válida.
+
+\begin{DoxyPrecond}{Precondición}
+{\ttfamily packet} debe apuntar a una estructura válida.
+\end{DoxyPrecond}
+Inicializa un paquete GPS a un estado conocido.
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\doxymbox{\texttt{out}}  & {\em packet} & Paquete GPS a inicializar.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondición}
+El paquete queda preparado para ser usado por el pipeline antes de que llegue la primera trama GPS válida. 
+\end{DoxyPostcond}
+Gráfico de llamadas a esta función:\+
+% FIG 4
+\Hypertarget{formatter__data_8c_ae9ef0eb14e10c6d73fcd9de44f1bf115}\index{formatter\_data.c@{formatter\_data.c}!ImuData\_to\_json@{ImuData\_to\_json}}
+\index{ImuData\_to\_json@{ImuData\_to\_json}!formatter\_data.c@{formatter\_data.c}}
+\doxysubsubsection{\texorpdfstring{ImuData\_to\_json()}{ImuData\_to\_json()}}
+{\footnotesize\ttfamily \label{formatter__data_8c_ae9ef0eb14e10c6d73fcd9de44f1bf115} 
+void Imu\+Data\+\_\+to\+\_\+json (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{buffer}{, }\item[{size\+\_\+t}]{buffer\+\_\+size}{, }\item[{\doxymbox{\hyperlink{struct_imu_data_packet__t}{Imu\+Data\+Packet\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{data}{}\end{DoxyParamCaption})}
+
+
+
+Serializa el paquete inercial en el formato compacto de telemetría. 
+
+Serializa un paquete IMU en formato JSON.
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\doxymbox{\texttt{out}}  & {\em buffer} & Buffer donde se escribe la cadena generada. \\
+\hline
+\doxymbox{\texttt{in}}  & {\em buffer\+\_\+size} & Tamaño total disponible en {\ttfamily buffer}. \\
+\hline
+\doxymbox{\texttt{in}}  & {\em data} & Paquete IMU con acelerómetro, giróscopo y magnetómetro.\\
+\hline
+\end{DoxyParams}
+El formato usa claves delimitadas con {\ttfamily \texorpdfstring{$\vert$}{|}} y campos separados por {\ttfamily /\+} para evitar comillas dobles dentro del payload. Esta decisión reduce problemas al insertar la cadena dentro de comandos AT, donde las comillas forman parte de la sintaxis del propio comando.
+
+\begin{DoxyPrecond}{Precondición}
+{\ttfamily buffer} debe apuntar a memoria válida con al menos {\ttfamily buffer\+\_\+size} bytes. 
+
+{\ttfamily data} debe apuntar a un paquete IMU válido. 
+\end{DoxyPrecond}
+\begin{DoxyNote}{Nota}
+La función no devuelve estado; si el buffer no es suficiente, {\ttfamily snprintf} truncará la salida manteniendo la terminación nula cuando el tamaño lo permita.
+\end{DoxyNote}
+Serializa el paquete inercial en el formato compacto de telemetría.
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\doxymbox{\texttt{out}}  & {\em buffer} & Buffer de salida donde se escribe la cadena JSON. \\
+\hline
+\doxymbox{\texttt{in}}  & {\em buffer\+\_\+size} & Tamaño disponible en el buffer de salida. \\
+\hline
+\doxymbox{\texttt{in}}  & {\em data} & Paquete IMU que contiene la última muestra normalizada.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondición}
+{\ttfamily buffer} debe apuntar a memoria válida y {\ttfamily buffer\+\_\+size} debe ser suficiente para almacenar el JSON generado. 
+
+{\ttfamily data} debe apuntar a un paquete inicializado.
+\end{DoxyPrecond}
+\begin{DoxyNote}{Nota}
+Centralizar la conversión evita duplicar el formato de telemetría en las tareas de Free\+RTOS. 
+\end{DoxyNote}
+Gráfico de llamadas a esta función:\+
+% FIG 5
+\Hypertarget{formatter__data_8c_aa7dfe24eaf1db45d49d4c462acbf569b}\index{formatter\_data.c@{formatter\_data.c}!ImuDataPacket\_Init@{ImuDataPacket\_Init}}
+\index{ImuDataPacket\_Init@{ImuDataPacket\_Init}!formatter\_data.c@{formatter\_data.c}}
+\doxysubsubsection{\texorpdfstring{ImuDataPacket\_Init()}{ImuDataPacket\_Init()}}
+{\footnotesize\ttfamily \label{formatter__data_8c_aa7dfe24eaf1db45d49d4c462acbf569b} 
+void Imu\+Data\+Packet\+\_\+\+Init (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{struct_imu_data_packet__t}{Imu\+Data\+Packet\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{packet}{}\end{DoxyParamCaption})}
+
+
+
+Inicializa un paquete IMU a un estado conocido. 
+
+Inicializa un paquete IMU con valores seguros.
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\doxymbox{\texttt{out}}  & {\em packet} & Paquete IMU que se reinicia.\\
+\hline
+\end{DoxyParams}
+El reinicio explícito del flag de actualización permite que las tareas consumidoras distingan entre datos recién publicados y memoria simplemente reservada o reutilizada.
+
+\begin{DoxyPrecond}{Precondición}
+{\ttfamily packet} debe apuntar a una estructura válida.
+\end{DoxyPrecond}
+Inicializa un paquete IMU a un estado conocido.
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\doxymbox{\texttt{out}}  & {\em packet} & Paquete IMU a inicializar.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondición}
+El paquete queda preparado para ser usado por el pipeline antes de la primera lectura del sensor. 
+\end{DoxyPostcond}
+Gráfico de llamadas a esta función:\+
+% FIG 6

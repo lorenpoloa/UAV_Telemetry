@@ -1,0 +1,427 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.17.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Mi Proyecto STM32: Referencia del archivo Core/Inc/sensor10DoF.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+const theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'default';
+mermaid.initialize({ startOnLoad: true, theme: theme });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Mi Proyecto STM32<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.17.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', () => {
+  initMenu('',true);
+  init_search();
+});
+</script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1" style="position:absolute;right:8px;top:8px;height:36px;"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2" style="float:right">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('sensor10_do_f_8h.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Referencia del archivo sensor10DoF.h</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Interfaz pública del módulo de adquisición del sensor 10DoF.  
+<a href="#details">Más...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="main_8h_source.html">main.h</a>&quot;</code><br />
+<code>#include &lt;stdint.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Gráfico de dependencias incluidas en sensor10DoF.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="sensor10_do_f_8h__incl.png" border="0" usemap="#a_core_2_inc_2sensor10_do_f_8h" loading="lazy" alt=""/></div>
+<!-- MAP 0 -->
+</div>
+</div><div class="textblock"><div class="dynheader">
+Gráfico de los archivos que directa o indirectamente incluyen a este archivo:</div>
+<div class="dyncontent">
+<div class="center"><img src="sensor10_do_f_8h__dep__incl.png" border="0" usemap="#a_core_2_inc_2sensor10_do_f_8hdep" loading="lazy" alt=""/></div>
+<!-- MAP 1 -->
+</div>
+</div>
+<p><a href="sensor10_do_f_8h_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Estructuras de datos</h2></td></tr>
+<tr class="memitem:Sensor10DoF_5Ft" id="r_Sensor10DoF_5Ft"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_sensor10_do_f__t.html">Sensor10DoF_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Conjunto completo de medidas calculadas por el módulo 10DoF.  <a href="struct_sensor10_do_f__t.html#details">Más...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumeraciones</h2></td></tr>
+<tr class="memitem:a2d321db4d1c1bdad7da1082cc9d2da90" id="r_a2d321db4d1c1bdad7da1082cc9d2da90"><td class="memItemLeft">enum &#160;</td><td class="memItemRight"><a class="el" href="#a2d321db4d1c1bdad7da1082cc9d2da90">SensorStatus_t</a> { <a class="el" href="#a2d321db4d1c1bdad7da1082cc9d2da90aa6cd2e3b0a7c51a390945e41e6dc1db8">SENSOR_OK</a> = 0
+, <a class="el" href="#a2d321db4d1c1bdad7da1082cc9d2da90a3606d5ad89db20322e69051227332a0f">SENSOR_ERROR</a>
+, <a class="el" href="#a2d321db4d1c1bdad7da1082cc9d2da90ab269ae21112e87a45bf7708d7a217e19">SENSOR_TIMEOUT</a>
+, <a class="el" href="#a2d321db4d1c1bdad7da1082cc9d2da90ad6da2b13bdfc13b3959320862249847a">SENSOR_BUSY</a>
+ }</td></tr>
+<tr class="memdesc:a2d321db4d1c1bdad7da1082cc9d2da90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estado genérico de las operaciones del módulo 10DoF.  <a href="#a2d321db4d1c1bdad7da1082cc9d2da90">Más...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:a40d60a406a5f724ddb728f6335c660be" id="r_a40d60a406a5f724ddb728f6335c660be"><td class="memItemLeft"><a class="el" href="#a2d321db4d1c1bdad7da1082cc9d2da90">SensorStatus_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#a40d60a406a5f724ddb728f6335c660be">Sensor10DoF_Init</a> (void)</td></tr>
+<tr class="memdesc:a40d60a406a5f724ddb728f6335c660be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicializa los sensores y prepara el bus de comunicación.  <br /></td></tr>
+<tr class="memitem:a9513ab16635801c9f5470c7f859489f4" id="r_a9513ab16635801c9f5470c7f859489f4"><td class="memItemLeft"><a class="el" href="#a2d321db4d1c1bdad7da1082cc9d2da90">SensorStatus_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#a9513ab16635801c9f5470c7f859489f4">Sensor10DoF_Read</a> (<a class="el" href="struct_sensor10_do_f__t.html">Sensor10DoF_t</a> *data)</td></tr>
+<tr class="memdesc:a9513ab16635801c9f5470c7f859489f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lee una muestra completa del módulo 10DoF.  <br /></td></tr>
+<tr class="memitem:ac4c6b274050321d5e7e1a48532870982" id="r_ac4c6b274050321d5e7e1a48532870982"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac4c6b274050321d5e7e1a48532870982">Sensor10DoF_Reset</a> (void)</td></tr>
+<tr class="memdesc:ac4c6b274050321d5e7e1a48532870982"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reinicia el estado interno del módulo 10DoF.  <br /></td></tr>
+<tr class="memitem:a8286f829ac13dbc25471ead91feac263" id="r_a8286f829ac13dbc25471ead91feac263"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a8286f829ac13dbc25471ead91feac263">Sensor10DoF_I2CRecover</a> (void)</td></tr>
+<tr class="memdesc:a8286f829ac13dbc25471ead91feac263"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ejecuta una recuperación manual del bus I2C usado por el módulo.  <br /></td></tr>
+<tr class="memitem:a0b850440969ed2c0142b67744da3a201" id="r_a0b850440969ed2c0142b67744da3a201"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a0b850440969ed2c0142b67744da3a201">Sensor10DoF_Calibrate</a> (void)</td></tr>
+<tr class="memdesc:a0b850440969ed2c0142b67744da3a201"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ejecuta la calibración del módulo 10DoF.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Interfaz pública del módulo de adquisición del sensor 10DoF. </p>
+<p>Este driver concentra la inicialización, recuperación y lectura de las magnitudes inerciales, magnéticas y ambientales usadas por el sistema. La API devuelve valores ya convertidos a unidades de aplicación para que las tareas de FreeRTOS y la capa de telemetría no dependan de registros ni escalas internas de cada sensor. </p>
+</div><a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">Documentación de enumeraciones</h2>
+<a id="a2d321db4d1c1bdad7da1082cc9d2da90" name="a2d321db4d1c1bdad7da1082cc9d2da90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d321db4d1c1bdad7da1082cc9d2da90">&#9670;&#160;</a></span>SensorStatus_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a2d321db4d1c1bdad7da1082cc9d2da90">SensorStatus_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Estado genérico de las operaciones del módulo 10DoF. </p>
+<p>La distinción entre error, timeout y bus ocupado permite aplicar estrategias de recuperación distintas sin acoplar la aplicación al detalle del bus I2C. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Valores de enumeraciones</th></tr><tr><td class="fieldname"><a id="a2d321db4d1c1bdad7da1082cc9d2da90aa6cd2e3b0a7c51a390945e41e6dc1db8" name="a2d321db4d1c1bdad7da1082cc9d2da90aa6cd2e3b0a7c51a390945e41e6dc1db8"></a>SENSOR_OK&#160;</td><td class="fielddoc"><p>Operación completada correctamente. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2d321db4d1c1bdad7da1082cc9d2da90a3606d5ad89db20322e69051227332a0f" name="a2d321db4d1c1bdad7da1082cc9d2da90a3606d5ad89db20322e69051227332a0f"></a>SENSOR_ERROR&#160;</td><td class="fielddoc"><p>Error genérico durante la operación del sensor. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2d321db4d1c1bdad7da1082cc9d2da90ab269ae21112e87a45bf7708d7a217e19" name="a2d321db4d1c1bdad7da1082cc9d2da90ab269ae21112e87a45bf7708d7a217e19"></a>SENSOR_TIMEOUT&#160;</td><td class="fielddoc"><p>No se recibió respuesta dentro del tiempo esperado. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2d321db4d1c1bdad7da1082cc9d2da90ad6da2b13bdfc13b3959320862249847a" name="a2d321db4d1c1bdad7da1082cc9d2da90ad6da2b13bdfc13b3959320862249847a"></a>SENSOR_BUSY&#160;</td><td class="fielddoc"><p>El recurso compartido o bus todavía no está disponible. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentación de funciones</h2>
+<a id="a0b850440969ed2c0142b67744da3a201" name="a0b850440969ed2c0142b67744da3a201"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b850440969ed2c0142b67744da3a201">&#9670;&#160;</a></span>Sensor10DoF_Calibrate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Sensor10DoF_Calibrate </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ejecuta la calibración del módulo 10DoF. </p>
+<p>Ejecuta una nueva calibración del giróscopo.</p>
+<p>La calibración reduce offsets sistemáticos, especialmente en el giróscopo, y permite que las magnitudes publicadas sean estables cuando el sistema está en reposo.</p>
+<p>Ejecuta la calibración del módulo 10DoF.</p>
+<p>Permite recalcular los offsets si cambia la temperatura, la alimentación o se observa deriva tras el arranque. El sensor debe permanecer inmóvil durante la llamada para que el promedio represente únicamente el sesgo estático. </p>
+<div class="dynheader">
+Gráfico de llamadas de esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="sensor10_do_f_8h_a0b850440969ed2c0142b67744da3a201_cgraph.png" border="0" usemap="#asensor10_do_f_8h_a0b850440969ed2c0142b67744da3a201_cgraph" loading="lazy" alt=""/></div>
+<!-- MAP 2 -->
+</div>
+
+</div>
+</div>
+<a id="a8286f829ac13dbc25471ead91feac263" name="a8286f829ac13dbc25471ead91feac263"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8286f829ac13dbc25471ead91feac263">&#9670;&#160;</a></span>Sensor10DoF_I2CRecover()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Sensor10DoF_I2CRecover </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ejecuta una recuperación manual del bus I2C usado por el módulo. </p>
+<p>Intenta recuperar el bus I2C generando pulsos manuales en SCL.</p>
+<p>Esta operación está pensada para liberar el bus cuando un dispositivo mantiene líneas bloqueadas tras una transacción incompleta o un reinicio inesperado.</p>
+<p>Ejecuta una recuperación manual del bus I2C usado por el módulo.</p>
+<p>Algunos esclavos I2C pueden dejar SDA retenida tras un reset o una transferencia interrumpida. La recuperación conmuta temporalmente SCL/SDA como GPIO para liberar el bus antes de reinicializar el periférico I2C. </p>
+<div class="dynheader">
+Gráfico de llamadas de esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="sensor10_do_f_8h_a8286f829ac13dbc25471ead91feac263_cgraph.png" border="0" usemap="#asensor10_do_f_8h_a8286f829ac13dbc25471ead91feac263_cgraph" loading="lazy" alt=""/></div>
+<!-- MAP 3 -->
+</div>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="sensor10_do_f_8h_a8286f829ac13dbc25471ead91feac263_icgraph.png" border="0" usemap="#asensor10_do_f_8h_a8286f829ac13dbc25471ead91feac263_icgraph" loading="lazy" alt=""/></div>
+<!-- MAP 4 -->
+</div>
+
+</div>
+</div>
+<a id="a40d60a406a5f724ddb728f6335c660be" name="a40d60a406a5f724ddb728f6335c660be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40d60a406a5f724ddb728f6335c660be">&#9670;&#160;</a></span>Sensor10DoF_Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a2d321db4d1c1bdad7da1082cc9d2da90">SensorStatus_t</a> Sensor10DoF_Init </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inicializa los sensores y prepara el bus de comunicación. </p>
+<p>Inicializa todos los sensores del módulo 10DoF.</p>
+<dl class="section return"><dt>Devuelve</dt><dd>SENSOR_OK si todos los dispositivos quedan listos para lectura. </dd>
+<dd>
+SENSOR_ERROR si algún dispositivo no responde o no queda configurado. </dd>
+<dd>
+SENSOR_TIMEOUT si el bus no responde dentro del tiempo esperado.</dd></dl>
+<p>Debe llamarse antes de solicitar lecturas para asegurar que las escalas, registros y compensaciones iniciales están configuradas de forma coherente.</p>
+<p>Inicializa los sensores y prepara el bus de comunicación.</p>
+<dl class="retval"><dt>Valores devueltos</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">SENSOR_OK</td><td>Todos los dispositivos respondieron y quedaron configurados. </td></tr>
+    <tr><td class="paramname">SENSOR_ERROR</td><td>Algún dispositivo no respondió, no pudo configurarse o falló la calibración.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>La función verifica primero la presencia de todos los esclavos I2C antes de configurar registros. Esto permite detectar fallos de cableado o bloqueo de bus antes de producir lecturas parciales incoherentes. </p>
+<div class="dynheader">
+Gráfico de llamadas de esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="sensor10_do_f_8h_a40d60a406a5f724ddb728f6335c660be_cgraph.png" border="0" usemap="#asensor10_do_f_8h_a40d60a406a5f724ddb728f6335c660be_cgraph" loading="lazy" alt=""/></div>
+<!-- MAP 5 -->
+</div>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="sensor10_do_f_8h_a40d60a406a5f724ddb728f6335c660be_icgraph.png" border="0" usemap="#asensor10_do_f_8h_a40d60a406a5f724ddb728f6335c660be_icgraph" loading="lazy" alt=""/></div>
+<!-- MAP 6 -->
+</div>
+
+</div>
+</div>
+<a id="a9513ab16635801c9f5470c7f859489f4" name="a9513ab16635801c9f5470c7f859489f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9513ab16635801c9f5470c7f859489f4">&#9670;&#160;</a></span>Sensor10DoF_Read()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a2d321db4d1c1bdad7da1082cc9d2da90">SensorStatus_t</a> Sensor10DoF_Read </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_sensor10_do_f__t.html">Sensor10DoF_t</a> *</td>          <td class="paramname"><span class="paramname"><em>d</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Lee una muestra completa del módulo 10DoF. </p>
+<p>Lee todos los sensores y rellena una muestra 10DoF completa.</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">data</td><td>Estructura donde se almacenan las magnitudes convertidas.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>SENSOR_OK si la lectura se completa correctamente. </dd>
+<dd>
+SENSOR_ERROR si alguna magnitud no puede actualizarse. </dd>
+<dd>
+SENSOR_TIMEOUT si un dispositivo no responde a tiempo. </dd>
+<dd>
+SENSOR_BUSY si el módulo no puede atender la lectura en ese instante.</dd></dl>
+<dl class="section pre"><dt>Precondición</dt><dd><span class="tt">data</span> debe apuntar a una estructura válida.</dd></dl>
+<p>La función entrega una muestra agregada para reducir el acoplamiento entre las tareas consumidoras y los distintos sensores físicos que forman el módulo.</p>
+<p>Lee una muestra completa del módulo 10DoF.</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">d</td><td>Estructura de destino con aceleración, orientación, campo magnético, velocidad angular, temperatura, presión y altitud. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valores devueltos</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">SENSOR_OK</td><td>Muestra actualizada correctamente. </td></tr>
+    <tr><td class="paramname">SENSOR_ERROR</td><td>Error de argumento, comunicación o compensación inválida.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>La función entrega magnitudes ya convertidas para aislar al resto del proyecto de escalas de registros. También calcula roll, pitch y heading compensado por inclinación para que la interfaz pueda consumir directamente valores físicos.</p>
+<dl class="section pre"><dt>Precondición</dt><dd><a class="el" href="#a40d60a406a5f724ddb728f6335c660be" title="Inicializa los sensores y prepara el bus de comunicación.">Sensor10DoF_Init()</a> debe haberse ejecutado correctamente. </dd></dl>
+<div class="dynheader">
+Gráfico de llamadas de esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="sensor10_do_f_8h_a9513ab16635801c9f5470c7f859489f4_cgraph.png" border="0" usemap="#asensor10_do_f_8h_a9513ab16635801c9f5470c7f859489f4_cgraph" loading="lazy" alt=""/></div>
+<!-- MAP 7 -->
+</div>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="sensor10_do_f_8h_a9513ab16635801c9f5470c7f859489f4_icgraph.png" border="0" usemap="#asensor10_do_f_8h_a9513ab16635801c9f5470c7f859489f4_icgraph" loading="lazy" alt=""/></div>
+<!-- MAP 8 -->
+</div>
+
+</div>
+</div>
+<a id="ac4c6b274050321d5e7e1a48532870982" name="ac4c6b274050321d5e7e1a48532870982"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4c6b274050321d5e7e1a48532870982">&#9670;&#160;</a></span>Sensor10DoF_Reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Sensor10DoF_Reset </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reinicia el estado interno del módulo 10DoF. </p>
+<p>Recupera el bus I2C y reinicializa el módulo 10DoF.</p>
+<p>Se utiliza como mecanismo de recuperación cuando la secuencia de lectura queda en un estado no fiable y conviene volver a una condición conocida.</p>
+<p>Reinicia el estado interno del módulo 10DoF.</p>
+<p>Se proporciona como rutina de recuperación ante errores de comunicación. La función intenta dejar el bus y los sensores en un estado operativo sin exponer a las capas superiores los detalles eléctricos de recuperación. </p>
+<div class="dynheader">
+Gráfico de llamadas de esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="sensor10_do_f_8h_ac4c6b274050321d5e7e1a48532870982_cgraph.png" border="0" usemap="#asensor10_do_f_8h_ac4c6b274050321d5e7e1a48532870982_cgraph" loading="lazy" alt=""/></div>
+<!-- MAP 9 -->
+</div>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="sensor10_do_f_8h_ac4c6b274050321d5e7e1a48532870982_icgraph.png" border="0" usemap="#asensor10_do_f_8h_ac4c6b274050321d5e7e1a48532870982_icgraph" loading="lazy" alt=""/></div>
+<!-- MAP 10 -->
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c6310732a22f63c0c2fc5595561e68f1.html">Core</a></li><li class="navelem"><a href="dir_e2489e887f17afa3cbc07a4ec152cdd2.html">Inc</a></li><li class="navelem"><a href="sensor10_do_f_8h.html">sensor10DoF.h</a></li>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.17.0 </li>
+  </ul>
+</div>
+</body>
+</html>

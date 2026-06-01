@@ -1,0 +1,237 @@
+\doxysection{Referencia del archivo Core/\+\+Inc/\+sensor10\+DoF.h}
+\hypertarget{sensor10_do_f_8h}{}\label{sensor10_do_f_8h}\index{Core/Inc/sensor10DoF.h@{Core/Inc/sensor10DoF.h}}
+
+
+Interfaz pública del módulo de adquisición del sensor 10DoF.  
+
+
+{\ttfamily \+\#include "{}main.\+h"{}}\newline
+{\ttfamily \+\#include $<$stdint.\+h$>$}\newline
+Gráfico de dependencias incluidas en sensor10\+Do\+F.\+h:\+
+% FIG 0
+Gráfico de los archivos que directa o indirectamente incluyen a este archivo:\+
+% FIG 1
+\doxysubsubsection*{Estructuras de datos}
+\begin{DoxyCompactItemize}
+\item 
+struct \doxymbox{\hyperlink{struct_sensor10_do_f__t}{Sensor10\+Do\+F\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Conjunto completo de medidas calculadas por el módulo 10DoF. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumeraciones}
+\begin{DoxyCompactItemize}
+\item 
+enum \doxymbox{\hyperlink{sensor10_do_f_8h_a2d321db4d1c1bdad7da1082cc9d2da90}{Sensor\+Status\+\_\+t}} \{ \doxymbox{\hyperlink{sensor10_do_f_8h_a2d321db4d1c1bdad7da1082cc9d2da90aa6cd2e3b0a7c51a390945e41e6dc1db8}{SENSOR\+\_\+\+OK}} = 0
+, \doxymbox{\hyperlink{sensor10_do_f_8h_a2d321db4d1c1bdad7da1082cc9d2da90a3606d5ad89db20322e69051227332a0f}{SENSOR\+\_\+\+ERROR}}
+, \doxymbox{\hyperlink{sensor10_do_f_8h_a2d321db4d1c1bdad7da1082cc9d2da90ab269ae21112e87a45bf7708d7a217e19}{SENSOR\+\_\+\+TIMEOUT}}
+, \doxymbox{\hyperlink{sensor10_do_f_8h_a2d321db4d1c1bdad7da1082cc9d2da90ad6da2b13bdfc13b3959320862249847a}{SENSOR\+\_\+\+BUSY}}
+ \}
+\begin{DoxyCompactList}\small\item\em Estado genérico de las operaciones del módulo 10DoF. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{sensor10_do_f_8h_a2d321db4d1c1bdad7da1082cc9d2da90}{Sensor\+Status\+\_\+t}} \doxymbox{\hyperlink{sensor10_do_f_8h_a40d60a406a5f724ddb728f6335c660be}{Sensor10\+Do\+F\+\_\+\+Init}} (void)
+\begin{DoxyCompactList}\small\item\em Inicializa los sensores y prepara el bus de comunicación. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{sensor10_do_f_8h_a2d321db4d1c1bdad7da1082cc9d2da90}{Sensor\+Status\+\_\+t}} \doxymbox{\hyperlink{sensor10_do_f_8h_a9513ab16635801c9f5470c7f859489f4}{Sensor10\+Do\+F\+\_\+\+Read}} (\doxymbox{\hyperlink{struct_sensor10_do_f__t}{Sensor10\+Do\+F\+\_\+t}} \texorpdfstring{$\ast$}{*}data)
+\begin{DoxyCompactList}\small\item\em Lee una muestra completa del módulo 10DoF. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{sensor10_do_f_8h_ac4c6b274050321d5e7e1a48532870982}{Sensor10\+Do\+F\+\_\+\+Reset}} (void)
+\begin{DoxyCompactList}\small\item\em Reinicia el estado interno del módulo 10DoF. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{sensor10_do_f_8h_a8286f829ac13dbc25471ead91feac263}{Sensor10\+Do\+F\+\_\+\+I2\+CRecover}} (void)
+\begin{DoxyCompactList}\small\item\em Ejecuta una recuperación manual del bus I2C usado por el módulo. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{sensor10_do_f_8h_a0b850440969ed2c0142b67744da3a201}{Sensor10\+Do\+F\+\_\+\+Calibrate}} (void)
+\begin{DoxyCompactList}\small\item\em Ejecuta la calibración del módulo 10DoF. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Interfaz pública del módulo de adquisición del sensor 10DoF. 
+
+Este driver concentra la inicialización, recuperación y lectura de las magnitudes inerciales, magnéticas y ambientales usadas por el sistema. La API devuelve valores ya convertidos a unidades de aplicación para que las tareas de Free\+RTOS y la capa de telemetría no dependan de registros ni escalas internas de cada sensor. 
+
+\label{sensor10_do_f_8h_doc-enum-members}
+\Hypertarget{sensor10_do_f_8h_doc-enum-members}
+\doxysubsection{Documentación de enumeraciones}
+\Hypertarget{sensor10_do_f_8h_a2d321db4d1c1bdad7da1082cc9d2da90}\index{sensor10DoF.h@{sensor10DoF.h}!SensorStatus\_t@{SensorStatus\_t}}
+\index{SensorStatus\_t@{SensorStatus\_t}!sensor10DoF.h@{sensor10DoF.h}}
+\doxysubsubsection{\texorpdfstring{SensorStatus\_t}{SensorStatus\_t}}
+{\footnotesize\ttfamily \label{sensor10_do_f_8h_a2d321db4d1c1bdad7da1082cc9d2da90} 
+enum \doxymbox{\hyperlink{sensor10_do_f_8h_a2d321db4d1c1bdad7da1082cc9d2da90}{Sensor\+Status\+\_\+t}}}
+
+
+
+Estado genérico de las operaciones del módulo 10DoF. 
+
+La distinción entre error, timeout y bus ocupado permite aplicar estrategias de recuperación distintas sin acoplar la aplicación al detalle del bus I2C. \begin{DoxyEnumFields}[2]{Valores de enumeraciones}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SENSOR\_OK@{SENSOR\_OK}!sensor10DoF.h@{sensor10DoF.h}}
+\index{sensor10DoF.h@{sensor10DoF.h}!SENSOR\_OK@{SENSOR\_OK}}
+}\Hypertarget{sensor10_do_f_8h_a2d321db4d1c1bdad7da1082cc9d2da90aa6cd2e3b0a7c51a390945e41e6dc1db8}\label{sensor10_do_f_8h_a2d321db4d1c1bdad7da1082cc9d2da90aa6cd2e3b0a7c51a390945e41e6dc1db8} 
+SENSOR\+\_\+\+OK&Operación completada correctamente. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SENSOR\_ERROR@{SENSOR\_ERROR}!sensor10DoF.h@{sensor10DoF.h}}
+\index{sensor10DoF.h@{sensor10DoF.h}!SENSOR\_ERROR@{SENSOR\_ERROR}}
+}\Hypertarget{sensor10_do_f_8h_a2d321db4d1c1bdad7da1082cc9d2da90a3606d5ad89db20322e69051227332a0f}\label{sensor10_do_f_8h_a2d321db4d1c1bdad7da1082cc9d2da90a3606d5ad89db20322e69051227332a0f} 
+SENSOR\+\_\+\+ERROR&Error genérico durante la operación del sensor. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SENSOR\_TIMEOUT@{SENSOR\_TIMEOUT}!sensor10DoF.h@{sensor10DoF.h}}
+\index{sensor10DoF.h@{sensor10DoF.h}!SENSOR\_TIMEOUT@{SENSOR\_TIMEOUT}}
+}\Hypertarget{sensor10_do_f_8h_a2d321db4d1c1bdad7da1082cc9d2da90ab269ae21112e87a45bf7708d7a217e19}\label{sensor10_do_f_8h_a2d321db4d1c1bdad7da1082cc9d2da90ab269ae21112e87a45bf7708d7a217e19} 
+SENSOR\+\_\+\+TIMEOUT&No se recibió respuesta dentro del tiempo esperado. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SENSOR\_BUSY@{SENSOR\_BUSY}!sensor10DoF.h@{sensor10DoF.h}}
+\index{sensor10DoF.h@{sensor10DoF.h}!SENSOR\_BUSY@{SENSOR\_BUSY}}
+}\Hypertarget{sensor10_do_f_8h_a2d321db4d1c1bdad7da1082cc9d2da90ad6da2b13bdfc13b3959320862249847a}\label{sensor10_do_f_8h_a2d321db4d1c1bdad7da1082cc9d2da90ad6da2b13bdfc13b3959320862249847a} 
+SENSOR\+\_\+\+BUSY&El recurso compartido o bus todavía no está disponible. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\label{sensor10_do_f_8h_doc-func-members}
+\Hypertarget{sensor10_do_f_8h_doc-func-members}
+\doxysubsection{Documentación de funciones}
+\Hypertarget{sensor10_do_f_8h_a0b850440969ed2c0142b67744da3a201}\index{sensor10DoF.h@{sensor10DoF.h}!Sensor10DoF\_Calibrate@{Sensor10DoF\_Calibrate}}
+\index{Sensor10DoF\_Calibrate@{Sensor10DoF\_Calibrate}!sensor10DoF.h@{sensor10DoF.h}}
+\doxysubsubsection{\texorpdfstring{Sensor10DoF\_Calibrate()}{Sensor10DoF\_Calibrate()}}
+{\footnotesize\ttfamily \label{sensor10_do_f_8h_a0b850440969ed2c0142b67744da3a201} 
+void Sensor10\+Do\+F\+\_\+\+Calibrate (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Ejecuta la calibración del módulo 10DoF. 
+
+Ejecuta una nueva calibración del giróscopo.
+
+La calibración reduce offsets sistemáticos, especialmente en el giróscopo, y permite que las magnitudes publicadas sean estables cuando el sistema está en reposo.
+
+Ejecuta la calibración del módulo 10DoF.
+
+Permite recalcular los offsets si cambia la temperatura, la alimentación o se observa deriva tras el arranque. El sensor debe permanecer inmóvil durante la llamada para que el promedio represente únicamente el sesgo estático. Gráfico de llamadas de esta función:\+
+% FIG 2
+\Hypertarget{sensor10_do_f_8h_a8286f829ac13dbc25471ead91feac263}\index{sensor10DoF.h@{sensor10DoF.h}!Sensor10DoF\_I2CRecover@{Sensor10DoF\_I2CRecover}}
+\index{Sensor10DoF\_I2CRecover@{Sensor10DoF\_I2CRecover}!sensor10DoF.h@{sensor10DoF.h}}
+\doxysubsubsection{\texorpdfstring{Sensor10DoF\_I2CRecover()}{Sensor10DoF\_I2CRecover()}}
+{\footnotesize\ttfamily \label{sensor10_do_f_8h_a8286f829ac13dbc25471ead91feac263} 
+void Sensor10\+Do\+F\+\_\+\+I2\+CRecover (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Ejecuta una recuperación manual del bus I2C usado por el módulo. 
+
+Intenta recuperar el bus I2C generando pulsos manuales en SCL.
+
+Esta operación está pensada para liberar el bus cuando un dispositivo mantiene líneas bloqueadas tras una transacción incompleta o un reinicio inesperado.
+
+Ejecuta una recuperación manual del bus I2C usado por el módulo.
+
+Algunos esclavos I2C pueden dejar SDA retenida tras un reset o una transferencia interrumpida. La recuperación conmuta temporalmente SCL/\+\+SDA como GPIO para liberar el bus antes de reinicializar el periférico I2C. Gráfico de llamadas de esta función:\+
+% FIG 3
+Gráfico de llamadas a esta función:\+
+% FIG 4
+\Hypertarget{sensor10_do_f_8h_a40d60a406a5f724ddb728f6335c660be}\index{sensor10DoF.h@{sensor10DoF.h}!Sensor10DoF\_Init@{Sensor10DoF\_Init}}
+\index{Sensor10DoF\_Init@{Sensor10DoF\_Init}!sensor10DoF.h@{sensor10DoF.h}}
+\doxysubsubsection{\texorpdfstring{Sensor10DoF\_Init()}{Sensor10DoF\_Init()}}
+{\footnotesize\ttfamily \label{sensor10_do_f_8h_a40d60a406a5f724ddb728f6335c660be} 
+\doxymbox{\hyperlink{sensor10_do_f_8h_a2d321db4d1c1bdad7da1082cc9d2da90}{Sensor\+Status\+\_\+t}} Sensor10\+Do\+F\+\_\+\+Init (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Inicializa los sensores y prepara el bus de comunicación. 
+
+Inicializa todos los sensores del módulo 10DoF.
+
+\begin{DoxyReturn}{Devuelve}
+SENSOR\+\_\+\+OK si todos los dispositivos quedan listos para lectura. 
+
+SENSOR\+\_\+\+ERROR si algún dispositivo no responde o no queda configurado. 
+
+SENSOR\+\_\+\+TIMEOUT si el bus no responde dentro del tiempo esperado.
+\end{DoxyReturn}
+Debe llamarse antes de solicitar lecturas para asegurar que las escalas, registros y compensaciones iniciales están configuradas de forma coherente.
+
+Inicializa los sensores y prepara el bus de comunicación.
+
+
+\begin{DoxyRetVals}{Valores devueltos}
+{\em SENSOR\+\_\+\+OK} & Todos los dispositivos respondieron y quedaron configurados. \\
+\hline
+{\em SENSOR\+\_\+\+ERROR} & Algún dispositivo no respondió, no pudo configurarse o falló la calibración.\\
+\hline
+\end{DoxyRetVals}
+La función verifica primero la presencia de todos los esclavos I2C antes de configurar registros. Esto permite detectar fallos de cableado o bloqueo de bus antes de producir lecturas parciales incoherentes. Gráfico de llamadas de esta función:\+
+% FIG 5
+Gráfico de llamadas a esta función:\+
+% FIG 6
+\Hypertarget{sensor10_do_f_8h_a9513ab16635801c9f5470c7f859489f4}\index{sensor10DoF.h@{sensor10DoF.h}!Sensor10DoF\_Read@{Sensor10DoF\_Read}}
+\index{Sensor10DoF\_Read@{Sensor10DoF\_Read}!sensor10DoF.h@{sensor10DoF.h}}
+\doxysubsubsection{\texorpdfstring{Sensor10DoF\_Read()}{Sensor10DoF\_Read()}}
+{\footnotesize\ttfamily \label{sensor10_do_f_8h_a9513ab16635801c9f5470c7f859489f4} 
+\doxymbox{\hyperlink{sensor10_do_f_8h_a2d321db4d1c1bdad7da1082cc9d2da90}{Sensor\+Status\+\_\+t}} Sensor10\+Do\+F\+\_\+\+Read (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{struct_sensor10_do_f__t}{Sensor10\+Do\+F\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{d}{}\end{DoxyParamCaption})}
+
+
+
+Lee una muestra completa del módulo 10DoF. 
+
+Lee todos los sensores y rellena una muestra 10DoF completa.
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\doxymbox{\texttt{out}}  & {\em data} & Estructura donde se almacenan las magnitudes convertidas.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+SENSOR\+\_\+\+OK si la lectura se completa correctamente. 
+
+SENSOR\+\_\+\+ERROR si alguna magnitud no puede actualizarse. 
+
+SENSOR\+\_\+\+TIMEOUT si un dispositivo no responde a tiempo. 
+
+SENSOR\+\_\+\+BUSY si el módulo no puede atender la lectura en ese instante.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondición}
+{\ttfamily data} debe apuntar a una estructura válida.
+\end{DoxyPrecond}
+La función entrega una muestra agregada para reducir el acoplamiento entre las tareas consumidoras y los distintos sensores físicos que forman el módulo.
+
+Lee una muestra completa del módulo 10DoF.
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\doxymbox{\texttt{out}}  & {\em d} & Estructura de destino con aceleración, orientación, campo magnético, velocidad angular, temperatura, presión y altitud. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Valores devueltos}
+{\em SENSOR\+\_\+\+OK} & Muestra actualizada correctamente. \\
+\hline
+{\em SENSOR\+\_\+\+ERROR} & Error de argumento, comunicación o compensación inválida.\\
+\hline
+\end{DoxyRetVals}
+La función entrega magnitudes ya convertidas para aislar al resto del proyecto de escalas de registros. También calcula roll, pitch y heading compensado por inclinación para que la interfaz pueda consumir directamente valores físicos.
+
+\begin{DoxyPrecond}{Precondición}
+\doxylink{sensor10_do_f_8h_a40d60a406a5f724ddb728f6335c660be}{Sensor10\+Do\+F\+\_\+\+Init()} debe haberse ejecutado correctamente. 
+\end{DoxyPrecond}
+Gráfico de llamadas de esta función:\+
+% FIG 7
+Gráfico de llamadas a esta función:\+
+% FIG 8
+\Hypertarget{sensor10_do_f_8h_ac4c6b274050321d5e7e1a48532870982}\index{sensor10DoF.h@{sensor10DoF.h}!Sensor10DoF\_Reset@{Sensor10DoF\_Reset}}
+\index{Sensor10DoF\_Reset@{Sensor10DoF\_Reset}!sensor10DoF.h@{sensor10DoF.h}}
+\doxysubsubsection{\texorpdfstring{Sensor10DoF\_Reset()}{Sensor10DoF\_Reset()}}
+{\footnotesize\ttfamily \label{sensor10_do_f_8h_ac4c6b274050321d5e7e1a48532870982} 
+void Sensor10\+Do\+F\+\_\+\+Reset (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Reinicia el estado interno del módulo 10DoF. 
+
+Recupera el bus I2C y reinicializa el módulo 10DoF.
+
+Se utiliza como mecanismo de recuperación cuando la secuencia de lectura queda en un estado no fiable y conviene volver a una condición conocida.
+
+Reinicia el estado interno del módulo 10DoF.
+
+Se proporciona como rutina de recuperación ante errores de comunicación. La función intenta dejar el bus y los sensores en un estado operativo sin exponer a las capas superiores los detalles eléctricos de recuperación. Gráfico de llamadas de esta función:\+
+% FIG 9
+Gráfico de llamadas a esta función:\+
+% FIG 10

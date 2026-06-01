@@ -1,0 +1,49 @@
+# --- INFORMACIÓN DEL PROYECTO ---
+PROJECT_NAME           = "TFG_UAV_TELEMETRY_v4"
+PROJECT_NUMBER         = "4.0.0"
+OUTPUT_DIRECTORY       = "Documentation"
+OUTPUT_LANGUAGE        = Spanish
+BRIEF_MEMBER_DESC      = YES
+
+# --- CONFIGURACIÓN DE ENTRADA (QUÉ ESCANEAR) ---
+# INPUT apunta a las carpetas de código de tu STM32
+INPUT                  = Core/Src Core/Inc
+FILE_PATTERNS          = *.c *.h *.s
+RECURSIVE              = YES
+
+# --- CONFIGURACIÓN DE EXCLUSIÓN (QUÉ IGNORAR) ---
+# Evita documentar carpetas de configuración del IDE o librerías externas que no tocamos
+EXCLUDE                = Core/Src/stm32f4xx_it.c \
+                         Core/Src/system_stm32f4xx.c \
+                         Core/Src/dma.c \
+                         Core/Src/gpio.c \
+                         Core/Src/i2c.c \
+                         Core/Src/main.c \
+                         Core/Src/syscall.c \
+                         Core/Src/sysmem.c \
+                         Core/Src/tim.c \
+                         Core/Src/usart.c \
+                         Core/Inc/stm32f4xx_it.h
+EXCLUDE_PATTERNS       = Core/Src/stm32* Core/Src/*stm32* Core/Inc/stm32* Core/Inc/*stm32* */cmsis/* */startup_*
+
+# --- CONFIGURACIÓN DE SALIDA (QUÉ GENERAR) ---
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html_v4
+GENERATE_LATEX         = YES
+LATEX_OUTPUT           = latex_v4
+
+# Recomendado para proyectos en español
+PDF_HYPERLINKS         = YES
+USE_PDFLATEX           = YES
+
+# --- OPTIMIZACIÓN PARA C ---
+OPTIMIZE_OUTPUT_FOR_C  = YES
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+
+# --- DIAGRAMAS (Requiere Graphviz/Dot instalado) ---
+HAVE_DOT               = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+DIRECTORY_GRAPH        = YES
