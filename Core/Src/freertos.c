@@ -54,13 +54,13 @@ extern UART_HandleTypeDef huart3;
  * Se mantiene como macro para simplificar la configuración de conexión en un
  * entorno embebido sin almacenamiento persistente de credenciales.
  */
-#define WIFI_TEST_SSID      "Livebox7-640F"
+#define WIFI_TEST_SSID      ""
 
 /**
  * @def WIFI_TEST_PASS
  * @brief Contraseña de la red WiFi usada por el sistema durante la ejecución.
  */
-#define WIFI_TEST_PASS      "6s42rTNbXDvd"
+#define WIFI_TEST_PASS      ""
 
 /**
  * @def SERVER_HOST
@@ -70,7 +70,7 @@ extern UART_HandleTypeDef huart3;
  * El uso de dirección IP directa evita depender de resolución DNS en el módulo
  * WiFi y reduce una posible fuente de fallo durante las pruebas locales.
  */
-#define SERVER_HOST         "192.168.1.12"
+#define SERVER_HOST         ""
 
 /**
  * @def PAYLOAD_LENGHT
