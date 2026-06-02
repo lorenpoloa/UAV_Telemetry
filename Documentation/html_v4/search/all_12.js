@@ -1,8 +1,0 @@
-var searchData=
-[
-  ['valid_0',['valid',['../structgps__data__t.html#a8f9667fc80d224cf1707acdac7bd14bc',1,'gps_data_t']]],
-  ['vbus_5ffs_5fgpio_5fport_1',['VBUS_FS_GPIO_Port',['../main_8h.html#a1fa7cc3eb3439f24f5963e33cb04510d',1,'main.h']]],
-  ['vbus_5ffs_5fpin_2',['VBUS_FS_Pin',['../main_8h.html#a29d654dfa7f64c8e67b6d2fe85f2298e',1,'main.h']]],
-  ['vdd_5fvalue_3',['VDD_VALUE',['../stm32f4xx__hal__conf_8h.html#aae550dad9f96d52cfce5e539adadbbb4',1,'stm32f4xx_hal_conf.h']]],
-  ['vportsvchandler_4',['vPortSVCHandler',['../_free_r_t_o_s_config_8h.html#ad43047b3ea0a146673e30637488bf754',1,'FreeRTOSConfig.h']]]
-];
